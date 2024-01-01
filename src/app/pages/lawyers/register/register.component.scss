@@ -1,0 +1,193 @@
+
+div.main-content{
+  background-color: #FCFCFC;
+
+  div.first{
+    height: 100% !important;
+  }
+
+ div.lawyer{
+   background-image: url("../../../../assets/images/back.png");
+   background-repeat: no-repeat;
+   background-size: auto;
+   //height: 80% !important;
+ }
+
+  div.logo{
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
+    text-align: center !important;
+    img.la{
+     margin: 0 auto !important;
+    }
+  }
+
+ div.form-login{
+   margin: 0 auto !important;
+   p.title{
+     margin-top: 35px !important;
+     padding-bottom: 10px !important;
+     font-weight: bold;
+     font-family: 'Poppins';
+     color: #181937;
+     text-align: center !important;
+     font-size: 30px;
+   }
+   input.email {
+     ::placeholder{
+       color:#DB2222;
+     }
+
+   }
+
+   span.title-left{
+     margin-top: 5px !important;
+     margin-top: 10px !important;
+     color: #0095D4;
+     text-decoration: underline;
+     cursor: pointer;
+   }
+
+   span.title-right{
+     margin: 5px !important;
+     margin-top: 10px !important;
+     color: #0095D4;
+     text-decoration: underline;
+     cursor: pointer;
+   }
+
+   p.links{
+    margin-top: 15px !important;
+   }
+
+   p.error{
+     color: #DB2222;
+     text-align: center;
+   }
+   p.accept{
+     span.terms{
+       color: #0095D4;
+       text-decoration: underline;
+       margin-left: 5px;
+       cursor: pointer;
+     }
+   }
+   //padding-top: 40px !important;
+   width: 485px !important;
+   height: 625px !important;
+   border: 1px solid gray !important;
+   border-radius: 15px !important;
+   box-shadow:0ch !important;
+
+   div.input-group{
+     width: 357px !important;
+     margin: 0 auto !important;
+   }
+
+   p{
+     text-align: center;
+   }
+
+   div.button{
+     margin: 0 auto !important;
+     button.btn{
+      border-radius: 15px;
+    }
+   }
+
+ }
+
+ p.personal{
+   margin-top: 10px !important;
+   text-align: center !important;
+ }
+
+ div.social{
+   text-align: center !important;
+ }
+
+
+ div.success{
+  margin: 0 auto !important;
+  p.title{
+    margin-top: 35px !important;
+    padding-bottom: 10px !important;
+    font-weight: bold;
+    font-family: 'Poppins';
+    color: #181937;
+    text-align: center !important;
+    font-size: 20px;
+  }
+  p.subtitle{
+    margin-top: 15px !important;
+    padding-bottom: 10px !important;
+    font-weight: bold;
+    font-family: 'Poppins';
+    color: #181937;
+    text-align: center !important;
+    font-size: 15px;
+  }
+  input.email {
+    ::placeholder{
+      color:#DB2222;
+    }
+
+  }
+
+  span.title-left{
+    margin-top: 5px !important;
+    margin-top: 10px !important;
+    color: #0095D4;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  span.title-right{
+    margin: 5px !important;
+    margin-top: 10px !important;
+    color: #0095D4;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  p.links{
+   margin-top: 15px !important;
+  }
+
+  p.error{
+    color: #DB2222;
+    text-align: center;
+  }
+  p.accept{
+    span.terms{
+      color: #0095D4;
+      text-decoration: underline;
+      margin-left: 5px;
+      cursor: pointer;
+    }
+  }
+  //padding-top: 40px !important;
+  width: 353px !important;
+  height: 211px !important;
+  border: 1px solid gray !important;
+  border-radius: 15px !important;
+  box-shadow:0ch !important;
+
+  div.input-group{
+    width: 357px !important;
+    margin: 0 auto !important;
+  }
+
+  p{
+    text-align: center;
+  }
+
+  div.button{
+    margin: 0 auto !important;
+    button.btn{
+      border-radius: 15px;
+    }
+  }
+ }
+
+ }

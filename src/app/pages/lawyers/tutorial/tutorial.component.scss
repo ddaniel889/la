@@ -1,0 +1,30 @@
+div.main-content{
+  background-color: #fff;
+  div.logo{
+    //width: 122px;
+   // height: 102px;
+   margin-top: 30px !important;
+    padding-bottom: 40px !important;
+    text-align: center !important;
+    img.la{
+     margin: 0 auto !important;
+    }
+  }
+
+  div.screen{
+    width: 818px;
+    height: 434px;
+    background-color: #E8E8E8;
+    border-radius: 15px;
+    margin: 0 auto;
+  }
+
+  p.button{
+    padding-top: 50px;
+    text-align: center;
+    button{
+      border-radius: 15px !important;
+    }
+  }
+
+}

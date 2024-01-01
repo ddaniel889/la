@@ -1,0 +1,100 @@
+div.main-content{
+  span.side{
+    //margin-right: 500px !important;
+    float: right;
+  }
+  div.side{
+    float: right !important;
+    margin-right: 50px;
+    span.profile{
+      padding-left: 25px !important;
+    }
+  }
+
+  p.head{
+    font-family: 'Poppins';
+    font-weight: bold;
+    font-size: 23px;
+    color:#181937;
+    span{
+      margin-right: 10px;
+      mat-icon.keyboard{
+        font-size: 25px !important;
+        cursor: pointer;
+      }
+      span.profile{
+        font-size:17px;
+        font-family: 'Poppins';
+        color: #181937;
+      }
+
+    }
+
+  }
+
+  /* Create two columns/boxes that floats next to each other */
+/*nav {
+  float: left;
+  width: 30%;
+  height: 300px;
+  background: #ccc;
+  padding: 20px;
+}*/
+
+div.note{
+  p{
+    margin-left: 50px;
+    font-family: 'Poppins';
+    color: #181937;
+    font-size: 15px;
+    margin-bottom: 0;
+
+  }
+}
+
+
+article {
+  float: right !important;
+  padding: 20px;
+  width: 84%;
+  background-color: #fff;
+  height: auto; /* only for demonstration, should be removed */
+}
+
+div.search{
+  margin-left: 50px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  input{
+    width: 100% !important;
+    background-color: #F1F1F1;
+    border-radius: 15px;
+    height: 42px !important;
+    border: #F1F1F1;
+  }
+
+}
+.contact,.problem,.questions{
+  margin-left: 70px;
+  height: 132px !important;
+  box-shadow: 10px 10px #F1F1F1;
+  margin-top: 15px;
+  border-radius: 15px !important;
+  margin-bottom: 15px;
+  border: 1px  #F1F1F1 solid;
+  p {
+    color: #181937 !important;
+    padding-top: 60px;
+    font-weight: bold;
+    //cursor: pointer;
+    font-size: 20px;
+    margin-left: 50px;
+  }
+}
+
+div.section-questions{
+  div.top{
+    margin-left: 50px !important;
+  }
+}
+}

@@ -1,0 +1,167 @@
+<div class="main-content">
+  <div class="row">
+    <div class="col-3">
+      <nav>
+        <sidebar></sidebar>
+      </nav>
+    </div>
+
+    <div class="col-9">
+      <article>
+        <div class="head">
+          <div class="row top">
+            <div class="col-5"> <p class="head">  <span> !Bienvenido al panel de control !   </span> </p></div>
+            <div class="col-5"> <p>  <span class="side"> <mat-icon class="mat-18">notifications</mat-icon> <span class="profile"> <img src="../../../../assets/images/image_profile.jpg" alt=""> Ana Richardson </span></span>   </p></div>
+          </div>
+         </div>
+
+         <div class="note">
+          <p>
+            Aquí, obtén una visión rápida de las métricas clave de la
+          </p>
+          <p>
+            plataforma.
+          </p>
+         </div>
+
+
+         <div class="activity">
+           <div class="row">
+             <div class="col-6">
+                <h4> Actividad</h4>
+                <div class="row">
+                  <div class="col-4">
+                     <div class="pill-one" style="background-color:#00FF00 !important; border-radius: 10px; padding: 2px;">
+                       <div class="row">
+                        <div class="col-9">
+                          <p class="count" style="font-size: 30px; font-weight: bold; margin-left: 8px; margin-top: 8px; color:#fff;">150</p>
+                          <p style="color: #fff; margin-bottom: 6px !important; font-size: 13px;">Clientes activos </p>
+                        </div>
+                        <div class="col-3">
+                          <span><mat-icon style="color:#fff !important;margin-top: 10px;margin-right: 6px !important;">person_outline</mat-icon></span>
+                        </div>
+                       </div>
+                     </div>
+                  </div>
+                  <div class="col-4">
+                     <div class="pill-two" style="background-color: #C3AE35 !important; border-radius: 10px; padding: 2px;">
+                      <div class="row">
+                        <div class="col-9">
+                          <p class="count" style="font-size: 30px; font-weight: bold; margin-left: 8px; margin-top: 8px; color:#fff;">140</p>
+                          <p style="color:#fff; margin-bottom: 6px; font-size: 13px;">Clientes activos </p>
+                        </div>
+                        <div class="col-3">
+                          <span><mat-icon style="color:#fff; margin-top: 10px;margin-right: 6px !important;">person_outline</mat-icon></span>
+                        </div>
+                       </div>
+                     </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="pill-three" style="background-color: #fff !important; border-radius: 10px; padding: 2px;">
+                      <div class="row">
+                        <div class="col-9">
+                          <p class="count" style="font-size: 30px; font-weight: bold; margin-left: 8px; margin-top: 8px;">100</p>
+                          <p style="color:#000; font-size: 13px; margin-bottom: 6px;">Clientes activos </p>
+                        </div>
+                        <div class="col-3">
+                          <span><mat-icon style="color:#000; margin-top: 10px;margin-right: 6px !important;">lock_outline</mat-icon></span>
+                        </div>
+                       </div>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="staditics" style="height: 406px !important; background-color: #fff;">
+                  grafico
+
+                </div>
+
+             </div>
+
+             <div class="col-6">
+                <h4> Ingresos totales
+                  <span class="calendar">
+                    <select name="" id="">
+                      <option value="Sep2023" class="dates">Sep 2023</option>
+                      <option value="Oct2023" class="dates">Oct 2023</option>
+                      <option value="Nov2023" class="dates">Nov 2023</option>
+                      <option value="Dec2023" class="dates">Dec 2023</option>
+
+                    </select>
+
+                  </span>
+                </h4>
+                <p class="amount">$00000</p>
+
+                <div class="subscription" *ngFor="let item of subs">
+                  <div class="row">
+                    <div class="col-10">
+                      <p class="name">{{item.name}}</p>
+                      <p class="date">{{item.date}}</p>
+                    </div>
+
+                    <div class="col-2">
+                      <p class="number">{{item.number}}</p>
+                      <p class="amount">{{item.amount}}</p>
+                    </div>
+
+                  </div>
+                </div>
+
+             </div>
+
+
+           </div>
+         </div>
+
+         <div class="history">
+          <div class="row">
+            <div class="col-12">
+              <h2>Historial de casos</h2>
+              <table>
+                <tr>
+                  <th><span><mat-icon>check_circle_outline</mat-icon></span></th>
+                  <th>Número de caso</th>
+                  <th>Nombre del caso</th>
+                  <th>Fecha inicio</th>
+                  <th>Estado del caso</th>
+                  <th>Abogado y cliente</th>
+                  <th>Costo</th>
+                </tr>
+                <tr>
+                  <td><span><mat-icon>check_circle_outline</mat-icon></span></td>
+                  <td>#123456</td>
+                  <td>Divorcio Smith</td>
+                  <td>04.12.2021 20:30</td>
+                  <td>Pendiente</td>
+                  <td><span class="profile"> <img src="../../../../assets/images/image_profile.jpg" alt=""> Ana Richardson </span> </td>
+                  <td>$00000</td>
+                </tr>
+                <tr>
+                  <td><span><mat-icon>check_circle_outline</mat-icon></span></td>
+                  <td>#123456</td>
+                  <td>Divorcio Smith</td>
+                  <td>04.12.2021 20:30</td>
+                  <td>Pendiente</td>
+                  <td><span class="profile"> <img src="../../../../assets/images/image_profile.jpg" alt=""> Ana Richardson </span> </td>
+                  <td>$00000</td>
+                </tr>
+
+              </table>
+            </div>
+
+          </div>
+         </div>
+      </article>
+
+    </div>
+
+
+
+  </div>
+
+
+
+
+</div>

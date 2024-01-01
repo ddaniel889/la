@@ -1,0 +1,460 @@
+<div class="main-content">
+  <div class="row">
+    <div class="col-3">
+      <nav>
+        <sidebar></sidebar>
+      </nav>
+    </div>
+
+    <div class="col-9">
+        <article>
+          <div class="head">
+            <div class="row top">
+              <div class="col-5"> <p class="head">  <span *ngIf="content">Contenido y comunicación </span> <span *ngIf="news">Publicar noticias </span> <span *ngIf="resources">Publicar recursos profesionales</span>  <span *ngIf="notificacions">Crear anuncios y notificaciones</span>  <span *ngIf="preview">Noticia publicada </span> </p></div>
+              <div class="col-5"> <p>  <span class="side"> <mat-icon class="mat-18">notifications</mat-icon> <span class="profile"> <img src="../../../../assets/images/image_profile.jpg" alt=""> Ana Richardson </span></span>   </p></div>
+            </div>
+           </div>
+
+           <div class="note">
+            <p *ngIf="content">
+              Comunicación y Actualizaciones para Todos.
+            </p>
+            <p *ngIf="news">Crea y publica todas las noticias para los abogados al igual que las publicaciones para los suscritos al  </p>
+            <p *ngIf="news"> boletín informativo </p>
+            <P *ngIf="resources" class="resources">Comparte Recursos Profesionales de Forma Sencilla.</P>
+            <P *ngIf="notificacions" class="resources" style="font-size: 13px;">Comunica con eficacia a tu audiencia.</P>
+            <div>
+            <br />
+            <p class="sucess" *ngIf="news"><span class="check"><mat-icon>check_circle_outline</mat-icon> </span>&nbsp; Suscripción a boletín informativo</p>
+            <br />
+            <p class="title-news" *ngIf="news">Dale un título a la noticia</p>
+            <br />
+            <p class="body" *ngIf="news">Aquí desarrolla el cuerpo de la noticia...</p>
+            <br />
+            </div>
+          </div>
+           <div class="row options" *ngIf="content">
+             <div class="green" (click)="getNews()">
+               <p>Publicar noticias</p>
+             </div>
+             <div class="red" (click)="getResources()">
+                <p class="one">Publicar recursos </p>
+                <p>profesionales</p>
+             </div>
+             <div class="white" (click)="getNotificacions()">
+              <p class="one">Crear anuncios y</p>
+              <p>notificaciones</p>
+             </div>
+
+           </div>
+           <div class="row history" *ngIf="content">
+             <div class="col-3">
+              <span>
+                <select name="" id="" (click)="openFilters()">
+                  <option value="">Noticias publicadas&nbsp;</option>
+                </select>
+              </span>
+             </div>
+             <div class="col-9">
+               <div>
+
+               </div>
+             </div>
+           </div>
+           <div class="row">
+            <div class="col-12">
+              <div class="search" *ngIf="content">
+                <input type="text" placeholder="Introduce el numero o el nombre de la noticia">&nbsp;
+                <select  id="" (click)="openFilters()" style="border-radius: 15px !important; background-color: #f2f2f2;border:">
+                  <option value="Sep2023" class="dates">Filtros</option>
+                </select>
+              </div>
+            </div>
+           </div>
+           <div class="row">
+            <div class="col-12">
+              <table *ngIf="content">
+                <tr style="background-color: #E4E4E4;">
+                  <th></th>
+                  <th>Código</th>
+                  <th>Fecha</th>
+                  <th>Nombre de noticia</th>
+                  <th>Sección</th>
+                  <th>Estado</th>
+
+                </tr>
+                <tr>
+                  <td><mat-icon>check_circle_outline</mat-icon></td>
+                  <td>53165</td>
+                  <td>01/12/23</td>
+                  <td>Importantes Cambios en la Legislación Fiscal para el Año 2023</td>
+                  <td>Noticias</td>
+                  <td>
+                    Publicada
+                  </td>
+
+                </tr>
+                <tr>
+                  <td><mat-icon>check_circle_outline</mat-icon></td>
+                  <td>53165</td>
+                  <td> 01/12/23</td>
+                  <td>Importantes Cambios en la Legislación Fiscal para el Año 2023</td>
+                  <td>Suscripción </td>
+                  <td>
+                    Eliminada
+                  </td>
+
+                </tr>
+                <tr>
+                  <td><mat-icon>check_circle_outline</mat-icon></td>
+                  <td>53165</td>
+                  <td>01/12/23</td>
+                  <td>Importantes Cambios en la Legislación Fiscal para el Año 2023	</td>
+                  <td>Suscripción</td>
+                  <td>
+                    Eliminada
+                  </td>
+
+                </tr>
+
+              </table>
+
+
+              <div class="news" *ngIf="news">
+                <div class="row">
+                  <div class="col-7 ">
+                    <div class="main-image" style=" width: 90% !important; height: 292px; border: 1px solid #F1F1F1;border-radius: 15px !important;background-color: #F1F1F1;">
+                    <img src="../../../../assets/images/imgbg.PNG" alt="" style=" display: block;margin-left: auto;margin-right: auto;margin-top: 85px;">
+                    <p class="big" style="text-align: center; color:#8C8C8C; font-size: 13px;">Agregar imagen principal</p>
+                  </div>
+                  </div>
+                  <div class="col-3 add-images">
+                    <div class="image-one" style=" width: 90% !important; height: 135px; border: 1px solid #F1F1F1;border-radius: 15px !important;background-color: #F1F1F1;">
+                      <img src="../../../../assets/images/imgsm.PNG" alt="" style=" display: block;margin-left: auto;margin-right: auto;margin-top: 35px;">
+                      <p class="big" style="text-align: center; color:#8C8C8C;  font-size: 13px;">Agregar imagen</p>
+                    </div>
+                    <div class="image-two " style=" width: 90% !important; height: 135px; border: 1px solid #F1F1F1;border-radius: 15px !important;background-color: #F1F1F1; margin-top: 25px !important;">
+                      <img src="../../../../assets/images/imgsm.PNG" alt="" style=" display: block;margin-left: auto;margin-right: auto;margin-top: 35px;">
+                      <p class="big" style="text-align: center; color:#8C8C8C;  font-size: 13px;">Agregar imagen</p>
+                    </div>
+
+                  </div>
+                  <div class="col-2">
+                    <div class="plus" style=" width: 90% !important; height: 292px; border: 1px solid #F1F1F1;border-radius: 15px !important;background-color: #F1F1F1;">
+                     <p class="plus" style="margin-top: 115px !important; text-align: center !important;"><mat-icon class="mat-18" style="color:#8C8C8C">add</mat-icon> </p>
+                    </div>
+
+                  </div>
+                </div>
+                <br />
+                <p class="date-news"> Fecha de la noticia</p>
+                <br />
+                <div class="row">
+                  <div class="col-2">
+
+                  </div>
+                  <div class="col-3">
+                     <button type="button" class="btn btn-default" data-bs-toggle="modal" data-bs-target="#save" style="border: 1px solid #000; border-radius: 15px;">Guardar borrador </button>
+                  </div>
+                  <div class="col-2">
+                    <button type="button" class="btn btn-default" (click)="getPreview()" style="border: 1px solid #000; border-radius: 15px;">Vista previa </button>
+                  </div>
+                  <div class="col-3">
+                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#review" style="border: 1px solid #000; border-radius: 15px;">Subir para revisión </button>
+                  </div>;
+                  <div class="col-2">
+                  </div>
+                </div>
+
+                 <!-- The Modal -->
+            <div class="modal" id="save">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <!-- Modal Header -->
+                   <div class="modal-header">
+                   <img src="../../../../assets/images/saved.PNG" alt="" style=" display: block;margin-left: auto;margin-right: auto;margin-top: 15px;">
+                   </div>
+
+                   <!-- Modal body -->
+                    <div class="modal-body">
+                      <p style="font-size: 30px;font-weight: bold;text-align:center;"> Borrador guardado</p>
+                       </div>
+                     </div>
+                   </div>
+                    </div>
+
+                 <!-- The Modal -->
+                 <div class="modal" id="review">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <!-- Modal Header -->
+                      <div class="modal-header">
+                        <img src="../../../../assets/images/upload.PNG" alt="" style=" display: block;margin-left: auto;margin-right: auto;margin-top: 15px;">
+                      </div>
+
+                      <!-- Modal body -->
+                      <div class="modal-body">
+                        <p style="font-size: 30px;font-weight: bold;text-align:center;">Subida para revisión</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="resources" *ngIf="resources">
+                <div class="row root">
+                  <h4 class="control"><strong style="font-size:17px ">Tipo de recurso</strong></h4>
+                  <div class="col-4">
+                    <div>
+                      <input type="radio"  name="section" value="template" checked />&nbsp;
+                      <label for="news">Plantilla legal</label>
+                    </div>
+                    <div>
+                      <input type="radio"  name="section" value="guide" />&nbsp;
+                      <label for="subscription">Guía</label>
+                    </div>
+                    <div>
+                      <input type="radio"  name="section" value="form" />&nbsp;
+                      <label for="saved">Formulario</label>
+                    </div>
+                    <div>
+                      <input type="radio"  name="section" value="reference" />&nbsp;
+                      <label for="saved">Documento de referencia</label>
+                    </div>
+                  </div>
+                  <div class="col-4">
+
+                  </div>
+
+                  <div class="col-4">
+
+                   </div>
+                </div>
+                <br />
+                <p class="title-resources" style="font-size: 20px;color:#8C8C8C;">Título del recurso... </p>
+                <p class="minus" style="font-size: 13px;color:#8C8C8C;">Aquí desarrolla la descripción detallada del contenido y el propósito del recurso...</p>
+                <br />
+                <p> <strong style="font-size:17px ">Subir el archivo </strong></p>
+                <br/>
+                <p><mat-icon class="mat-18">add_circle</mat-icon>&nbsp;&nbsp;<span>Subir archivo</span></p>
+                <br />
+                <p> <strong style="font-size: 17px;">Categoría del recurso </strong></p>
+                <div class="search">
+                  <input type="text" >
+                </div>
+                <div class="row">
+                  <h4> <strong> Privacidad y acceso</strong></h4>
+                  <div class="col-4">
+                    <div>
+                      <input type="radio"  name="privacy" value="access" checked />&nbsp;
+                      <label for="news">Privacidad y acceso</label>
+                    </div>
+                    <div>
+                      <input type="radio"  name="privacy" value="custoomers" />&nbsp;
+                      <label for="subscription">Clientes</label>
+                    </div>
+                    <div>
+                      <input type="radio"  name="privacy" value="managers" />&nbsp;
+                      <label for="saved">Administradores</label>
+                    </div>
+
+                  </div>
+                  <div class="col-4">
+
+                  </div>
+
+                  <div class="col-4">
+
+                   </div>
+                </div>
+                <br />
+                <div class="row">
+                  <div class="col-3">
+
+                  </div>
+                  <div class="col-3">
+                    <button type="button" class="btn btn-default" data-bs-toggle="modal" data-bs-target="#save" style="border: 1px solid #000; border-radius: 15px;">Guardar borrador </button>
+                  </div>
+                  <div class="col-3">
+                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#review" style="border: 1px solid #000; border-radius: 15px;">Subir para revisión </button>
+                  </div>;
+                  <div class="col-3">
+                  </div>
+                </div>
+                <br />
+              </div>
+
+              <div class="notifications" *ngIf="notificacions">
+                <div class="row root">
+                  <h4 class="control"><strong style="font-size:17px ">Tipo de comunicación</strong></h4>
+                  <div class="col-4">
+                    <div>
+                      <input type="radio"  name="communication" value="advert" checked />&nbsp;
+                      <label for="news">Anuncio</label>
+                    </div>
+                    <div>
+                      <input type="radio"  name="communication" value="notification" />&nbsp;
+                      <label for="subscription">Notificación</label>
+                    </div>
+                    <div>
+                      <input type="radio"  name="communication" value="promotion" />&nbsp;
+                      <label for="saved">Promoción</label>
+                    </div>
+                    <div>
+                      <input type="radio"  name="communication" value="update" />&nbsp;
+                      <label for="saved">Actualización crítica</label>
+                    </div>
+                  </div>
+                  <div class="col-4">
+
+                  </div>
+
+                  <div class="col-4">
+
+                   </div>
+                </div>
+                <br />
+                <div class="row root">
+                  <h4 class="control"><strong style="font-size:17px ">Destinatarios</strong></h4>
+                  <div class="col-4">
+                    <div>
+                      <input type="radio"  name="communication" value="lawyers" />&nbsp;
+                      <label for="subscription">Abogados</label>
+                    </div>
+                    <div>
+                      <input type="radio"  name="communication" value="customers" />&nbsp;
+                      <label for="saved">Clientes</label>
+                    </div>
+                    <div>
+                      <input type="radio"  name="communication" value="events" />&nbsp;
+                      <label for="news">Suscritos </label>
+                    </div>
+                    <div>
+                      <input type="radio"  name="communication" value="hightlated" />&nbsp;
+                      <label for="saved">Abogados destacados</label>
+                    </div>
+                  </div>
+                  <div class="col-4">
+
+                  </div>
+
+                  <div class="col-4">
+
+                   </div>
+                </div>
+                <br />
+                <p> <strong style="font-size:17px ">Contenido de la comunicación </strong></p>
+                <p class="title-resources" style="font-size: 20px;color:#8C8C8C;">Título o asunto...</p>
+                <p class="minus" style="font-size: 13px;color:#8C8C8C;">Aquí desarrolla la descripción detallada del contenido y el propósito del anuncio/notificación...</p>
+                <br />
+                <div class="row">
+                  <div class="col-4 add-images">
+                    <div class="image-one" style=" width: 90% !important; height: 135px; border: 1px solid #F1F1F1;border-radius: 15px !important;background-color: #F1F1F1;">
+                      <img src="../../../../assets/images/imgsm.PNG" alt="" style=" display: block;margin-left: auto;margin-right: auto;margin-top: 35px;">
+                      <p class="big" style="text-align: center; color:#8C8C8C;  font-size: 13px;">Agregar imagen</p>
+                    </div>
+                  </div>
+                  <div class="col-2">
+                    <div class="plus" style=" width: 90% !important; height: 135px; border: 1px solid #F1F1F1;border-radius: 15px !important;background-color: #F1F1F1;">
+                     <p class="plus" style="margin-top: 50px !important; text-align: center !important;"><mat-icon class="mat-18" style="color:#8C8C8C">add</mat-icon> </p>
+                    </div>
+                  </div>
+                </div>
+                <br />
+                <p> <strong style="font-size:17px ">Enlace</strong></p>
+                <p class="minus" style="font-size: 13px;color:#8C8C8C;">Aquí el enlace...</p>
+                <p> <strong style="font-size:17px ">Fecha y hora de envío</strong></p>
+                <div class="row">
+                  <div class="col-2">
+                    <div class="search">
+                      <input type="text" placeholder="Septiembre">
+                    </div>
+                  </div>
+                  <div class="col-1">
+                    <div class="search">
+                      <input type="text" placeholder="23">
+                    </div>
+                  </div>
+                  <div class="col-2">
+                    <div class="search">
+                      <input type="text" placeholder="2023">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-3">
+
+                  </div>
+                  <div class="col-3">
+                    <button type="button" class="btn btn-default" data-bs-toggle="modal" data-bs-target="#save" style="border: 1px solid #000; border-radius: 15px;">Guardar borrador </button>
+                  </div>
+                  <div class="col-3">
+                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#review" style="border: 1px solid #000; border-radius: 15px;">Subir para revisión </button>
+                  </div>;
+                  <div class="col-3">
+                  </div>
+                </div>
+              </div>
+
+              <div class="preview" *ngIf="preview">
+                <div class="row">
+                  <div class="col-7">
+                    <div class="row">
+                      <div class="col-3">
+
+                      </div>
+                      <div class="col-3">
+                        <button type="button" class="btn btn-default" data-bs-toggle="modal" data-bs-target="#save" style="border: 1px solid #000; border-radius: 15px;width: 171px !important;">Eliminar </button>
+                      </div>
+                      <div class="col-3">
+                        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#review" style="border: 1px solid #000; border-radius: 15px;width: 171px !important;">Editar </button>
+                      </div>;
+                      <div class="col-3">
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-12 note">
+                        <br />
+                        <img src="../../../../assets/images/news.PNG" alt="" style=" display: block;margin-left: auto;margin-right: auto;height: 290px;">
+                        <h2>"Tribunal Supremo dictamina la constitucionalidad de la ley de control de armas"</h2>
+                        <br />
+                        <h4>Sep 23 2023, 7:00 A.M</h4>
+                         <img src="../../../../assets/images/image_b.PNG" alt="" style=" display: block;margin-left: auto;margin-right: auto;height: 290px;">
+                         <p style="text-align: justify;">La Ley Nacional de Armas de Fuego (NFA, por sus siglas en inglés) se promulgó originalmente en 1934. Similar a la NFA actual, la ley original imponía un impuesto a la fabricación y transferencia de armas de fuego definidas en la Ley, así como un impuesto especial (ocupacional) a las personas y entidades involucradas en el negocio de importación, manufactura y comercialización de las armas de fuego definidas en la NFA. La ley también exigía el registro de todas las armas de fuego definidas en la NFA con la Secretaría del Tesoro. Las armas de fuego sujetas a la Ley de 1934 incluían escopetas y rifles que tengan cañones menores de 18 pulgadas de largo, ciertas armas de fuego descritas como “cualquier otra arma”, ametralladoras y silenciadores para armas de fuego.
+
+Si bien la NFA fue promulgada por el Congreso como ejercicio de su autoridad para imponer impuestos, la NFA tenía un propósito subyacente no relacionado con recaudación de ingresos. Según lo revela la historia de la ley, su propósito subyacente era restringir, e incluso prohibir, las transacciones de armas de fuego definidas en la NFA. El Congreso expresó que las armas de fuego representaban un problema delictivo significativo debido a su uso frecuente en crímenes, particularmente los delitos de pandillas de esa época, como la Masacre del Día de San Valentín. Se consideraba que los impuestos de $200 por fabricación y transferencia de la mayoría de las armas de fuego definidas en la NFA eran bastante severos y adecuados para cumplir con el propósito del Congreso de desalentar o eliminar las transacciones de esas armas de fuego. El impuesto de $200 no ha cambiado desde 1934. </p>
+
+                      </div>
+
+                    </div>
+                  </div>
+                  <div class="col-5">
+                    <h2 style="text-align: center;"><strong>Comentarios</strong></h2>
+                    <div class="card">
+                      <div class="comments">
+                        <div class="row">
+                          <div class="col-2">
+                             <img src="../../../../assets/images/person.PNG" alt="" style=" display: block;margin-left: auto;margin-right: auto;margin-top: 10px;">
+                          </div>
+                          <div class="col-10">
+                            <h3>Gabriela Gómez</h3>
+                            <h5><span>26 sep 2023, 9:00 a.m</span></h5>
+                            <p style="text-align: justify;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+                          </div>
+                           <hr>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        <br />
+        </article>
+    </div>
+  </div>
+</div>

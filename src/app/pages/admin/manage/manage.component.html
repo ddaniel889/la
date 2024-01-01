@@ -1,0 +1,131 @@
+<div class="main-content">
+  <div class="row">
+    <div class="col-3">
+      <nav>
+        <sidebar></sidebar>
+      </nav>
+    </div>
+
+    <div class="col-9">
+        <article>
+          <div class="head">
+            <div class="row top">
+              <div class="col-5"> <p class="head">  <span>Gestión de usuarios </span> </p></div>
+              <div class="col-5"> <p>  <span class="side"> <mat-icon class="mat-18">notifications</mat-icon> <span class="profile"> <img src="../../../../assets/images/image_profile.jpg" alt=""> Ana Richardson </span></span>   </p></div>
+            </div>
+           </div>
+
+           <div class="note">
+            <p>
+              Aquí puedes ver y administrar a clientes y abogados, con
+            </p>
+            <p>
+              información de contacto y opciones de búsqueda.
+            </p>
+           </div>
+
+           <div class="row">
+            <div class="col-5">
+              <div class="left">
+                <div class="search">
+                  <input type="text" placeholder="Buscar usuario">&nbsp;
+                  <select (click)="openFilters()" id="" style="border-radius: 15px !important; background-color: #f2f2f2;border:">
+                    <option value="Sep2023" class="dates">Filtro</option>
+                  </select>
+                </div>
+
+                <div class="chapters">
+                  <div class="users" *ngFor="let item of users">
+                    <div class="row">
+                      <div class="col-2">
+                        <p class="image"><img src="../../../../assets/images/users.PNG" alt=""></p>
+                      </div>
+                      <div class="col-10">
+                        <p class="name">{{item.name}} </p>
+                        <p class="number">{{item.number}}</p>
+                        <p class="date">{{item.date}}</p>
+                        <p class="button">
+                          <button type="submit" class="btn btn-outline-dark">Cliente</button>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-7">
+              <div class="right">
+                  <img class="users" src="../../../../assets/images/users.PNG" alt="">
+                  <p class="name">Raquel Victoria</p>
+                  <p class="location"><span class="point"> <mat-icon class="mat-18">location_on</mat-icon> </span>Cali, Colombia</p>
+
+                <p class="buttons">  <button style="margin-right: 10px !important;" type="submit" class="btn btn-dark"> Mensaje </button>  <button style="margin-left: 10px !important;"  type="submit" class="btn btn-dark">Ocultar  </button> </p>
+                <table style="width: 100%;">
+                  <legend>Información</legend>
+                  <tr>
+                    <td><mat-icon class="mat-18">mail_outline</mat-icon></td>
+                    <td>Correo</td>
+                    <td>correo1234@gmail.com</td>
+                    <td><button type="submit" class="btn btn-danger" style="background-color: #C3A314 !important; border-radius: 15px;"> <span style="font-size: 15px; padding-top: 3px;padding-bottom: 6px;">Privado</span> </button></td>
+                  </tr>
+                  <tr>
+                    <td><mat-icon class="mat-18">lock_outline</mat-icon></td>
+                    <td>Contraseña</td>
+                    <td>**********************</td>
+                    <td><button type="submit" class="btn btn-danger" style="background-color: #C3A314 !important; border-radius: 15px;">Privado</button></td>
+                  </tr>
+                  <tr>
+                    <td><span style="font-weight: bold; font-size: 23px;">&nbsp;G</span></td>
+                    <td>Género</td>
+                    <td>Femenino</td>
+                    <td><button type="submit" class="btn btn-primary" style="background-color: #087551; border-radius: 15px;">Público</button></td>
+                  </tr>
+                  <tr>
+                    <td><span style="font-weight: bold; font-size: 23px;">&nbsp;#</span></td>
+                    <td>Número</td>
+                    <td>3102548989</td>
+                    <td><button type="submit" class="btn btn-primary" style="background-color: #087551; border-radius: 15px;">Público</button></td>
+                  </tr>
+                  <tr>
+                    <td><mat-icon class="mat-18">contact_mail_outline</mat-icon></td>
+                    <td>Documento</td>
+                    <td>1006548984</td>
+                    <td><button type="submit" class="btn btn-danger" style="background-color: #C3A314 !important; border-radius: 15px;">Privado</button></td>
+                  </tr>
+                </table>
+
+              </div>
+
+              <div class="payment">
+                <table>
+                  <legend>Historial de pagos
+                    <span class="calendar" style="width: 50%; float: right;">
+                    <select name="" id="" style="border-radius: 15px !important; background-color: #f2f2f2;">
+                      <option value="Sep2023" class="dates">Pagos</option>
+                      <option value="Oct2023" class="dates">Casos</option>
+                    </select>
+
+                  </span></legend>
+                  <tr style="background-color: #f2f2f2; color:#9192A6;">
+                    <th>Servicio</th>
+                    <th>Fecha</th>
+                    <th>Persona</th>
+                    <th>Pago</th>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                     <td></td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+
+
+           </div>
+        </article>
+    </div>
+  </div>
+</div>
