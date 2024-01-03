@@ -40,6 +40,7 @@ import { FilterUsersComponent } from './pages/admin/filter-users/filter-users.co
 import { UserCasesComponent } from './pages/admin/user-cases/user-cases.component';
 import { FilterCasesComponent } from './pages/admin/filter-cases/filter-cases.component';
 import { NewsFiltersComponent } from './pages/admin/news-filters/news-filters.component';
+import { CampaignFilterComponent } from './pages/admin/campaign-filter/campaign-filter.component';
 
 
 @NgModule({
@@ -75,7 +76,8 @@ import { NewsFiltersComponent } from './pages/admin/news-filters/news-filters.co
     FilterUsersComponent,
     UserCasesComponent,
     FilterCasesComponent,
-    NewsFiltersComponent
+    NewsFiltersComponent,
+    CampaignFilterComponent
   ],
   imports: [
     BrowserModule,

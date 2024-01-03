@@ -1,1 +1,236 @@
-<p>marketing works!</p>
+<div class="main-content">
+  <div class="row">
+    <div class="col-3">
+      <nav>
+        <admin-sidebar></admin-sidebar>
+      </nav>
+    </div>
+
+    <div class="col-9">
+        <article>
+          <div class="head">
+            <div class="row top">
+              <div class="col-5"> <p class="head">  <span >Marketing y promoción </span>  <span >Crear campaña </span></p></div>
+              <div class="col-5"> <p>  <span class="side"> <mat-icon class="mat-18">notifications</mat-icon> <span class="profile"> <img src="../../../../assets/images/image_profile.jpg" alt=""> Ana Richardson </span></span>   </p></div>
+            </div>
+           </div>
+
+           <div class="note">
+          <p>Impulsa tu plataforma con marketing.</p>
+          <p>Diseña tu próxima campaña de marketing aquí.</p>
+
+           </div>
+           <div class="row options" *ngIf="content">
+             <div class="green" (click)="create()">
+               <p>Crear nueva campaña</p>
+             </div>
+             <div class="red" >
+                <p class="one">Campañas activas </p>
+                <p>12</p>
+             </div>
+
+
+           </div>
+
+           <div class="row">
+            <div class="col-12">
+              <div class="search" *ngIf="content">
+                <input type="text" placeholder="Buscar campaña por nombre o número de campaña">&nbsp;
+                <select  id="" (click)="openFilters()" style="border-radius: 15px !important; background-color: #f2f2f2;">
+                  <option value="Sep2023" class="dates">Filtros</option>
+                </select>
+              </div>
+            </div>
+           </div>
+           <div class="row">
+            <div class="col-12">
+              <table *ngIf="content">
+                <tr style="background-color: #E4E4E4;border-radius: 10px;">
+                  <th></th>
+                  <th>Código</th>
+                  <th>Nombre</th>
+                  <th>Fecha de envío</th>
+                  <th>Destinatario</th>
+                  <th>Abiertos</th>
+                  <th>Clics</th>
+                  <th>Estado</th>
+
+                </tr>
+                <tr style="background-color: #fff;"><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                <tr>
+                  <td><mat-icon>check_circle_outline</mat-icon></td>
+                  <td>53165</td>
+                  <td>Campaña suscripción</td>
+                  <td>01/12/23</td>
+                  <td>Abogados</td>
+                  <td>
+                    40%
+                  </td>
+                  <td>
+                    40%
+                  </td>
+                  <td>
+                    Activa
+                  </td>
+                </tr>
+                <tr>
+                  <td><mat-icon>check_circle_outline</mat-icon></td>
+                  <td>53165</td>
+                  <td> Campaña suscripción</td>
+                  <td>01/12/23</td>
+                  <td>Abogados </td>
+                  <td>
+                    40%
+                  </td>
+                  <td>
+                    40%
+                  </td>
+                  <td>
+                    Pausada
+                  </td>
+                </tr>
+                <tr>
+                  <td><mat-icon>check_circle_outline</mat-icon></td>
+                  <td>53165</td>
+                  <td>Campaña suscripción</td>
+                  <td>01/12/23	</td>
+                  <td>Clientes</td>
+                  <td>
+                    40%
+                  </td>
+                  <td>
+                    40%
+                  </td>
+                  <td>
+                    Programada
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        <br />
+        <div class="news" >
+          <div class="row root">
+            <p class="title-resources" style="font-size: 20px;color:#8C8C8C;">Dale un título a la campaña... </p>
+            <p class="minus" style="font-size: 13px;color:#8C8C8C;">Proporciona una descripción de la campaña y sus objetivos.</p>
+            <br />
+            <h4><strong>Fecha de inicio</strong></h4>
+            <div class="row">
+              <div class="col-2">
+                <div class="search">
+                  <input type="text" placeholder="Septiembre">
+                </div>
+              </div>
+              <div class="col-1">
+                <div class="search">
+                  <input type="text" placeholder="23">
+                </div>
+              </div>
+              <div class="col-2">
+                <div class="search">
+                  <input type="text" placeholder="2023">
+                </div>
+              </div>
+              <h4><strong>Fecha de fin</strong></h4>
+              <div class="col-2">
+                <div class="search">
+                  <input type="text" placeholder="Mes">
+                </div>
+              </div>
+              <div class="col-1">
+                <div class="search">
+                  <input type="text" placeholder="00">
+                </div>
+              </div>
+              <div class="col-2">
+                <div class="search">
+                  <input type="text" placeholder="0000">
+                </div>
+              </div>
+            </div>
+            <h4 class="control"><strong style="font-size:17px ">Tipo de recurso</strong></h4>
+            <div class="col-4">
+              <div>
+                <input type="radio"  name="section" value="template" checked />&nbsp;
+                <label for="news">Plantilla legal</label>
+              </div>
+              <div>
+                <input type="radio"  name="section" value="guide" />&nbsp;
+                <label for="subscription">Guía</label>
+              </div>
+              <div>
+                <input type="radio"  name="section" value="form" />&nbsp;
+                <label for="saved">Formulario</label>
+              </div>
+              <div>
+                <input type="radio"  name="section" value="reference" />&nbsp;
+                <label for="saved">Documento de referencia</label>
+              </div>
+            </div>
+            <div class="col-4">
+
+            </div>
+
+            <div class="col-4">
+
+             </div>
+          </div>
+          <br />
+
+          <p> <strong style="font-size:17px ">Subir el archivo </strong></p>
+          <br/>
+          <p><mat-icon class="mat-18">add_circle</mat-icon>&nbsp;&nbsp;<span>Subir archivo</span></p>
+          <br />
+          <p> <strong style="font-size: 17px;">Categoría del recurso </strong></p>
+          <div class="search">
+            <input type="text" >
+          </div>
+          <div class="row">
+            <h4> <strong> Privacidad y acceso</strong></h4>
+            <div class="col-4">
+              <div>
+                <input type="radio"  name="privacy" value="access" checked />&nbsp;
+                <label for="news">Privacidad y acceso</label>
+              </div>
+              <div>
+                <input type="radio"  name="privacy" value="custoomers" />&nbsp;
+                <label for="subscription">Clientes</label>
+              </div>
+              <div>
+                <input type="radio"  name="privacy" value="managers" />&nbsp;
+                <label for="saved">Administradores</label>
+              </div>
+
+            </div>
+            <div class="col-4">
+
+            </div>
+
+            <div class="col-4">
+
+             </div>
+          </div>
+          <br />
+          <div class="row">
+            <div class="col-3">
+
+            </div>
+            <div class="col-3">
+              <button type="button" class="btn btn-default" data-bs-toggle="modal" data-bs-target="#save" style="border: 1px solid #000; border-radius: 15px;">Guardar borrador </button>
+            </div>
+            <div class="col-3">
+              <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#review" style="border: 1px solid #000; border-radius: 15px;background-color: #181937;">Subir para revisión </button>
+            </div>
+            <div class="col-3">
+            </div>
+          </div>
+          <br />
+        </div>
+        <br>
+        <div class="active">
+
+        </div>
+        </article>
+    </div>
+  </div>
+</div>

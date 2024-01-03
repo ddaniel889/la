@@ -1,0 +1,47 @@
+div.main-content{
+  label {
+    font:
+      1rem 'Fira Sans',
+      sans-serif;
+  }
+
+  input {
+    margin: 0.4rem;
+  }
+
+  div.search{
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    input{
+      width: 80% !important;
+      background-color: #F1F1F1;
+      border-radius: 15px;
+      height: 31px !important;
+      border: #F1F1F1;
+    }
+
+  }
+
+  button{
+    width: 100% !important;
+    border-radius: 15px !important;
+    height: 45px !important;
+    background-color: #087551;
+    border: 1px solid #087551;
+  }
+
+  h2{
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  h4{
+    font-size: 15px;
+    font-weight: bold;
+  }
+  p.to{
+    margin-top: 15px !important;
+    margin-bottom: 0 !important;
+  }
+}

@@ -43,7 +43,7 @@ export class UserCasesComponent implements OnInit {
     this.dialog.open(FilterCasesComponent , {
      // data: { material },
       width: "800px",
-      height:  "750px",
+      height:  "550px",
     }).afterClosed().subscribe({
       next: (res) => {
         if (res) {

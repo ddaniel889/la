@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { CanActivate, Router } from '@angular/router';
+import { CanActivate, Router } from '@angular/router';//
 
 @Component({
   selector: 'app-legal-notices',

@@ -37,7 +37,7 @@
   }
 
   li a.active {
-    background-color: #04AA6D;
+    background-color: #181937;
     color: white;
     border-radius: 15px;
     mat-icon{
@@ -48,13 +48,15 @@
   }
 
   li a:hover:not(.active) {
-    background-color: #04AA6D;
+    background-color: #181937;
     color: white;
     border-radius: 15px;
+    cursor: pointer;
     mat-icon{
       color: #fff;
       margin-right: 10px !important;
       font-size: 19px !important;
+      cursor: pointer;
     }
   }
  }

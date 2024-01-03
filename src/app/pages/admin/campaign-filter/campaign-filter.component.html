@@ -1,5 +1,5 @@
 <div class="main-content">
-  <H2>Filtros de noticias</H2>
+  <H2>Filtros de campañas</H2>
   <h4>Fecha de publicación</h4>
   <div class="row">
     <div class="col-2">
@@ -38,19 +38,15 @@
   </div>
   <br />
   <div class="row">
-    <h4>Sección</h4>
+    <h4>Destinatarios</h4>
     <div class="col-4">
       <div>
-        <input type="radio"  name="section" value="news" checked />
-        <label for="news">Noticias</label>
+        <input type="radio"  name="type" value="news" checked />
+        <label for="news">Abogados</label>
       </div>
       <div>
-        <input type="radio"  name="section" value="subscription" />
-        <label for="subscription">Suscripción</label>
-      </div>
-      <div>
-        <input type="radio"  name="section" value="saved" />
-        <label for="saved">Archivado</label>
+        <input type="radio"  name="type" value="subscription" />
+        <label for="subscription">Clientes</label>
       </div>
     </div>
     <div class="col-4">
@@ -67,45 +63,45 @@
     <h4>Estado de la noticia</h4>
     <div class="col-4">
       <div>
-        <input type="radio"  name="state" value="publicaded" checked />
-        <label for="publicaded">Publicado</label>
-      </div>
-      <div>
-        <input type="radio"  name="state" value="reviewed" />
-        <label for="reviewed">En revisión</label>
-      </div>
-      <div>
-        <input type="radio"  name="state" value="deleted" />
-        <label for="deleted">Eliminado</label>
-      </div>
-    </div>
-    <div class="col-4">
-      <div>
-        <input type="radio"  name="state" value="draft" checked />
-        <label for="draft">Borrador</label>
+        <input type="radio"  name="state" value="active" checked />
+        <label for="active">Activa</label>
       </div>
       <div>
         <input type="radio"  name="state" value="scheduled" />
         <label for="scheduled">Programada</label>
       </div>
       <div>
-        <input type="radio"  name="state" value="rejected" />
-        <label for="rejected">Rechazada</label>
+        <input type="radio"  name="state" value="paused" />
+        <label for="paused">Pausada</label>
+      </div>
+    </div>
+    <div class="col-4">
+      <div>
+        <input type="radio"  name="state" value="completed"  />
+        <label for="completed">Completada</label>
+      </div>
+      <div>
+        <input type="radio"  name="state" value="cancelled" />
+        <label for="cancelled">Cancelada</label>
+      </div>
+      <div>
+        <input type="radio"  name="state" value="review" />
+        <label for="review">En revisión</label>
       </div>
 
     </div>
 
     <div class="col-4">
       <div>
-        <input type="radio"  name="state" value="updated" checked />
-        <label for="publicaded">Actualizada</label>
+        <input type="radio"  name="state" value="noapproved"  />
+        <label for="noapproved">No aprobada</label>
       </div>
 
      </div>
   </div>
    <br />
    <div class="button">
-    <button type="submit" class="btn btn-primary" style="background-color: #181937;">Buscar</button>
+    <button type="submit" class="btn btn-primary" style="background-color: #181937 !important;">Buscar</button>
    </div>
 
   </div>

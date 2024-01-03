@@ -14,8 +14,17 @@ import {PanelComponent } from './pages/admin/panel/panel.component';
 import {ManageComponent } from './pages/admin/manage/manage.component';
 import { UserCasesComponent } from './pages/admin/user-cases/user-cases.component';
 import { ContentComponent } from './pages/admin/content/content.component';
+import { MarketingComponent } from './pages/admin/marketing/marketing.component';
+import { AnaliticsComponent } from './pages/admin/analitics/analitics.component';
+import { PaymentsComponent } from './pages/admin/payments/payments.component';
+import { ReportsComponent } from './pages/admin/reports/reports.component';
+import { ConfigurationsComponent } from './pages/admin/configurations/configurations.component';
+import { ClientSupportComponent } from './pages/admin/client-support/client-support.component';
+import { AccountComponent } from './pages/admin/account/account.component';
+
 
 const routes: Routes = [
+   /*  Lawyers     */
   { path: '', pathMatch: 'full', redirectTo: 'login' },
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent},
@@ -30,6 +39,13 @@ const routes: Routes = [
   { path: 'manage-users', component:ManageComponent },
   { path: 'user-cases', component:UserCasesComponent  },
   { path: 'content', component:ContentComponent },
+  { path: 'marketing', component:MarketingComponent },
+  { path: 'analitics', component:AnaliticsComponent },
+  { path: 'payments', component:PaymentsComponent },
+  { path: 'reports', component:ReportsComponent },
+  { path: 'configurations', component:ConfigurationsComponent },
+  { path: 'client-support', component:ClientSupportComponent },
+  { path: 'account', component:AccountComponent },
 ];
 
 @NgModule({
