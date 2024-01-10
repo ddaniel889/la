@@ -10,21 +10,21 @@
         <article>
           <div class="head">
             <div class="row top">
-              <div class="col-5"> <p class="head">  <span >Marketing y promoción </span>  <span >Crear campaña </span></p></div>
+              <div class="col-5"> <p class="head">  <span *ngIf="content">Marketing y promoción </span>  <span *ngIf="new">Crear campaña </span> <span *ngIf="active">Marketing y promoción </span></p></div>
               <div class="col-5"> <p>  <span class="side"> <mat-icon class="mat-18">notifications</mat-icon> <span class="profile"> <img src="../../../../assets/images/image_profile.jpg" alt=""> Ana Richardson </span></span>   </p></div>
             </div>
            </div>
 
            <div class="note">
-          <p>Impulsa tu plataforma con marketing.</p>
-          <p>Diseña tu próxima campaña de marketing aquí.</p>
-
+          <p *ngIf="content">Impulsa tu plataforma con marketing.</p>
+          <p *ngIf="new">Diseña tu próxima campaña de marketing aquí.</p>
+          <br *ngIf="new" />
            </div>
            <div class="row options" *ngIf="content">
              <div class="green" (click)="create()">
                <p>Crear nueva campaña</p>
              </div>
-             <div class="red" >
+             <div class="red" (click)="getActive()" >
                 <p class="one">Campañas activas </p>
                 <p>12</p>
              </div>
@@ -109,117 +109,125 @@
             </div>
           </div>
         <br />
-        <div class="news" >
+        <div class="news" *ngIf="new">
           <div class="row root">
             <p class="title-resources" style="font-size: 20px;color:#8C8C8C;">Dale un título a la campaña... </p>
             <p class="minus" style="font-size: 13px;color:#8C8C8C;">Proporciona una descripción de la campaña y sus objetivos.</p>
             <br />
-            <h4><strong>Fecha de inicio</strong></h4>
+
             <div class="row">
               <div class="col-2">
+                <h4><strong>Fecha de inicio</strong></h4>
                 <div class="search">
                   <input type="text" placeholder="Septiembre">
                 </div>
               </div>
               <div class="col-1">
+                <p>&nbsp;</p>
                 <div class="search">
                   <input type="text" placeholder="23">
                 </div>
               </div>
               <div class="col-2">
+                <p>&nbsp;</p>
                 <div class="search">
                   <input type="text" placeholder="2023">
                 </div>
               </div>
-              <h4><strong>Fecha de fin</strong></h4>
               <div class="col-2">
+                <h4><strong>Fecha de finalización</strong></h4>
                 <div class="search">
                   <input type="text" placeholder="Mes">
                 </div>
               </div>
               <div class="col-1">
+                <p>&nbsp;</p>
                 <div class="search">
                   <input type="text" placeholder="00">
                 </div>
               </div>
               <div class="col-2">
+                <p>&nbsp;</p>
                 <div class="search">
                   <input type="text" placeholder="0000">
                 </div>
               </div>
             </div>
-            <h4 class="control"><strong style="font-size:17px ">Tipo de recurso</strong></h4>
-            <div class="col-4">
-              <div>
-                <input type="radio"  name="section" value="template" checked />&nbsp;
-                <label for="news">Plantilla legal</label>
+
+              <div class="row">
+              <div class="col-2">
+                <h4><strong>Estado</strong></h4>
+                <div class="search">
+                  <input type="text" placeholder="En creación">
+                </div>
               </div>
-              <div>
-                <input type="radio"  name="section" value="guide" />&nbsp;
-                <label for="subscription">Guía</label>
+              <div class="col-1">
               </div>
-              <div>
-                <input type="radio"  name="section" value="form" />&nbsp;
-                <label for="saved">Formulario</label>
+              <div class="col-2">
               </div>
-              <div>
-                <input type="radio"  name="section" value="reference" />&nbsp;
-                <label for="saved">Documento de referencia</label>
+              <div class="col-2">
+                <h4><strong>Presupuesto</strong></h4>
+                <div class="search">
+                  <input type="text" placeholder="$000000">
+                </div>
+              </div>
+              <div class="col-1">
+              </div>
+              <div class="col-3">
+                 <h4><strong>Responsables de la campaña</strong></h4>
+                <div class="search">
+                  <ul style="background-color: #F1F1F1;list-style-type: none;">
+                    <li style="padding-top: 5px;"><img src="../../../../assets/images/image_profile.jpg" alt="">&nbsp;Sierra Ferguson</li>
+                    <li style="padding-bottom: 5px;"><img src="../../../../assets/images/image_profile.jpg" alt="">&nbsp;Sierra Ferguson</li>
+                  </ul>
+                </div>
               </div>
             </div>
-            <div class="col-4">
 
+            <div class="row">
+              <div class="col-3">
+                <h4><strong>Segmentación de la audiencia</strong></h4>
+                <div class="search">
+                  <input type="text" placeholder="Ubicación"><br/>
+                </div>
+                <div class="search">
+                  <input type="text" placeholder="Área de especialización"><br/>
+                </div>
+              </div>
+
+              <div class="col-3">
+                <h4><strong>Tipo de contenido</strong></h4>
+                <div class="search">
+                  <textarea name="" id="" cols="30" rows="5" style="background-color: #F1F1F1;" placeholder="Correo electrónico, anuncios, publicaciones, etc"></textarea>
+                </div>
+              </div>
+              <div class="col-1">
+              </div>
             </div>
-
-            <div class="col-4">
-
-             </div>
           </div>
           <br />
 
-          <p> <strong style="font-size:17px ">Subir el archivo </strong></p>
+          <p class="title-resources" style="font-size: 15px;color:#000;font-weight: bold;">Contenido de la campaña </p>
+          <div class="search" style="width: 400px">
+            <input type="text" placeholder="Escribe aquí el contenido textual de la campaña...">
+          </div>
+          <p> <strong style="font-size:17px ">Adjuntar archivos</strong></p>
           <br/>
-          <p><mat-icon class="mat-18">add_circle</mat-icon>&nbsp;&nbsp;<span>Subir archivo</span></p>
+          <p>  <input type="radio"  name="privacy" value="managers" style="width: 25px; height: 25px;" />&nbsp;&nbsp;<mat-icon class="mat-18">add_circle</mat-icon>&nbsp;&nbsp;<span>Adjunta archivo</span></p>
           <br />
-          <p> <strong style="font-size: 17px;">Categoría del recurso </strong></p>
-          <div class="search">
-            <input type="text" >
+          <p> <strong style="font-size: 17px;">Agregar enlaces </strong></p>
+          <div class="search" style="width: 320px">
+            <input type="text" placeholder="asdfghjikol.com">
           </div>
-          <div class="row">
-            <h4> <strong> Privacidad y acceso</strong></h4>
-            <div class="col-4">
-              <div>
-                <input type="radio"  name="privacy" value="access" checked />&nbsp;
-                <label for="news">Privacidad y acceso</label>
-              </div>
-              <div>
-                <input type="radio"  name="privacy" value="custoomers" />&nbsp;
-                <label for="subscription">Clientes</label>
-              </div>
-              <div>
-                <input type="radio"  name="privacy" value="managers" />&nbsp;
-                <label for="saved">Administradores</label>
-              </div>
 
-            </div>
-            <div class="col-4">
-
-            </div>
-
-            <div class="col-4">
-
-             </div>
-          </div>
           <br />
           <div class="row">
             <div class="col-3">
 
             </div>
+
             <div class="col-3">
-              <button type="button" class="btn btn-default" data-bs-toggle="modal" data-bs-target="#save" style="border: 1px solid #000; border-radius: 15px;">Guardar borrador </button>
-            </div>
-            <div class="col-3">
-              <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#review" style="border: 1px solid #000; border-radius: 15px;background-color: #181937;">Subir para revisión </button>
+              <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#review" style="border: 1px solid #000; border-radius: 15px;background-color: #181937;">Crear campaña </button>
             </div>
             <div class="col-3">
             </div>
@@ -227,8 +235,44 @@
           <br />
         </div>
         <br>
-        <div class="active">
+        <div class="active card" *ngIf="active" style="width: 85%">
+          <div class="section" style="padding: 5px;">
+            <p style="text-align: justify;">Fecha de campaña: 15 de noviembre de 2023</p>
+            <h2>Informe de Seguimiento de Resultados de Campaña de Marketing - "Campaña de Abogados Expertos"</h2><br />
+            <p>La "Campaña de Abogados Expertos" se lanzó el 1 de octubre de 2023 con el objetivo de promover nuestros servicios de asesoría legal con abogados especializados en diversas áreas. La campaña se llevó a cabo en diversas plataformas en línea, incluyendo redes sociales, correo electrónico y anuncios en sitios web de noticias legales.</p>
+            <h4><strong>Objetivos de la Campaña: </strong></h4>
+            <ul>
+              <li>Aumentar el número de registros de nuevos usuarios en la plataforma en un 20%.</li>
+              <li>Incrementar la participación de abogados registrados en un 15%.</li>
+              <li>Aumentar las ventas de asesorías legales en un 10%.</li>
+            </ul>
+            <br />
+            <h4><strong>Resultados de la Campaña:</strong></h4>
+            <ul>
+              <li>Registro de Usuarios: Se logró un aumento del 25% en el número de nuevos registros de usuarios durante el período de la campaña, superando el objetivo establecido.</li>
+              <li>Participación de Abogados: La participación de abogados registrados aumentó en un 18%, acercándose al objetivo.</li>
+              <li>Ventas de Asesorías Legales: Las ventas de asesorías legales aumentaron en un 12%, superando el objetivo inicial.</li>
+            </ul>
+            <br />
+            <h4><strong>Estrategias y Canales de Marketing:</strong></h4>
+            <ul>
+              <li>Redes Sociales: Las publicaciones diarias en nuestras redes sociales obtuvieron una alta participación y generaron nuevos registros de usuarios.</li>
+              <li>Campañas de Correo Electrónico: El envío de correos electrónicos informativos a usuarios existentes y abogados registrados generó interés y participación.</li>
+              <li>Publicidad en Sitios Web Legales: Los anuncios en sitios web de noticias legales dirigieron el tráfico de calidad a la plataforma.</li>
+            </ul>
+            <br />
+            <h4><strong>Análisis de Costos:</strong></h4>
+            <ul>
+              <li>Costo Total de la Campaña: $5,000.</li>
+              <li>Costo por Adquisición (CPA): $10 por nuevo usuario registrado.</li>
+              <li>ROI (Retorno de la Inversión): El ROI calculado fue del 120%, lo que indica una inversión rentable.</li>
+            </ul>
+            <br />
+            <p style="text-align: justify;">
+              Conclusión: La "Campaña de Abogados Expertos" resultó en un aumento significativo en el registro de nuevos usuarios y en las ventas de asesorías legales. Aunque no se alcanzaron todos los objetivos en su totalidad, los resultados indican una campaña efectiva y rentable. Las estrategias y canales de marketing utilizados demostraron ser exitosos y pueden servir de base para futuras campañas.</p>
+            <p>Recomendaciones:</p>
 
+          </div>
         </div>
         </article>
     </div>

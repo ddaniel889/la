@@ -1,0 +1,174 @@
+<div class="main-content">
+  <div class="row">
+    <div class="col-3">
+      <nav>
+        <admin-sidebar></admin-sidebar>
+      </nav>
+    </div>
+
+   <div class="col-9">
+    <article>
+      <div class="head">
+        <div class="row top">
+          <div class="col-5"> <p class="head">  <span *ngIf="content">Gestión de pagos </span> <span *ngIf="report">Informe generado</span> </p></div>
+          <div class="col-5"> <p>  <span class="side"> <mat-icon class="mat-18">notifications</mat-icon> <span class="profile"> <img src="../../../../assets/images/image_profile.jpg" alt=""> Ana Richardson </span></span>   </p></div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-5">
+          <div class=" generate card" style="border-radius: 10px;" *ngIf="content">
+           <h6 class="generate">Generar informe financiero</h6>
+           <div class="row">
+
+            <table class="top">
+              <tr class="up">
+                <td> <p style="float: right !important;"><img src="../../../../assets/images/forward.jpg" alt="">&nbsp;Desde:</p></td><td> <div class="input">
+                  <input type="text" placeholder="Enero 1 del 2023">
+                </div></td>
+              </tr>
+              <tr class="down" style="background-color: #fff !important;">
+                <td> <p style="float: right !important;"><img src="../../../../assets/images/forward.jpg" alt="">&nbsp;Desde:</p></td>
+                <td>
+                  <div class="input">
+                  <input type="text" placeholder="Enero 1 del 2023">
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td></td><td></td>
+              </tr>
+            </table>
+            <!--div class="col-3">
+              <p><span><img src="../../../../assets/images/forward.jpg" alt=""> </span>&nbsp;Desde:</p>
+              <p><span><img src="../../../../assets/images/prev.jpg" alt=""> </span>&nbsp;Desde:</p>
+            </!--div-->
+            <!--div class="col-8">
+              <div class="input">
+                <input type="text" placeholder="Enero 1 del 2023">
+              </div>
+              <div class="input">
+                <input type="text" placeholder="Junio 1 del 2023">
+              </div>
+            </!--div-->
+           </div>
+            <button class="btn btn-success set" (click)="generate()">Generar</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="border-radius: 10px; margin-top: 25px; margin-right: 25px;width: 85%;" *ngIf="content">
+        <div class="row">
+          <div class="col-12">
+            <div class="search">
+              <input type="text" placeholder="Buscar en el historial de pagos">&nbsp;
+              <select  id=""  style="border-radius: 15px !important; background-color: #f2f2f2;">
+                <option value="Sep2023" class="dates">Fecha</option>
+              </select>
+            </div>
+          </div>
+         </div>
+         <div class="row">
+          <div class="col-12">
+            <table>
+              <tr style="background-color: #F0F4F7;border-radius: 10px;">
+                <th></th>
+                <th>Servicio</th>
+                <th>Fecha</th>
+                <th>Persona</th>
+                <th>Pago</th>
+              </tr>
+              <tr style="background-color: #fff;"><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr>
+                <td><mat-icon>check_circle_outline</mat-icon></td>
+                <td>Cita “Nombre de la cita”</td>
+                <td>Martes, 23 de Septiembre 2023</td>
+                <td> <img src="../../../../assets/images/users.PNG" alt=""> Raquel Ortiz</td>
+                <td>Abogados</td>
+
+              </tr>
+              <tr>
+                <td><mat-icon>check_circle_outline</mat-icon></td>
+                <td>Cita “Nombre de la cita”</td>
+                <td>Martes, 23 de Septiembre 2023</td>
+                <td><img src="../../../../assets/images/users.PNG" alt=""> Raquel Ortiz</td>
+                <td>Abogados </td>
+              </tr>
+              <tr>
+                <td><mat-icon>check_circle_outline</mat-icon></td>
+                <td>Cita “Nombre de la cita”</td>
+                <td>Martes, 23 de Septiembre 2023</td>
+                <td><img src="../../../../assets/images/users.PNG" alt=""> Raquel Ortiz</td>
+                <td>Clientes</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      <br />
+      </div>
+
+
+
+    <div class="reports card" *ngIf="report" style="margin:25px !important">
+     <div class="row">
+      <div class="col-12">
+        <div class="content" style="padding: 10px;">
+        <h2>Informe de Pagos (Mes de Septiembre de 2023)</h2><br />
+        <p><strong>Ingresos Totales: </strong> $15,000</p>
+         <ul>
+          <li> <strong>Ingresos de Suscripciones: </strong>$8,000</li>
+          <li><strong> Ingresos de Asesorías:</strong> $4,500</li>
+          <li><strong> Ingresos de Publicidad:</strong> $2,000</li>
+          <li><strong> Otros Ingresos:</strong> $500</li>
+         </ul>
+         <p><strong>Detalles de Suscripciones: </strong></p>
+         <ul>
+          <li><strong>Nuevas Suscripciones (Mes de Septiembre): </strong> 20</li>
+          <li><strong>Renovaciones de Suscripciones: </strong> 15</li>
+          <li><strong>Cancelaciones de Suscripciones: </strong> 5</li>
+         </ul>
+         <p><strong> Detalles de Asesorías:</strong></p>
+         <ul>
+          <li><strong>Total de Asesorías Realizadas: </strong> 90</li>
+          <li> <strong>Ingresos por Asesorías: </strong>$4,500</li>
+          <li><strong>Promedio de Pago por Asesoría: </strong> $50</li>
+          <li><strong>Duración Promedio de Asesoría: </strong> 30 minutos</li>
+         </ul>
+         <p><strong>Detalles de Publicidad: </strong></p>
+         <ul>
+          <li> <strong> Ingresos de Anuncios en la Plataforma:</strong> $1,500</li>
+          <li><strong> Ingresos de Publicidad en Boletines:</strong> $500</li>
+         </ul>
+         <p><strong> Otros Ingresos:</strong></p>
+         <ul>
+          <li><strong>Ingresos por Descargas de Recursos Profesionales: </strong> $200</li>
+          <li> <strong>Ingresos por Acceso a Documentos Legales: </strong>$300</li>
+         </ul>
+         <p><strong>Métodos de Pago Más Utilizados: </strong></p>
+         <ul>
+          <li> <strong> Tarjeta de Crédito:</strong> $9,500</li>
+          <li><strong>PayPal: </strong> $2,500</li>
+          <li><strong>Transferencia Bancaria: </strong> $3,000</li>
+         </ul>
+        <br />
+        <p class="report" style="font-size: 13px; color:#181937">Este informe ofrece una visión detallada de los ingresos generados en el mes de septiembre en la plataforma de abogados. Incluye los ingresos totales y desglosa los ingresos por categoría, como suscripciones, asesorías, publicidad y otros ingresos. También proporciona información sobre el desempeño de las suscripciones, las asesorías y los métodos de pago más utilizados. Este tipo de informe es esencial para el seguimiento financiero y la toma de decisiones relacionadas con la monetización de la plataforma.</p>
+      </div>
+      </div>
+     </div>
+     <div class="row">
+      <div class="col-12">
+       <button class="btn" style="width: 99%; border-radius: 15px;background-color: #181937;margin: 5px; "><span style="color:#fff">Descargar informe </span></button>
+      </div>
+     </div>
+    </div>
+
+    </article>
+
+
+
+   </div>
+
+
+  </div>
+
+</div>

@@ -16,7 +16,7 @@ import { UserCasesComponent } from './pages/admin/user-cases/user-cases.componen
 import { ContentComponent } from './pages/admin/content/content.component';
 import { MarketingComponent } from './pages/admin/marketing/marketing.component';
 import { AnaliticsComponent } from './pages/admin/analitics/analitics.component';
-import { PaymentsComponent } from './pages/admin/payments/payments.component';
+import { AdminPaymentsComponent } from './pages/admin/admin-payments/admin-payments.component';
 import { ReportsComponent } from './pages/admin/reports/reports.component';
 import { ConfigurationsComponent } from './pages/admin/configurations/configurations.component';
 import { ClientSupportComponent } from './pages/admin/client-support/client-support.component';
@@ -41,7 +41,7 @@ const routes: Routes = [
   { path: 'content', component:ContentComponent },
   { path: 'marketing', component:MarketingComponent },
   { path: 'analitics', component:AnaliticsComponent },
-  { path: 'payments', component:PaymentsComponent },
+  { path: 'admin-payments', component:AdminPaymentsComponent },
   { path: 'reports', component:ReportsComponent },
   { path: 'configurations', component:ConfigurationsComponent },
   { path: 'client-support', component:ClientSupportComponent },

@@ -1,18 +1,20 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-reports',
-  templateUrl: './reports.component.html',
-  styleUrls: ['./reports.component.scss']
+  selector: 'app-admin-payments',
+  templateUrl: './admin-payments.component.html',
+  styleUrls: ['./admin-payments.component.scss']
 })
-export class ReportsComponent implements OnInit {
-  public report:boolean = false;
+export class AdminPaymentsComponent implements OnInit {
   public content:boolean = false;
+  public report:boolean = false;
+
   constructor() { }
 
   ngOnInit(): void {
     this.content = true;
   }
+
 
   generate() {
     this.report = true;

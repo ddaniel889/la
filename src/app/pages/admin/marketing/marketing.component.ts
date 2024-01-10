@@ -16,6 +16,8 @@ export class MarketingComponent implements OnInit {
 
   ngOnInit(): void {
     this.content = true;
+    this.new = false;
+    this.active = false;
   }
 
 
@@ -51,5 +53,13 @@ export class MarketingComponent implements OnInit {
 
   create(): void {
     this.content = false;
+    this.new = true;
+    this.active = false;
+  }
+
+  getActive(): void {
+    this.content = false;
+    this.new = false;
+    this.active = true;
   }
 }

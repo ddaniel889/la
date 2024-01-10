@@ -1,1 +1,173 @@
-<p>reports works!</p>
+
+<div class="main-content">
+  <div class="row">
+    <div class="col-3">
+      <nav>
+        <admin-sidebar></admin-sidebar>
+      </nav>
+    </div>
+    <div class="col-9">
+     <article>
+      <div class="head">
+        <div class="row top">
+          <div class="col-5"> <p class="head">  <span>Generación de informes </span> </p></div>
+          <div class="col-5"> <p>  <span class="side"> <mat-icon class="mat-18">notifications</mat-icon> <span class="profile"> <img src="../../../../assets/images/image_profile.jpg" alt=""> Ana Richardson </span></span>   </p></div>
+        </div>
+      </div>
+
+     <div class="row">
+      <div class="card reports" *ngIf="content">
+        <br />
+        <h3> <strong> Así generas un informe...</strong></h3>
+        <p>Elige los parámetros específicos, como fechas, tipo de informe y filtros. Define el intervalo de tiempo que deseas analizar. Antes de generar el informe, revisa la vista previa para asegurarte de que los datos sean correctos. Una vez satisfecho, inicia la generación del informe.</p>
+        <br />
+        <div class="row">
+          <div class="col-2">
+           <p> <mat-icon class="mat-18">calendar_view_day</mat-icon>&nbsp;<strong>Desde:</strong></p>
+          </div>
+          <div class="col-3">
+            <div class="search">
+              <input type="text" placeholder="Septiembre">
+            </div>
+          </div>
+          <div class="col-1">
+            <div class="search">
+              <input type="number" placeholder="23">
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="search">
+              <input type="number" placeholder="2023">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-2">
+
+          </div>
+          <div class="col-1">
+            <div class="search">
+              <input type="number" placeholder="8">
+            </div>
+          </div>
+          <div class="col-1">
+            <div class="search">
+              <input type="number" placeholder="00">
+            </div>
+          </div>
+          <div class="col-1">
+            <div class="search">
+              <input type="text" placeholder="AM">
+            </div>
+          </div>
+          <div class="col-1">
+
+          </div>
+          <div class="col-2">
+
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-2">
+           <p> <mat-icon class="mat-18">calendar_view_day</mat-icon>&nbsp; <strong> Desde:</strong></p>
+          </div>
+          <div class="col-3">
+            <div class="search">
+              <input type="text" placeholder="Septiembre">
+            </div>
+          </div>
+          <div class="col-1">
+            <div class="search">
+              <input type="number" placeholder="23">
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="search">
+              <input type="number" placeholder="2023">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-2">
+          </div>
+          <div class="col-1">
+            <div class="search">
+              <input type="number" placeholder="8">
+            </div>
+          </div>
+          <div class="col-1">
+            <div class="search">
+              <input type="number" placeholder="00">
+            </div>
+          </div>
+          <div class="col-1">
+            <div class="search">
+              <input type="text" placeholder="AM">
+            </div>
+          </div>
+          <div class="col-1">
+
+          </div>
+          <div class="col-2">
+
+          </div>
+        </div>
+        <br/>
+        <div class="row">
+          <div class="col-2">
+            <p style="font-size: 13px;width: 100%;">Tipo de informe:</p>
+          </div>
+          <div class="col-4">
+            <p>  <mat-icon>check_circle_outline</mat-icon>&nbsp;Usuarios registrados</p>
+            <p>  <mat-icon>check_circle_outline</mat-icon>&nbsp;Usuarios registrados</p>
+            <p>  <mat-icon>check_circle_outline</mat-icon>&nbsp;Usuarios registrados</p>
+            <p>  <mat-icon>check_circle_outline</mat-icon>&nbsp;Usuarios registrados</p>
+            <p>  <mat-icon>check_circle_outline</mat-icon>&nbsp;Usuarios registrados</p>
+          </div>
+          <div class="col-4">
+            <p>  <mat-icon>check_circle_outline</mat-icon>&nbsp;Usuarios registrados</p>
+            <p>  <mat-icon>check_circle_outline</mat-icon>&nbsp;Usuarios registrados</p>
+            <p>  <mat-icon>check_circle_outline</mat-icon>&nbsp;Usuarios registrados</p>
+            <p>  <mat-icon>check_circle_outline</mat-icon>&nbsp;Usuarios registrados</p>
+            <p>  <mat-icon>check_circle_outline</mat-icon>&nbsp;Usuarios registrados</p>
+          </div>
+        </div>
+        <div>
+          <button (click)="generate()" class="btn" style="width: 99%; border-radius: 15px;background-color: #181937;margin: 5px; "><span style="color:#fff">Generar informe </span></button>
+        </div>
+      </div>
+     </div>
+
+     <div class="report card" *ngIf="report" style="margin:25px !important;width: 85%;">
+      <div class="row">
+       <div class="col-12">
+         <div class="content" style="padding: 10px;">
+         <h2>Informe de Usuarios Registrados y Suscripciones (Mes de Octubre de 2023)</h2><br />
+         <p><strong>Usuarios Registrados:</strong></p>
+          <ul>
+           <li> <strong>Ingresos de Suscripciones: </strong>$8,000</li>
+           <li><strong> Ingresos de Asesorías:</strong> $4,500</li>
+           <li><strong> Ingresos de Publicidad:</strong> $2,000</li>
+           <li><strong> Otros Ingresos:</strong> $500</li>
+          </ul>
+          <p><strong>Suscripciones </strong></p>
+          <ul>
+           <li><strong>Nuevas Suscripciones (Mes de Septiembre): </strong> 20</li>
+           <li><strong>Renovaciones de Suscripciones: </strong> 15</li>
+           <li><strong>Cancelaciones de Suscripciones: </strong> 5</li>
+          </ul>
+         <br />
+         <p class="report" style="font-size: 13px; color:#181937">Este informe proporciona una visión general del crecimiento de usuarios registrados en la plataforma, así como detalles sobre el desempeño de las suscripciones. Los datos incluyen el número total de usuarios, la actividad de los usuarios, el desglose por áreas de especialización y el tipo de suscripciones utilizadas. Esto permite a los administradores de la plataforma tomar decisiones informadas sobre estrategias de marketing y retención de suscriptores. Los números también reflejan la salud general de la plataforma y su capacidad para atraer y mantener usuarios y suscriptores.</p>
+       </div>
+       </div>
+      </div>
+      <div class="row">
+       <div class="col-12">
+        <button class="btn" style="width: 99%; border-radius: 15px;background-color: #181937;margin: 5px; "><span style="color:#fff">Descargar informe </span></button>
+       </div>
+      </div>
+     </div>
+     </article>
+    </div>
+  </div>
+</div>

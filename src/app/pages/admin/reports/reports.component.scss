@@ -1,0 +1,76 @@
+
+div.main-content{
+  span.side{
+    float: right;
+    mat-icon{
+      padding:25px !important;
+      margin-right:25px !important;
+    }
+  }
+  div.side{
+    float: right !important;
+    margin-right: 50px;
+    span.profile{
+      padding-left: 25px !important;
+    }
+  }
+  p.head{
+    div.top{
+      margin-left: 50px !important;
+    }
+    font-family: 'Poppins';
+    font-weight: bold;
+    font-size: 23px;
+    color:#181937;
+    span{
+      margin-right: 10px;
+      mat-icon.keyboard{
+        font-size: 25px !important;
+        cursor: pointer;
+      }
+      span.profile{
+        font-size:17px;
+        font-family: 'Poppins';
+        color: #181937;
+        margin-left: 25px !important;
+        padding-left: 25px !important;
+      }
+    }
+
+  }
+
+  article{
+    margin-top: 30px !important;
+  }
+
+  div.reports{
+    margin-top: 35px !important;
+    height: 670px !important;
+    width: 70% !important;
+    p{
+      width: 70% !important;
+    }
+  }
+
+  div.search{
+    margin-left: 5px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    input{
+      width: 80% !important;
+      background-color: #F1F1F1;
+      border-radius: 5px;
+      height: 42px !important;
+      border: #F1F1F1;
+    }
+
+  }
+
+  div.report{
+    p.report{
+      font-size: 13px;
+      font-weight: lighter;
+      color: #181937 !important;
+    }
+  }
+}

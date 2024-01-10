@@ -41,6 +41,8 @@ import { UserCasesComponent } from './pages/admin/user-cases/user-cases.componen
 import { FilterCasesComponent } from './pages/admin/filter-cases/filter-cases.component';
 import { NewsFiltersComponent } from './pages/admin/news-filters/news-filters.component';
 import { CampaignFilterComponent } from './pages/admin/campaign-filter/campaign-filter.component';
+import { AdminPaymentsComponent } from './pages/admin/admin-payments/admin-payments.component';
+import { SetSupportComponent } from './pages/admin/set-support/set-support.component';
 
 
 @NgModule({
@@ -77,7 +79,9 @@ import { CampaignFilterComponent } from './pages/admin/campaign-filter/campaign-
     UserCasesComponent,
     FilterCasesComponent,
     NewsFiltersComponent,
-    CampaignFilterComponent
+    CampaignFilterComponent,
+    AdminPaymentsComponent,
+    SetSupportComponent
   ],
   imports: [
     BrowserModule,

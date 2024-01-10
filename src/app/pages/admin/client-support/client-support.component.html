@@ -1,1 +1,99 @@
-<p>client-support works!</p>
+<div class="main-content">
+  <div class="row">
+    <div class="col-3">
+      <nav>
+        <admin-sidebar></admin-sidebar>
+      </nav>
+    </div>
+
+   <div class="col-9">
+    <article>
+      <div class="head">
+        <div class="row top">
+          <div class="col-5"> <p class="head">  <span *ngIf="content">Soporte y servicio al cliente </span> </p></div>
+          <div class="col-5"> <p>  <span class="side"> <mat-icon class="mat-18">notifications</mat-icon> <span class="profile"> <img src="../../../../assets/images/image_profile.jpg" alt=""> Ana Richardson </span></span>   </p></div>
+        </div>
+      </div>
+
+      <div class="row">
+        <h6 class="generate" *ngIf="content">Brinda un servicio eficiente</h6>
+        <div class="col-5">
+         <div class="section">
+          <img src="../../../../assets/images/request.png" alt="">
+         </div>
+        </div>
+      </div>
+
+      <div class="card" style="border-radius: 10px; margin-top: 25px; margin-right: 25px;width: 85%;" *ngIf="content">
+        <div class="row">
+          <div class="col-12">
+            <div class="search">
+              <input type="text" placeholder="Buscar solicitud">&nbsp;
+              <select  id=""  style="border-radius: 15px !important; background-color: #f2f2f2;">
+                <option value="Sep2023" class="dates">Filtro</option>
+              </select>
+            </div>
+          </div>
+         </div>
+         <div class="row">
+          <div class="col-12">
+            <table>
+              <tr style="background-color: #F0F4F7;border-radius: 10px;">
+                <th></th>
+                <th>Código</th>
+                <th>Fecha </th>
+                <th>Solicitante</th>
+                <th>Tipo de consulta</th>
+                <th>Prioridad</th>
+                <th>Asignado a</th>
+                <th>Estado</th>
+              </tr>
+              <tr style="background-color: #fff;"><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr>
+                <td><mat-icon>check_circle_outline</mat-icon></td>
+                <td>53165</td>
+                <td>01/12/23</td>
+                <td> <img src="../../../../assets/images/users.PNG" alt=""> Raquel Ortiz</td>
+                <td>Problema técnico</td>
+                <td>Alta</td>
+                <td><button type="button" class="btn" style="background-color: #181937;border-radius: 15px;"><span style="color:#fff;">Asignar </span></button></td>
+                <td>Pediente</td>
+              </tr>
+              <tr>
+                <td><mat-icon>check_circle_outline</mat-icon></td>
+                <td>53165</td>
+                <td>01/12/23</td>
+                <td><img src="../../../../assets/images/users.PNG" alt=""> Raquel Ortiz</td>
+                <td>Consulta legal </td>
+                <td>Media</td>
+                <td><button type="button" class="btn"  style="background-color: #181937;border-radius: 15px;"><span style="color:#fff;">Asignar </span></button></td>
+                <td>En proceos</td>
+              </tr>
+              <tr>
+                <td><mat-icon>check_circle_outline</mat-icon></td>
+                <td>53165</td>
+                <td>01/12/23</td>
+                <td><img src="../../../../assets/images/users.PNG" alt=""> Raquel Ortiz</td>
+                <td>Solicitud de información</td>
+                <td>Baja</td>
+                <td><button type="button" class="btn"  style="background-color: #181937;border-radius: 15px;"><span style="color:#fff;">Asignar </span></button></td>
+                <td>Publicado</td>
+
+              </tr>
+            </table>
+          </div>
+        </div>
+      <br />
+      </div>
+
+    </article>
+
+
+
+   </div>
+
+
+  </div>
+
+</div>
+
