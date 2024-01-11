@@ -43,6 +43,7 @@ import { NewsFiltersComponent } from './pages/admin/news-filters/news-filters.co
 import { CampaignFilterComponent } from './pages/admin/campaign-filter/campaign-filter.component';
 import { AdminPaymentsComponent } from './pages/admin/admin-payments/admin-payments.component';
 import { SetSupportComponent } from './pages/admin/set-support/set-support.component';
+import { AssignTicketComponent } from './pages/admin/assign-ticket/assign-ticket.component';
 
 
 @NgModule({
@@ -81,7 +82,8 @@ import { SetSupportComponent } from './pages/admin/set-support/set-support.compo
     NewsFiltersComponent,
     CampaignFilterComponent,
     AdminPaymentsComponent,
-    SetSupportComponent
+    SetSupportComponent,
+    AssignTicketComponent
   ],
   imports: [
     BrowserModule,

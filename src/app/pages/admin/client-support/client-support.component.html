@@ -10,17 +10,28 @@
     <article>
       <div class="head">
         <div class="row top">
-          <div class="col-5"> <p class="head">  <span *ngIf="content">Soporte y servicio al cliente </span> </p></div>
+          <div class="col-5"> <p class="head">  <span *ngIf="content" style="color: #181937;margin-top: 30px !important;">Soporte y servicio al cliente </span> <span *ngIf="request" style="color: #181937;margin-top: 30px !important;"> Crear nueva solicitud </span> </p></div>
           <div class="col-5"> <p>  <span class="side"> <mat-icon class="mat-18">notifications</mat-icon> <span class="profile"> <img src="../../../../assets/images/image_profile.jpg" alt=""> Ana Richardson </span></span>   </p></div>
         </div>
       </div>
 
       <div class="row">
         <h6 class="generate" *ngIf="content">Brinda un servicio eficiente</h6>
+        <h6 class="generate" *ngIf="request" style="margin-bottom:  0 !important;">Aquí puedes crear solicitudes como administrador o por los clientes en caso de que estos</h6>
+        <h6 class="generate" *ngIf="request" style="margin-bottom:  0 !important;">se pongan en contacto por otros medios de comunicación</h6>
         <div class="col-5">
-         <div class="section">
+         <div class="section" (click)="add()" *ngIf="content" style="cursor: pointer !important;">
           <img src="../../../../assets/images/request.png" alt="">
          </div>
+        </div>
+      </div>
+
+      <div class="row" *ngIf="content">
+        <div class="col-3">
+          <br />
+          <select  id=""  style="border: 0 !important; background-color: #fff;">
+            <option value="all" class="dates" style="color:#181937">Todas</option>
+          </select>
         </div>
       </div>
 
@@ -56,8 +67,8 @@
                 <td> <img src="../../../../assets/images/users.PNG" alt=""> Raquel Ortiz</td>
                 <td>Problema técnico</td>
                 <td>Alta</td>
-                <td><button type="button" class="btn" style="background-color: #181937;border-radius: 15px;"><span style="color:#fff;">Asignar </span></button></td>
-                <td>Pediente</td>
+                <td><button type="button" class="btn" style="background-color: #181937;border-radius: 15px;"><span style="color:#fff;font-size: 13px;font-weight: 500;" (click)="openAsign()">Asignar </span></button></td>
+                <td>Pendiente</td>
               </tr>
               <tr>
                 <td><mat-icon>check_circle_outline</mat-icon></td>
@@ -66,8 +77,8 @@
                 <td><img src="../../../../assets/images/users.PNG" alt=""> Raquel Ortiz</td>
                 <td>Consulta legal </td>
                 <td>Media</td>
-                <td><button type="button" class="btn"  style="background-color: #181937;border-radius: 15px;"><span style="color:#fff;">Asignar </span></button></td>
-                <td>En proceos</td>
+                <td><button type="button" class="btn"  style="background-color: #181937;border-radius: 15px;" (click)="openAsign()"><span style="color:#fff;font-size: 13px;font-weight: 500;">Asignar </span></button></td>
+                <td>En procesos</td>
               </tr>
               <tr>
                 <td><mat-icon>check_circle_outline</mat-icon></td>
@@ -76,7 +87,7 @@
                 <td><img src="../../../../assets/images/users.PNG" alt=""> Raquel Ortiz</td>
                 <td>Solicitud de información</td>
                 <td>Baja</td>
-                <td><button type="button" class="btn"  style="background-color: #181937;border-radius: 15px;"><span style="color:#fff;">Asignar </span></button></td>
+                <td><button type="button" class="btn"  style="background-color: #181937;border-radius: 15px;" (click)="openAsign()"><span style="color:#fff;font-size: 13px;font-weight: 500;">Asignar </span></button></td>
                 <td>Publicado</td>
 
               </tr>
@@ -84,8 +95,19 @@
           </div>
         </div>
       <br />
-      </div>
 
+
+      </div>
+      <div class="request" *ngIf="request">
+        <div class="card form">
+           <h3>Llenar formulario</h3>
+            <input type="text" placeholder="Nombres">
+            <input type="text" placeholder="Apellidos">
+            <input type="text" placeholder="Correo electrónico">
+            <textarea name="request" id="request" cols="3" rows="5" placeholder="Mensaje que describe la situación..."></textarea>
+            <button class="btn" style="width: 65%; border-radius: 15px;background-color: #181937;margin: 15px; "><span style="color:#fff;font-weight: bold;font-size: 20px;">Envíar </span></button>
+          </div>
+      </div>
     </article>
 
 

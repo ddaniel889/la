@@ -9,22 +9,22 @@ import { FilterUsersComponent } from '../filter-users/filter-users.component';
 })
 export class ManageComponent implements OnInit {
   public users = [{
-    name : 'Suscripción Premium',
+    name : 'Raquel Victoria',
     number : '#2345',
     date : 'Usuario desde Septiembre 23 2023',
    },
    {
-    name : 'Suscripción Premium',
+    name : 'Raquel Victoria',
     number : '#2345',
     date : 'Usuario desde Septiembre 23 2023',
    },
    {
-    name : 'Suscripción Premium',
+    name : 'Raquel Victoria',
     number : '#2345',
     date : 'Usuario desde Septiembre 23 2023',
    },
    {
-    name : 'Suscripción Premium',
+    name : 'Raquel Victoria',
     number : '#2345',
     date : 'Usuario desde Septiembre 23 2023',
    },

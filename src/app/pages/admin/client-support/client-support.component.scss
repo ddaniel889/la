@@ -1,11 +1,21 @@
 div.main-content{
+  div.head{
+    p.head{
+      margin-top: 10px !important;
+    }
+  }
 
   div.generate{
      h6.generate{
-      margin-top: 5px;
       margin-left: 5px;
       color: #8C8C8C;
-      font-size: 12px;
+      font-size: 13px;
+     }
+     h6.request{
+      margin-left: 5px;
+      margin-bottom: 0 !important;
+      color: #8C8C8C;
+      font-size: 13px;
      }
      button.set{
       width: 80%;
@@ -85,6 +95,10 @@ div.main-content{
 
   }
 
+  div.all{
+
+  }
+
   div.input{
     margin-left: 5px;
     margin-bottom: 6px;
@@ -119,6 +133,48 @@ div.main-content{
       font-size: 13px;
       font-weight: lighter;
       color: #181937 !important;
+    }
+  }
+
+  div.request{
+    width: 35% !important;
+    margin-top: 30px !important;
+    border-radius: 10px;
+    border-color: #F1F1F1;
+    h3{
+      margin-bottom: 25px !important;
+      margin-top: 15px !important;
+      margin-left: 15px !important;
+      font-weight: bold;
+      font-size: 17px;
+      color:#181937;
+    }
+    /*div.form{
+      width: 40% !important;
+    }*/
+    input{
+      display: block;
+      margin-left: 60px !important;
+      margin-right: auto;
+      width: 65% !important;
+      background-color: #F1F1F1;
+      border-radius: 15px;
+      height: 42px !important;
+      border: #F1F1F1;
+      margin-bottom: 10px !important;
+      margin-left: 15px !important;
+    }
+    ::placeholder {
+      margin-left: 50px !important;
+    }
+    textarea{
+      background-color: #F1F1F1 !important;
+      margin-top: 5px !important;
+      margin-bottom: 5px !important;
+      margin-left: 15px !important;
+      border: 1px solid #F1F1F1;
+      width: 65% !important;
+      border-radius: 15px;
     }
   }
 }

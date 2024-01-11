@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { AssignTicketComponent } from '../assign-ticket/assign-ticket.component';
+import { MatDialog } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-client-support',
@@ -7,20 +9,53 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ClientSupportComponent implements OnInit {
   public content:boolean = false;
-  public report:boolean = false;
+  public request:boolean = false;
 
 
-  constructor() { }
+  constructor(
+    private readonly dialog: MatDialog,
+  ) {
+
+   }
 
   ngOnInit(): void {
     this.content = true;
   }
 
 
-  generate() {
-    this.report = true;
+   add() {
+    this.request = true;
     this.content = false;
-    console.log('a')
+  }
+
+  openAsign() {
+    this.dialog.open(AssignTicketComponent , {
+     // data: { material },
+      width: "460px",
+      height:  "410px",
+    }).afterClosed().subscribe({
+      next: (res) => {
+        if (res) {
+        /*  this.storeService.updateQuantity(material._id, res).subscribe({
+            next: () => {
+              this.total -= material.total;
+              this.total += res * material.price;
+              this.materials[index].quantity = res;
+              this.materials[index].total = res * material.price
+              this.dialog.open(AlertComponent, { data: { title: "El material ha sido editado" } })
+              this.getOrderGeneral();
+            },
+            error: (err) => {
+              if (err.error == "not-enough-stock") {
+                this.dialog.open(AlertComponent, { data: { title: "No hay suficiente stock de este material" } })
+              }
+            }
+          })*/
+
+        }
+
+      }
+    })
   }
 
 }
