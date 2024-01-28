@@ -1,0 +1,32 @@
+div.main{
+  margin-top: 35px !important;
+  height: 670px !important;
+  width: 70% !important;
+
+  p{
+    width: 70% !important;
+  }
+  div.report{
+    div.content{
+      h2{
+        color:#181937;
+        font-size: 17px;
+        font-family: 'Poppins',sans-serif;
+        font-weight: bold;
+      }
+      p{
+        color: #181937;
+        font-size: 13px;
+        font-family: 'Poppins',sans-serif;
+        font-weight: bold;
+      }
+      li{
+        color: #181937;
+        font-size: 13px;
+        font-family: 'Poppins',sans-serif;
+        font-weight: bold;
+      }
+    }
+
+  }
+}

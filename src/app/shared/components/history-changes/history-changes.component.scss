@@ -1,0 +1,33 @@
+div.main{
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 87%;
+    margin-left: 55px !important;
+  }
+
+  td, th {
+    border: 1px solid #F0F4F7;
+    text-align: left;
+    padding: 8px;
+  }
+
+  tr:nth-child(even) {
+    background-color: #F0F4F7;
+  }
+
+  div.search{
+    margin-left:55px !important;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    input{
+      width: 86% !important;
+      background-color: #F1F1F1;
+      border-radius: 15px;
+      height: 42px !important;
+      border: #F1F1F1;
+    }
+
+  }
+
+}

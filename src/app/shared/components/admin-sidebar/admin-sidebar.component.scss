@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
 
 div.column{
   margin: 0;
@@ -33,6 +33,9 @@ li a {
     margin-right: 10px !important;
     font-size: 19px !important;
   }
+  span.title{
+    font-family: 'Poppins', sans-serif !important;
+  }
 
 }
 
@@ -55,7 +58,9 @@ li a:hover:not(.active) {
     color: #fff;
     margin-right: 10px !important;
     font-size: 19px !important;
+
   }
+
 }
 
 a.exit{

@@ -1,0 +1,104 @@
+
+
+div.main{
+  background-color: #F1F1F1 !important;
+  label.public{
+    color: #181937;
+    font-size: 13px;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 400;
+  }
+
+  h4.promotions{
+    margin-top: 30px !important;
+    color: #181937; font-size: 17px;
+    font-family: 'Poppins',sans-serif;
+    font-weight: bold;
+
+  }
+  p.buttons{
+    margin-top: 30px !important;
+
+  }
+  span.change{
+    font-size: 20px !important;
+    color:#fff !important;
+    font-family: 'Poppins',sans-serif;
+  }
+  p.para{
+    color: #181937;
+    font-size: 13px;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 400;
+  }
+   div.planes{
+    width: 325px;
+    height: 180px;
+    background-color: burlywood;
+    border-radius: 15px;
+    h4{
+      padding-top: 20px;
+      padding-left: 15px;
+      font-size: 17px;
+      font-family: 'Poppins',sans-serif;
+      font-weight: bold;
+      color: #fff;
+    }
+    p{
+      padding-left: 15px;
+      font-size: 13px;
+      font-family: 'Poppins',sans-serif;
+      font-weight: bold;
+      color: #fff;
+    }
+    span.count{
+      font-weight: 400;
+    }
+   }
+   div.newsletter{
+    width: 325px;
+    height: 180px;
+    background-color:#181937;
+    border-radius: 15px;
+    h4{
+      font-size: 17px;
+      font-family: 'Poppins',sans-serif;
+      font-weight: bold;
+      color: #fff;
+      padding-top: 20px;
+      padding-left: 15px;
+
+    }
+    p{
+      padding-top: 65px !important;
+      padding-left:  15px;
+      font-size: 13px;
+      font-family: 'Poppins',sans-serif;
+      font-weight: 400;
+      color: #fff;
+    }
+   }
+   div.profile{
+    width: 325px;
+    height: 180px;
+    background-color:#fff;
+    border-radius: 15px;
+    border: 0.5px solid gray;
+    h4{
+      font-size: 17px;
+      font-family: 'Poppins',sans-serif;
+      font-weight: bold;
+      color: #000;
+      padding-top: 20px;
+      padding-left: 15px;
+    }
+    p{
+      padding-top: 65px !important;
+      font-size: 13px;
+      font-family: 'Poppins',sans-serif;
+      font-weight: 400;
+      color: #000;
+      padding-left: 15px;
+    }
+   }
+}

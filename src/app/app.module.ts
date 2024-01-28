@@ -44,6 +44,9 @@ import { CampaignFilterComponent } from './pages/admin/campaign-filter/campaign-
 import { AdminPaymentsComponent } from './pages/admin/admin-payments/admin-payments.component';
 import { SetSupportComponent } from './pages/admin/set-support/set-support.component';
 import { AssignTicketComponent } from './pages/admin/assign-ticket/assign-ticket.component';
+import { DataTypeComponent } from './pages/admin/data-type/data-type.component';
+import { DownloadsComponent } from './pages/admin/downloads/downloads.component';
+import { FilterChangesComponent } from './pages/admin/filter-changes/filter-changes.component';
 
 
 @NgModule({
@@ -83,7 +86,10 @@ import { AssignTicketComponent } from './pages/admin/assign-ticket/assign-ticket
     CampaignFilterComponent,
     AdminPaymentsComponent,
     SetSupportComponent,
-    AssignTicketComponent
+    AssignTicketComponent,
+    DataTypeComponent,
+    DownloadsComponent,
+    FilterChangesComponent
   ],
   imports: [
     BrowserModule,

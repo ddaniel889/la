@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+div.main-content{
+  span.side{
+    float: right;
+    mat-icon{
+      margin-right: 25px !important;
+    }
+
+  }
+  div.side{
+    float: right !important;
+    margin-right: 50px;
+    span.profile{
+      padding-left: 35px !important;
+    }
+  }
+  p.head{
+    div.top{
+      margin-left: 50px !important;
+    }
+    font-family: 'Poppins',sans-serif;
+    font-weight: bold;
+    font-size: 23px;
+    color:#181937;
+    span{
+      margin-right: 10px;
+      mat-icon.keyboard{
+        font-size: 25px !important;
+        cursor: pointer;
+      }
+      span.profile{
+        font-size:17px;
+        font-family: 'Poppins',sans-serif;
+        color: #181937;
+      }
+    }
+
+  }
+
+  article{
+    margin-top: 30px !important;
+    padding: 10px !important;
+    margin-left: 15px !important;
+    div.cases{
+      height: 310px !important;
+      background-color: yellow;
+    }
+    div.register{
+      border-radius: 15px;
+      background-color: #fff;
+      height: 150px !important;
+      width: 48%;
+      margin: 5px !important;
+      p.title{
+        font-size: 20px;
+        font-family: 'Poppins',sans-serif;
+        font-weight: 400;
+        margin-left: 5px;
+      }
+      p.quantity{
+        margin-top: 50px;
+        margin-left: 5px;
+        margin-bottom: 20px;
+        font-weight: bold;
+        font-size: 50px;
+        font-family: 'Poppins',sans-serif;
+      }
+    }
+    div.active{
+      background-color: #181937;
+      height: 150px !important;
+      width: 48% !important;
+      margin: 5px !important;
+      border-radius: 15px;
+      p.title{
+        font-size: 20px;
+        font-family: 'Poppins',sans-serif;
+        font-weight: 400;
+        margin-left: 5px;
+        color: #fff;
+      }
+      p.quantity{
+        margin-top: 50px;
+        margin-left: 5px;
+        margin-bottom: 20px;
+        font-weight: bold;
+        font-size: 50px;
+        font-family: 'Poppins',sans-serif;
+        color: #fff;
+      }
+    }
+    div.case{
+      background-color: #181937;
+      height: 150px !important;
+      width: 48% !important;
+      margin: 5px !important;
+      border-radius: 15px;
+      p.title{
+        font-size: 20px;
+        font-family: 'Poppins',sans-serif;
+        font-weight: 100;
+        margin-left: 5px;
+        color: #fff;
+      }
+      p.quantity{
+        margin-top: 50px;
+        margin-left: 5px;
+        margin-bottom: 20px;
+        font-weight: bold;
+        font-size: 50px;
+        font-family: 'Poppins',sans-serif;
+        color: #fff;
+      }
+    }
+    div.lawyers{
+      border-radius: 15px;
+      background-color: #181937;
+      height: 150px !important;
+      width: 48%;
+      margin: 5px !important;
+      p.title{
+        font-size: 20px;
+        font-family: 'Poppins',sans-serif;
+        font-weight: 100;
+        margin-left: 5px;
+        color: #fff;
+      }
+      p.quantity{
+        margin-top: 50px;
+        margin-left: 5px;
+        margin-bottom: 20px;
+        font-weight: bold;
+        font-size: 50px;
+        font-family: 'Poppins',sans-serif;
+        color: #fff;
+      }
+    }
+  }
+
+  div.note{
+    p{
+      margin-left: 50px;
+      font-family: 'Poppins';
+      color: #181937;
+      font-size: 16px;
+      margin-bottom: 25px;
+
+    }
+  }
+
+  div.search-bar{
+    width: 98% !important;
+    border-radius: 15px;
+    padding: 10px !important;
+    margin-left: 15px !important;
+  }
+
+  div.search{
+    margin-left: 5px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    input{
+      width: 95% !important;
+      background-color: #F1F1F1;
+      border-radius: 15px;
+      height: 42px !important;
+      border: #F1F1F1;
+    }
+
+  }
+
+
+}

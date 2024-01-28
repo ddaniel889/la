@@ -1,0 +1,32 @@
+div.main{
+  div.chart{
+    margin: 0 auto !important;
+    background-color: #fff;
+    border:0.5px solid gainsboro;
+    height: 300px;
+    width: 100%;
+    border-radius: 15px;
+    h2{
+      padding-top: 20px;
+      font-size: 14px;
+      font-family: 'Poppins', sans-serif !important;
+      color:#181937;
+      font-weight: bold;
+      text-align: center;
+    }
+    div{
+      padding-left: 25px;
+      padding-bottom: 5px;
+    }
+    p{
+      padding-top: 20px !important;
+      margin-bottom: 20px !important;
+    }
+    button.btn{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-left: 110px !important;
+    }
+  }
+}

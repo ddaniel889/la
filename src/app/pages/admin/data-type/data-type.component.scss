@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+div.main-content{
+  border-radius: 15px;
+  h3.title{
+    color: #181937;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Poppins',sans-serif;
+  }
+  button.down{
+    width: 100%;
+    border-radius: 15px;
+    background-color: #181937;
+    margin: 10px;
+    margin-left: 1px;
+  }
+  p,mat-icon{
+    color:red;
+    font-size: 13px;
+  }
+  p{
+    color:red;
+    font-size: 13px;
+    font-family: 'Poppins',sans-serif;
+  }
+  h4{
+    font-size: 13px;
+    color:#181937;
+    font-family: 'Poppins',sans-serif;
+  }
+}
