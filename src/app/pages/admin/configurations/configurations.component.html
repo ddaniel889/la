@@ -11,7 +11,7 @@
      <article style=" background-color: #F1F1F1 !important;">
        <div class="head">
          <div class="row top">
-           <div class="col-5"> <p class="head">  <span *ngIf="config">Configuración de privacidad </span> <span *ngIf="password"> Cambio de contraseña</span> <span *ngIf="notifications"> Gestión de notificaciones</span>   <span *ngIf="taxes">Configuración de tarifas</span> <span *ngIf="terms"> Configuración de términos de uso</span> <span *ngIf="policies"> Configuración de políticas de privacidad  </span> <span *ngIf="backup">Copias de seguridad y gestión de datos</span> <span *ngIf="languages">Idioma</span> <span *ngIf="history">  Historial de cambios</span></p></div>
+           <div class="col-5"> <p class="head">  <span *ngIf="config">Configuración de privacidad </span> <span *ngIf="password"> Cambio de contraseña</span> <span *ngIf="notifications"> Gestión de notificaciones</span>   <span *ngIf="taxes">Configuración de tarifas</span> <span *ngIf="terms"> Configuración de términos de uso</span> <span *ngIf="policies"> Configuración de políticas de privacidad  </span> <span *ngIf="backup">Copias de seguridad y gestión de datos</span> <span *ngIf="languages">Idioma</span> <span *ngIf="history">  Historial de cambios</span> <span *ngIf="managers"> Cuentas de administradores </span></p></div>
 
            <div class="col-5"> <p>  <span class="side"> <mat-icon class="mat-18">notifications</mat-icon> <span class="profile"> <img src="../../../../assets/images/image_profile.jpg" alt=""> Ana Richardson </span></span>   </p></div>
          </div>
@@ -25,6 +25,8 @@
             <p class="config" *ngIf="backup"> También se pueden configurar políticas para la retención de datos, incluyendo cuánto tiempo se conservarán los datos antes de su eliminación. </p>
             <p class="config" *ngIf="languages">Aquí puedes cambiar el idioma.</p>
             <p class="config" *ngIf="history">Muestra un registro detallado de los cambios realizados en la configuración y la seguridad de la plataforma, incluyendo quién realizó el cambio y cuándo.</p>
+            <p class="config down" *ngIf="managers"> Aquí se muestran todas las cuentas de administradores existentes. Puedes eliminar </p>
+            <p class="config" *ngIf="managers">cuentas y  crear nuevas al igual que asignar roles y permisos.  </p>
           </div>
         </div>
        <br />
@@ -45,6 +47,9 @@
         </div>
         <div class="history" *ngIf="history">
           <history-changes></history-changes>
+        </div>
+        <div class="managers" *ngIf="managers">
+          <account-managers></account-managers>
         </div>
         <div class="row">
          <div class="col-6">
