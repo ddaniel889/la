@@ -9,13 +9,19 @@ div.main-content{
     margin-right: 50px;
     span.profile{
       padding-left: 25px !important;
+      span.name{
+        font-family: 'Poppins',sans-serif !important;
+        font-weight: bold;
+        font-size: 13px;
+        color:#181937;
+      }
     }
   }
   p.head{
     div.top{
       margin-left: 50px !important;
     }
-    font-family: 'Poppins';
+    font-family: 'Poppins',sans-serif;
     font-weight: bold;
     font-size: 23px;
     color:#181937;
@@ -27,7 +33,7 @@ div.main-content{
       }
       span.profile{
         font-size:17px;
-        font-family: 'Poppins';
+        font-family: 'Poppins',sans-serif;
         color: #181937;
       }
     }
@@ -42,8 +48,8 @@ div.main-content{
 
   div.note{
     p{
-      margin-left: 50px;
-      font-family: 'Poppins';
+      margin-left: 5px;
+      font-family: 'Poppins',sans-serif;
       color: #181937;
       font-size: 16px;
       margin-bottom: 0;
@@ -78,20 +84,20 @@ div.main-content{
     p.name{
       font-weight: bold;
       text-align: left;
-      font-family: 'Poppis';
+      font-family: 'Poppins',sans-serif;
       font-size: 17px;
 
     }
     p.date{
       text-align: left;
       font-size: 13px;
-      font-family: 'Poppins';
+      font-family: 'Poppins',sans-serif;
       margin-bottom: 0;
     }
     p.number{
       text-align:left;
       font-size: 15px;
-      font-family: 'Poppins';
+      font-family: 'Poppins',sans-serif;
     }
     p.button{
       padding-top: 5px;
@@ -125,13 +131,13 @@ div.main-content{
     p.name{
         font-size: 25px;
         font-weight: bold;
-        font-family: 'Poppins';
+        font-family: 'Poppins',sans-serif;
         text-align: center !important;
     }
     p.location{
       font-size: 14px;
       font-weight: lighter;
-      font-family: 'Poppins';
+      font-family: 'Poppins',sans-serif;
       text-align: center !important;
     }
 
@@ -152,7 +158,7 @@ table{
   legend{
     margin-top: 15px !important;
     margin-bottom: 15px !important;
-    font-family: 'Poppins';
+    font-family: 'Poppins',sans-serif;
     font-weight: bold;
     font-size: 17px;
   }
@@ -167,7 +173,7 @@ div.payment{
     legend{
       margin-top: 15px !important;
       margin-bottom: 15px !important;
-      font-family: 'Poppins';
+      font-family: 'Poppins',sans-serif;
       font-weight: bold;
       font-size: 17px;
        width: 500px !important;
@@ -176,7 +182,7 @@ div.payment{
         margin-left: 60px !important;
         option.dates{
           font-size: 17px;
-          font-family: 'Poppins';
+          font-family: 'Poppins',sans-serif;
           color: #181937;
         }
       }

@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
 div.main-content{
   span.side{
     float: right;
@@ -18,7 +18,7 @@ div.main-content{
     div.top{
       margin-left: 50px !important;
     }
-    font-family: 'Poppins';
+    font-family: 'Poppins',sans-serif;
     font-weight: bold;
     font-size: 23px;
     color:#181937;
@@ -30,7 +30,7 @@ div.main-content{
       }
       span.profile{
         font-size:17px;
-        font-family: 'Poppins';
+        font-family: 'Poppins',sans-serif;
         color: #181937;
         margin-left: 25px !important;
         padding-left: 25px !important;
@@ -73,6 +73,7 @@ div.main-content{
       font-size: 13px;
       font-weight: lighter;
       color: #181937 !important;
+      font-family: 'Poppins',sans-serif;
     }
   }
 }

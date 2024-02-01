@@ -29,7 +29,7 @@ div.main-content{
       }
       span.profile{
         font-size:17px;
-        font-family: 'Poppins';
+        font-family: 'Poppins',sans-serif;
         color: #181937;
       }
     }
@@ -226,7 +226,7 @@ div.table-history{
 
 
   table {
-    font-family: arial, sans-serif;
+    font-family: 'Poppins',sans-serif;
     border-collapse: collapse;
     width: 90%;
     margin-left: 20px !important;
@@ -278,13 +278,13 @@ div.chapters{
     p.date{
       text-align: left;
       font-size: 13px;
-      font-family: 'Poppins';
+      font-family: 'Poppins',sans-serif;
       margin-bottom: 0;
     }
     p.number{
       text-align:left;
       font-size: 15px;
-      font-family: 'Poppins';
+      font-family: 'Poppins',sans-serif;
     }
     p.button{
       padding-top: 5px;

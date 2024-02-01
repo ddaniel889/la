@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
 div.main-content{
   label {
     font:
-      1rem 'Fira Sans',
+      1rem 'Poppins',
       sans-serif;
   }
 
@@ -35,11 +37,13 @@ div.main-content{
   h2{
     font-size: 20px;
     font-weight: bold;
+    font-family: 'Poppins', sans-serif !important;
   }
 
   h4{
     font-size: 15px;
     font-weight: bold;
+    font-family: 'Poppins', sans-serif !important;
   }
   p.to{
     margin-top: 15px !important;

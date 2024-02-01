@@ -1,7 +1,7 @@
 div.main-content{
   label {
     font:
-      1rem 'Fira Sans',
+      1rem 'Poppins',
       sans-serif;
   }
 
@@ -34,14 +34,18 @@ div.main-content{
   h2{
     font-size: 20px;
     font-weight: bold;
+    font-family: 'Poppins',sans-serif;
+
   }
 
   h4{
     font-size: 15px;
     font-weight: bold;
+    font-family: 'Poppins',sans-serif;
   }
   p.to{
     margin-top: 15px !important;
     margin-bottom: 0 !important;
+    font-family: 'Poppins',sans-serif;
   }
 }

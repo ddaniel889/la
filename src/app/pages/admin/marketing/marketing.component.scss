@@ -25,7 +25,7 @@ div.main-content{
     div.top{
       margin-left: 50px !important;
     }
-    font-family: 'Poppins';
+    font-family: 'Poppins',sans-serif;
     font-weight: bold;
     font-size: 23px;
     color:#181937;
@@ -37,7 +37,7 @@ div.main-content{
       }
       span.profile{
         font-size:17px;
-        font-family: 'Poppins';
+        font-family: 'Poppins',sans-serif;
         color: #181937;
         margin-left: 25px !important;
         padding-left: 25px !important;
@@ -54,14 +54,14 @@ div.main-content{
 
   div.note{
     p{
-      font-family: 'Poppins';
+      font-family: 'Poppins',sans-serif;
       color: #181937;
       font-size: 16px;
       margin-bottom: 0;
 
     }
     p.resources{
-      font-family: 'Poppins';
+      font-family: 'Poppins',sans-serif;
       color: #181937;
       font-size: 13px;
     }
@@ -73,7 +73,7 @@ div.main-content{
       color: #767676 !important;
       font-size: 13px;
       font-weight: bold;
-      font-family: 'Poppins';
+      font-family: 'Poppins',sans-serif;
     }
     span.check{
       margin-right: 35px !important;
@@ -84,14 +84,14 @@ div.main-content{
     color: #181937 !important;
     font-size: 17px;
     font-weight: bold;
-    font-family: 'Poppins';
+    font-family: 'Poppins',sans-serif;
   }
 
   p.body{
     color: #767676 !important;
     font-size: 13px;
     font-weight: bold;
-    font-family: 'Poppins';
+    font-family: 'Poppins',sans-serif;
   }
 
   div.search{
@@ -112,6 +112,8 @@ div.main-content{
     font-size: 17px !important;
     font-weight:500;
     color:#8C8C8C !important;
+    font-family: 'Poppins',sans-serif;
+
   }
 
   div.chapters{
@@ -127,20 +129,20 @@ div.main-content{
     p.name{
       font-weight: bold;
       text-align: left;
-      font-family: 'Poppis';
+      font-family: 'Poppins',sans-serif;
       font-size: 17px;
 
     }
     p.date{
       text-align: left;
       font-size: 13px;
-      font-family: 'Poppins';
+      font-family: 'Poppins',sans-serif;
       margin-bottom: 0;
     }
     p.number{
       text-align:left;
       font-size: 15px;
-      font-family: 'Poppins';
+      font-family: 'Poppins',sans-serif;
     }
     p.button{
       padding-top: 5px;
@@ -174,13 +176,13 @@ div.main-content{
     p.name{
         font-size: 25px;
         font-weight: bold;
-        font-family: 'Poppins';
+        font-family: 'Poppins',sans-serif;
         text-align: center !important;
     }
     p.location{
       font-size: 14px;
       font-weight: lighter;
-      font-family: 'Poppins';
+      font-family: 'Poppins',sans-serif;
       text-align: center !important;
     }
 
@@ -201,7 +203,7 @@ table{
   legend{
     margin-top: 15px !important;
     margin-bottom: 15px !important;
-    font-family: 'Poppins';
+    font-family: 'Poppins',sans-serif;
     font-weight: bold;
     font-size: 17px;
   }
@@ -216,7 +218,7 @@ div.payment{
     legend{
       margin-top: 15px !important;
       margin-bottom: 15px !important;
-      font-family: 'Poppins';
+      font-family: 'Poppins',sans-serif;
       font-weight: bold;
       font-size: 17px;
        width: 500px !important;
@@ -225,7 +227,7 @@ div.payment{
         margin-left: 60px !important;
         option.dates{
           font-size: 17px;
-          font-family: 'Poppins';
+          font-family: 'Poppins',sans-serif;
           color: #181937;
         }
       }
@@ -253,7 +255,7 @@ div.search{
 }
 
 table {
-  font-family: arial, sans-serif;
+  font-family: 'Poppins',sans-serif;
   border-collapse: collapse;
   width: 90%;
 }
@@ -281,7 +283,7 @@ div.options{
     p{
       margin-top: 55px !important;
       font-size: 23px;
-      font-family: 'Poppins';
+      font-family: 'Poppins',sans-serif;
       font-weight: bold;
       color: #fff;
       text-align: center;
@@ -307,7 +309,7 @@ div.options{
     p{
       vertical-align: middle;
       font-size: 60px;
-      font-family: 'Poppins';
+      font-family: 'Poppins',sans-serif;
       margin-left: 15px;
       font-weight: bold;
       margin-top: 25px;
@@ -329,7 +331,7 @@ div.options{
     p{
       text-align: center;
       font-size: 23px;
-      font-family: 'Poppins';
+      font-family: 'Poppins',sans-serif;
       font-weight: bold;
       color: #000;
     }

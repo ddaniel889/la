@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
 div.main-content{
   div.history{
     margin-top: 20px !important;
@@ -5,6 +7,7 @@ div.main-content{
       font-size: 20px;
       font-weight: bold;
       text-align: left;
+      font-family: 'Poppins',sans-serif;
     }
   }
   span.side{
@@ -25,7 +28,7 @@ div.main-content{
     div.top{
       margin-left: 50px !important;
     }
-    font-family: 'Poppins';
+    font-family: 'Poppins',sans-serif;
     font-weight: bold;
     font-size: 23px;
     color:#181937;
@@ -37,7 +40,7 @@ div.main-content{
       }
       span.profile{
         font-size:17px;
-        font-family: 'Poppins';
+        font-family: 'Poppins',sans-serif;
         color: #181937;
         margin-left: 25px !important;
         padding-left: 25px !important;
@@ -55,7 +58,7 @@ div.main-content{
   div.note{
     p{
       margin-left: 50px;
-      font-family: 'Poppins';
+      font-family: 'Poppins',sans-serif;
       color: #181937;
       font-size: 16px;
       margin-bottom: 0;
@@ -90,20 +93,20 @@ div.main-content{
     p.name{
       font-weight: bold;
       text-align: left;
-      font-family: 'Poppis';
+      font-family: 'Poppins',sans-serif;
       font-size: 17px;
 
     }
     p.date{
       text-align: left;
       font-size: 13px;
-      font-family: 'Poppins';
+      font-family: 'Poppins',sans-serif;
       margin-bottom: 0;
     }
     p.number{
       text-align:left;
       font-size: 15px;
-      font-family: 'Poppins';
+      font-family: 'Poppins',sans-serif;
     }
     p.button{
       padding-top: 5px;
@@ -137,13 +140,13 @@ div.main-content{
     p.name{
         font-size: 25px;
         font-weight: bold;
-        font-family: 'Poppins';
+        font-family: 'Poppins',sans-serif;
         text-align: center !important;
     }
     p.location{
       font-size: 14px;
       font-weight: lighter;
-      font-family: 'Poppins';
+      font-family: 'Poppins',sans-serif;
       text-align: center !important;
     }
 
@@ -164,7 +167,7 @@ table{
   legend{
     margin-top: 15px !important;
     margin-bottom: 15px !important;
-    font-family: 'Poppins';
+    font-family: 'Poppins',sans-serif;
     font-weight: bold;
     font-size: 17px;
   }
@@ -179,7 +182,7 @@ div.payment{
     legend{
       margin-top: 15px !important;
       margin-bottom: 15px !important;
-      font-family: 'Poppins';
+      font-family: 'Poppins',sans-serif;
       font-weight: bold;
       font-size: 17px;
        width: 500px !important;
@@ -188,7 +191,7 @@ div.payment{
         margin-left: 60px !important;
         option.dates{
           font-size: 17px;
-          font-family: 'Poppins';
+          font-family: 'Poppins',sans-serif;
           color: #181937;
         }
       }
@@ -216,7 +219,7 @@ div.search{
 }
 
 table {
-  font-family: arial, sans-serif;
+  font-family: 'Poppins',sans-serif;
   border-collapse: collapse;
   width: 90%;
 }
@@ -255,7 +258,7 @@ div.defense{
   margin-bottom: 15px;
   h2{
     font-size: 25px;
-    font-family: 'Poppins';
+    font-family: 'Poppins',sans-serif;
     font-weight: bold;
     text-align: left;
     color: #fff;
@@ -263,7 +266,7 @@ div.defense{
   }
   h6{
     font-size: 15px;
-    font-family: 'Poppins';
+    font-family: 'Poppins',sans-serif;
     color:#F1F1F1;
     text-align: left;
   }
@@ -275,7 +278,7 @@ div.defense{
   p.amount{
     font-size: 25px;
     font-weight: bold;
-    font-family: 'Poppins';
+    font-family: 'Poppins',sans-serif;
     color: #fff;
     margin-top: 10px !important;
   }
@@ -291,11 +294,11 @@ div.description{
   h2{
     font-size: 20px;
     font-weight: bold;
-    font-family: 'Poppins';
+    font-family: 'Poppins',sans-serif;
   }
   p{
     font-size: 15px;
-    font-family: 'Poppins';
+    font-family: 'Poppins',sans-serif;
   }
 }
 
@@ -304,10 +307,7 @@ div.cases_title > div.virtual{
   width: 116px !important;
   border: 1px solid #04AA6D;;
   background-color: #04AA6D;
- /* p{
-    background-color: #04AA6D;
-    color:#fff;
-  }*/
+
 }
 
 div.cases_title{
@@ -317,7 +317,7 @@ div.cases_title{
   p.one{
     font-size: 17px;
     font-weight: bold;
-    font-family: 'Poppins';
+    font-family: 'Poppins',sans-serif;
     margin-left: 15px;
   }
   span.date{

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
 div.main{
   div.language{
     padding-top: 10px;
@@ -9,6 +11,8 @@ div.main{
     }
     p{
       padding-top: 20px !important;
+      font-family: 'Poppins', sans-serif !important;
+
     }
     button.btn{
       display: block;

@@ -23,7 +23,7 @@ div.main-content{
     div.top{
       margin-left: 50px !important;
     }
-    font-family: 'Poppins';
+    font-family: 'Poppins',sans-serif;
     font-weight: bold;
     font-size: 23px;
     color:#181937;
@@ -36,7 +36,7 @@ div.main-content{
       span.profile{
         margin-left: 50px !important;
         font-size:17px;
-        font-family: 'Poppins';
+        font-family: 'Poppins',sans-serif;
         color: #181937;
 
       }
@@ -60,7 +60,7 @@ div.main-content{
   div.note{
     p{
       margin-left: 50px;
-      font-family: 'Poppins';
+      font-family: 'Poppins',sans-serif;
       color: #181937;
       font-size: 16px;
       margin-bottom: 0;
@@ -76,8 +76,7 @@ div.main-content{
     width: 100% !important;
     border-radius: 10px !important;
     border: 0.5 solid black !important;
-    //margin-left: 20px;
-    //margin-right: 20px;
+
 
     image.user{
       display: block !important;
