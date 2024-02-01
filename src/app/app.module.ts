@@ -47,6 +47,7 @@ import { AssignTicketComponent } from './pages/admin/assign-ticket/assign-ticket
 import { DataTypeComponent } from './pages/admin/data-type/data-type.component';
 import { DownloadsComponent } from './pages/admin/downloads/downloads.component';
 import { FilterChangesComponent } from './pages/admin/filter-changes/filter-changes.component';
+import { ManagerDetailComponent } from './pages/admin/manager-detail/manager-detail.component';
 
 
 @NgModule({
@@ -89,7 +90,8 @@ import { FilterChangesComponent } from './pages/admin/filter-changes/filter-chan
     AssignTicketComponent,
     DataTypeComponent,
     DownloadsComponent,
-    FilterChangesComponent
+    FilterChangesComponent,
+    ManagerDetailComponent
   ],
   imports: [
     BrowserModule,

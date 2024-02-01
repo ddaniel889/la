@@ -11,6 +11,9 @@ import { HistoryChangesComponent } from './components/history-changes/history-ch
 import { ConfigTermsComponent } from './components/config-terms/config-terms.component';
 import { LanguagesComponent } from './components/languages/languages.component';
 import { FilterChangesComponent } from './components/filter-changes/filter-changes.component';
+import { CasesAnaliticsComponent } from './components/cases-analitics/cases-analitics.component';
+import { IncomesAnaliticsComponent } from './components/incomes-analitics/incomes-analitics.component';
+import { ActiveAnaliticsComponent } from './components/active-analitics/active-analitics.component';
 
 
 
@@ -25,7 +28,10 @@ import { FilterChangesComponent } from './components/filter-changes/filter-chang
     HistoryChangesComponent,
     ConfigTermsComponent,
     LanguagesComponent,
-    FilterChangesComponent
+    FilterChangesComponent,
+    CasesAnaliticsComponent,
+    IncomesAnaliticsComponent,
+    ActiveAnaliticsComponent
   ],
   imports: [
     CommonModule,
@@ -41,7 +47,10 @@ import { FilterChangesComponent } from './components/filter-changes/filter-chang
     ConfigTermsComponent,
     BackupComponent,
     LanguagesComponent,
-    FilterChangesComponent
+    FilterChangesComponent,
+    CasesAnaliticsComponent,
+    IncomesAnaliticsComponent,
+    ActiveAnaliticsComponent
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })

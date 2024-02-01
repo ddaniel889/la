@@ -2,12 +2,17 @@ import { DataTypeComponent } from './../data-type/data-type.component';
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 
+
 @Component({
   selector: 'app-analitics',
   templateUrl: './analitics.component.html',
   styleUrls: ['./analitics.component.scss']
 })
 export class AnaliticsComponent implements OnInit {
+
+  public incomes: any;
+  public active: any;
+
 
   constructor(
     private readonly dialog: MatDialog

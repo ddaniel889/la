@@ -21,6 +21,7 @@ import { ReportsComponent } from './pages/admin/reports/reports.component';
 import { ConfigurationsComponent } from './pages/admin/configurations/configurations.component';
 import { ClientSupportComponent } from './pages/admin/client-support/client-support.component';
 import { AccountComponent } from './pages/admin/account/account.component';
+import { ManagerDetailComponent } from './pages/admin/manager-detail/manager-detail.component';
 
 
 const routes: Routes = [
@@ -46,6 +47,7 @@ const routes: Routes = [
   { path: 'configurations', component:ConfigurationsComponent },
   { path: 'client-support', component:ClientSupportComponent },
   { path: 'account', component:AccountComponent },
+  { path: 'manager-detail/:id', component: ManagerDetailComponent },
 ];
 
 @NgModule({
