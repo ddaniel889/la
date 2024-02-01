@@ -23,7 +23,7 @@ export class ActiveAnaliticsComponent implements OnInit {
         datasets: [
           {
             label: "Usuarios activos",
-            data: [26, 29, 31, 24, 10, 3, 14, 16, 4, 5, 14, 23],
+            data: [18, 25, 29, 32, 45, 50, 53, 59,67, 72, 85, 89],
             borderColor: 'rgb(195, 174, 53)',
             backgroundColor: 'rgba(195, 174, 53)',
             borderWidth: 2,

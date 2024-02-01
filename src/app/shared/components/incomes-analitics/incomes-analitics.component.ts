@@ -16,14 +16,14 @@ export class IncomesAnaliticsComponent implements OnInit {
   }
 
   createChart() {
-    this.incomes = new Chart("MyChart", {
+    this.incomes = new Chart("MyIncomes", {
       type: 'line',
       data: {
         labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
         datasets: [
           {
             label: "Ingresos",
-            data: [26, 29, 31, 24, 10, 3, 14, 16, 4, 5, 14, 23],
+            data: [15, 22, 31, 38, 45, 49, 52, 58, 65, 75, 79, 82],
             borderColor: 'rgb(195, 174, 53)',
             backgroundColor: 'rgba(195, 174, 53)',
             borderWidth: 2,

@@ -17,7 +17,7 @@ export class CasesAnaliticsComponent implements OnInit {
 
 
   createChart() {
-    this.cases = new Chart("MyChart", {
+    this.cases = new Chart("MyCases", {
       type: 'line',
       data: {
         labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
