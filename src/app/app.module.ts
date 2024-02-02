@@ -50,6 +50,7 @@ import { FilterChangesComponent } from './pages/admin/filter-changes/filter-chan
 import { ManagerDetailComponent } from './pages/admin/manager-detail/manager-detail.component';
 import { CreateCamapaignComponent } from './pages/admin/create-camapaign/create-camapaign.component';
 import { ActiveCampaingnComponent } from './pages/admin/active-campaingn/active-campaingn.component';
+import { RecoveryComponent } from './pages/lawyers/recovery/recovery.component';
 
 
 @NgModule({
@@ -95,7 +96,8 @@ import { ActiveCampaingnComponent } from './pages/admin/active-campaingn/active-
     FilterChangesComponent,
     ManagerDetailComponent,
     CreateCamapaignComponent,
-    ActiveCampaingnComponent
+    ActiveCampaingnComponent,
+    RecoveryComponent
   ],
   imports: [
     BrowserModule,

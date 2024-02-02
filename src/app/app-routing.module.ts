@@ -9,6 +9,7 @@ import {BenefitsComponent } from './pages/lawyers/benefits/benefits.component';
 import {OptionsComponent } from './pages/lawyers/options/options.component';
 import {RegisterFormComponent } from './pages/lawyers/register-form/register-form.component';
 import {ProfileComponent } from './pages/lawyers/profile/profile.component';
+import { RecoveryComponent } from './pages/lawyers/recovery/recovery.component';
 /*  admin    */
 import {PanelComponent } from './pages/admin/panel/panel.component';
 import {ManageComponent } from './pages/admin/manage/manage.component';
@@ -35,6 +36,7 @@ const routes: Routes = [
   { path: 'options', component: OptionsComponent  },
   { path: 'form', component: RegisterFormComponent  },
   { path: 'profile', component: ProfileComponent  },
+  { path: 'recovery', component: RecoveryComponent  },
    /*  Admin          */
   { path: 'panel', component: PanelComponent },
   { path: 'manage-users', component:ManageComponent },

@@ -25,14 +25,15 @@
         <span class="input-group-text">@</span>
         <input type="text" class="form-control" placeholder="Contraseña" name="usrname">
       </div>
-      <p class="links"><span class="title-left" (click)="goRegister()">¿ Aún no tienes una cuenta?</span>&nbsp;  <span class="title-right"> ¿Olvidaste tu contraseña?</span></p>
+      <br />
+      <p class="links"><span class="title-left" (click)="goRegister()">¿ Aún no tienes una cuenta?</span>&nbsp;  <span class="title-right" (click)="goRecovery()"> ¿Olvidaste tu contraseña?</span></p>
 
-      <p class="remember"><span><mat-icon>check_circle_outline</mat-icon></span>  <span>Recuerda mi contraseña</span></p>
+      <p class="remember"><span><mat-icon>check_circle_outline</mat-icon></span> &nbsp; <span>Recuerda mi contraseña</span></p>
 
-      <p class="accept"><span><mat-icon>check_circle_outline</mat-icon></span>Acepto los<span class="terms" (click)="goTerms()">términos y condiciones</span> </p>
+      <p class="accept"><span><mat-icon>check_circle_outline</mat-icon></span> &nbsp; Acepto los<span class="terms" (click)="goTerms()">términos y condiciones</span> </p>
 
       <p class="button">
-        <button type="submit" class="btn btn-success">Iniciar sesión</button>
+        <button type="submit" class="btn" style="background-color: #181937;border-radius: 15px; color:#fff">Iniciar sesión</button>
       </p>
 
     </form>
@@ -50,38 +51,7 @@
    <p><span class="gogle"><img src="../../../../assets/images/gogle.png" alt="">  </span> <span class="facebook"> <img src="../../../../assets/images/facebook.png" alt=""></span></p>
 
    </div>
-
-
-  <div class="recovery">
-    <p class="title">Recupera tu contraseña</p>
-
-    <p class="personal">Ingresa tu correo y te enviaremos un link para</p>
-     <p class="personal">que puedas ingresar a tu cuenta</p>
-    <div class="form">
-     <form>
-       <div class="input-group mb-3">
-         <span class="input-group-text">@</span>
-         <input type="text" class="form-control" placeholder="Correo electrónico" name="usrname">
-       </div>
-
-
-       <p class="button">
-         <button type="submit" class="btn btn-success">Enviar</button>
-       </p>
-
-     </form>
-    </div>
-
-
-
-   </div>
-
-
-
 </div>
-
-
-
 
 </div>
 

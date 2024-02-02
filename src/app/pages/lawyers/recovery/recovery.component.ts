@@ -2,16 +2,17 @@ import { Component, OnInit } from '@angular/core';
 import { CanActivate, Router } from '@angular/router';
 
 @Component({
-  selector: 'app-login',
-  templateUrl: './login.component.html',
-  styleUrls: ['./login.component.scss']
+  selector: 'app-recovery',
+  templateUrl: './recovery.component.html',
+  styleUrls: ['./recovery.component.scss']
 })
-export class LoginComponent implements OnInit {
+export class RecoveryComponent implements OnInit {
 
   constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
+
 
   goRegister(): void {
     this.router.navigate(['/register']);
@@ -20,10 +21,5 @@ export class LoginComponent implements OnInit {
   goTerms(): void {
     this.router.navigate(['/terms']);
   }
-
-  goRecovery(): void {
-    this.router.navigate(['/recovery']);
-  }
-
 
 }
