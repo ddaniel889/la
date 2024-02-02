@@ -48,6 +48,8 @@ import { DataTypeComponent } from './pages/admin/data-type/data-type.component';
 import { DownloadsComponent } from './pages/admin/downloads/downloads.component';
 import { FilterChangesComponent } from './pages/admin/filter-changes/filter-changes.component';
 import { ManagerDetailComponent } from './pages/admin/manager-detail/manager-detail.component';
+import { CreateCamapaignComponent } from './pages/admin/create-camapaign/create-camapaign.component';
+import { ActiveCampaingnComponent } from './pages/admin/active-campaingn/active-campaingn.component';
 
 
 @NgModule({
@@ -91,7 +93,9 @@ import { ManagerDetailComponent } from './pages/admin/manager-detail/manager-det
     DataTypeComponent,
     DownloadsComponent,
     FilterChangesComponent,
-    ManagerDetailComponent
+    ManagerDetailComponent,
+    CreateCamapaignComponent,
+    ActiveCampaingnComponent
   ],
   imports: [
     BrowserModule,

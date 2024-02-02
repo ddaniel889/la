@@ -4,10 +4,12 @@
 div.main-content{
 
   div.generate{
+    margin-top: 30px !important;
      h6.generate{
       margin-top: 5px;
       margin-left: 5px;
       color: #8C8C8C;
+      font-family: 'Poppins',sans-serif;
       font-size: 12px;
      }
      button.set{
@@ -46,8 +48,10 @@ div.main-content{
     }
   }
   p.head{
+    margin-top: 30px !important;
+    margin-bottom: 0 !important;
     div.top{
-      margin-left: 50px !important;
+      padding-left: 50px !important;
     }
     font-family: 'Poppins',sans-serif;
     font-weight: bold;

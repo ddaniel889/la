@@ -22,6 +22,8 @@ div.main-content{
     }
   }
   p.head{
+    margin-top:30px !important;
+    margin-bottom: 0 !important;
     div.top{
       margin-left: 50px !important;
     }
@@ -280,6 +282,7 @@ div.options{
     border: 1px solid #181937;
     border-radius: 15px;
     margin: 5px;
+    cursor: pointer;
     p{
       margin-top: 55px !important;
       font-size: 23px;
@@ -299,6 +302,7 @@ div.options{
     border-radius: 15px;
     margin: 5px;
     margin-left: 15px !important;
+    cursor: pointer;
     p.one{
       margin-top: 25px;
       margin-left: 20px;
@@ -337,20 +341,7 @@ div.options{
     }
   }
 
-  div.news{
-    div.news > div.main-image{
-      width: 622px !important;
-      height: 292px !important;
-      background-color: #F1F1F1;
-      border: 1px solid #F1F1F1;
-      border-radius: 15px !important;
-    }
-    p.to{
-      margin-top: 15px !important;
-      margin-bottom: 0 !important;
-    }
 
-  }
 
 
   div.resources{

@@ -1,0 +1,28 @@
+div.news{
+  div.news > div.main-image{
+    width: 622px !important;
+    height: 292px !important;
+    background-color: #F1F1F1;
+    border: 1px solid #F1F1F1;
+    border-radius: 15px !important;
+  }
+  p.to{
+    margin-top: 15px !important;
+    margin-bottom: 0 !important;
+  }
+
+}
+
+div.search{
+  margin-left: 5px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  input{
+    width: 85% !important;
+    background-color: #F1F1F1;
+    border-radius: 15px;
+    height: 42px !important;
+    border: #F1F1F1;
+  }
+
+}

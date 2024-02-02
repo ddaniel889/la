@@ -4,7 +4,8 @@
 div.main-content{
   div.head{
     p.head{
-      margin-top: 10px !important;
+      margin-top: 30px !important;
+      margin-bottom: 0 !important;
       font-family: 'Poppins', sans-serif;
     }
   }
@@ -90,7 +91,7 @@ div.main-content{
   }
 
   div.search{
-    margin-left: 5px;
+    margin-left: 55px;
     margin-top: 30px;
     margin-bottom: 30px;
     input{
@@ -117,7 +118,7 @@ div.main-content{
   }
 
   table {
-   
+    margin-left: 55px !important;
     font-family: 'Poppins',sans-serif;
     border-collapse: collapse;
     width: 90%;
