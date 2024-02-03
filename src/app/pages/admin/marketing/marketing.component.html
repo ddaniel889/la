@@ -44,68 +44,8 @@
            </div>
            <div class="row">
             <div class="col-12">
-              <table *ngIf="content">
-                <tr style="background-color: #E4E4E4;border-radius: 10px;">
-                  <th></th>
-                  <th>Código</th>
-                  <th>Nombre</th>
-                  <th>Fecha de envío</th>
-                  <th>Destinatario</th>
-                  <th>Abiertos</th>
-                  <th>Clics</th>
-                  <th>Estado</th>
-
-                </tr>
-                <tr style="background-color: #fff;"><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                <tr>
-                  <td><mat-icon>check_circle_outline</mat-icon></td>
-                  <td>53165</td>
-                  <td>Campaña suscripción</td>
-                  <td>01/12/23</td>
-                  <td>Abogados</td>
-                  <td>
-                    40%
-                  </td>
-                  <td>
-                    40%
-                  </td>
-                  <td>
-                    Activa
-                  </td>
-                </tr>
-                <tr>
-                  <td><mat-icon>check_circle_outline</mat-icon></td>
-                  <td>53165</td>
-                  <td> Campaña suscripción</td>
-                  <td>01/12/23</td>
-                  <td>Abogados </td>
-                  <td>
-                    40%
-                  </td>
-                  <td>
-                    40%
-                  </td>
-                  <td>
-                    Pausada
-                  </td>
-                </tr>
-                <tr>
-                  <td><mat-icon>check_circle_outline</mat-icon></td>
-                  <td>53165</td>
-                  <td>Campaña suscripción</td>
-                  <td>01/12/23	</td>
-                  <td>Clientes</td>
-                  <td>
-                    40%
-                  </td>
-                  <td>
-                    40%
-                  </td>
-                  <td>
-                    Programada
-                  </td>
-                </tr>
-              </table>
+             <marketing-table *ngIf="content">
+             </marketing-table>
             </div>
           </div>
         <br />

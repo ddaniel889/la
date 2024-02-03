@@ -86,125 +86,7 @@ div.main-content{
     background-color: #F1F1F1;
   }
 
-  div.users{
-    padding-left: 15px;
-    padding-top: 15px !important;
-    padding-bottom: 15px !important;
-    background-color: #fff;
-    border-radius: 15px !important;
-    p.name{
-      font-weight: bold;
-      text-align: left;
-      font-family: 'Poppins',sans-serif;
-      font-size: 17px;
 
-    }
-    p.date{
-      text-align: left;
-      font-size: 13px;
-      font-family: 'Poppins',sans-serif;
-      margin-bottom: 0;
-    }
-    p.number{
-      text-align:left;
-      font-size: 15px;
-      font-family: 'Poppins',sans-serif;
-    }
-    p.button{
-      padding-top: 5px;
-      text-align: left;
-      button{
-        border-radius: 15px;
-        width: 262px !important;
-      }
-    }
-
-
-  }
-
-  div.right{
-    background-color: #fff;
-    border-radius: 15px;
-    padding-top: 18px !important;
-    img.users {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      width: 100px !important;
-      height: 100px !important;
-    }
-    p > img {
-      display: flex !important;
-      align-items: center !important;
-      width: 100px !important;
-      height: 100px !important;
-    }
-    p.name{
-        font-size: 25px;
-        font-weight: bold;
-        font-family: 'Poppins',sans-serif;
-        text-align: center !important;
-    }
-    p.location{
-      font-size: 14px;
-      font-weight: lighter;
-      font-family: 'Poppins',sans-serif;
-      text-align: center !important;
-    }
-
-  p > button{
-    width: 145px;
-    height: 55px;
-    background-color: #181937;
-    padding: 5px !important;
-    border-radius: 15px !important;
-    padding-left: 15px !important;
-    padding-right: 15px !important;
-  }
-  p.buttons, p.image{
-    text-align: center !important;
-  }
-
-table{
-  legend{
-    margin-top: 15px !important;
-    margin-bottom: 15px !important;
-    font-family: 'Poppins',sans-serif;
-    font-weight: bold;
-    font-size: 17px;
-  }
-}
-}
-
-div.payment{
-  margin-top: 35px !important;
-  border-radius: 15px !important;
-  background-color: #fff;
-  table{
-    legend{
-      margin-top: 15px !important;
-      margin-bottom: 15px !important;
-      font-family: 'Poppins',sans-serif;
-      font-weight: bold;
-      font-size: 17px;
-       width: 500px !important;
-      span.calendar{
-        float: right !important;
-        margin-left: 60px !important;
-        option.dates{
-          font-size: 17px;
-          font-family: 'Poppins',sans-serif;
-          color: #181937;
-        }
-      }
-      tr:nth-child(odd) {
-        background-color: #F0F4F7;
-
-      }
-    }
-  }
-
-}
 
 div.search{
   margin-left: 5px;
@@ -220,21 +102,7 @@ div.search{
 
 }
 
-table {
-  font-family: 'Poppins',sans-serif;
-  border-collapse: collapse;
-  width: 90%;
-}
 
-td, th {
-  border: 1px solid #dddddd;
-  text-align: left;
-  padding: 8px;
-}
-
-tr:nth-child(even) {
-  background-color: #dddddd;
-}
 
 div.myProgress {
   width: 100%;

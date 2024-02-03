@@ -122,7 +122,7 @@ div.main-content{
 
  div.success{
   margin: 0 auto !important;
-  background-color: #181937;
+
   p.title{
     margin-top: 35px !important;
     padding-bottom: 10px !important;
@@ -204,6 +204,8 @@ div.main-content{
     margin: 0 auto !important;
     button.btn{
       border-radius: 15px;
+      background-color: #181937;
+      color:#fff;
     }
   }
  }

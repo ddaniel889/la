@@ -14,6 +14,10 @@ import { FilterChangesComponent } from './components/filter-changes/filter-chang
 import { CasesAnaliticsComponent } from './components/cases-analitics/cases-analitics.component';
 import { IncomesAnaliticsComponent } from './components/incomes-analitics/incomes-analitics.component';
 import { ActiveAnaliticsComponent } from './components/active-analitics/active-analitics.component';
+import { MarketingTableComponent } from './components/marketing-table/marketing-table.component';
+import { ContentTableComponent } from './components/content-table/content-table.component';
+import { PrivacyComponent } from './components/privacy/privacy.component';
+import { CasesTablesComponent } from './components/cases-tables/cases-tables.component';
 
 
 
@@ -31,7 +35,11 @@ import { ActiveAnaliticsComponent } from './components/active-analitics/active-a
     FilterChangesComponent,
     CasesAnaliticsComponent,
     IncomesAnaliticsComponent,
-    ActiveAnaliticsComponent
+    ActiveAnaliticsComponent,
+    MarketingTableComponent,
+    ContentTableComponent,
+    PrivacyComponent,
+    CasesTablesComponent
   ],
   imports: [
     CommonModule,
@@ -50,7 +58,11 @@ import { ActiveAnaliticsComponent } from './components/active-analitics/active-a
     FilterChangesComponent,
     CasesAnaliticsComponent,
     IncomesAnaliticsComponent,
-    ActiveAnaliticsComponent
+    ActiveAnaliticsComponent,
+    MarketingTableComponent,
+    ContentTableComponent,
+    PrivacyComponent,
+    CasesTablesComponent
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })

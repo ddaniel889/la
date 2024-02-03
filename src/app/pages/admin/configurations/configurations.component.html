@@ -8,7 +8,7 @@
     </div>
 
     <div class="col-10">
-     <article style=" background-color: #F1F1F1 !important;">
+     <article>
        <div class="head">
          <div class="row top">
            <div class="col-5"> <p class="head"> <span *ngIf="config">Configuración y seguridad </span>  <span *ngIf="privacy">Configuración de privacidad </span> <span *ngIf="password"> Cambio de contraseña</span> <span *ngIf="notifications"> Gestión de notificaciones</span>   <span *ngIf="taxes">Configuración de tarifas</span> <span *ngIf="terms"> Configuración de términos de uso</span> <span *ngIf="policies"> Configuración de políticas de privacidad  </span> <span *ngIf="backup">Copias de seguridad y gestión de datos</span> <span *ngIf="languages">Idioma</span> <span *ngIf="history">  Historial de cambios</span> <span *ngIf="managers"> Cuentas de administradores </span></p></div>
@@ -96,142 +96,12 @@
             <h3>Privacidad de información personal</h3>
             <p>Permite a los administradores definir qué información personal, como números de teléfono o direcciones de correo electrónico, se muestra públicamente en los perfiles y qué información se mantiene privada.</p>
           </div>
-           <div class="table-history card" *ngIf="password">
-             <h3 class="access">Historial de acceso</h3>
-             <div class="row">
-               <div class="col-12">
-                 <div class="search">
-                   <input type="text" placeholder="Buscar acceso">&nbsp;
-                   <select  id=""  style="border-radius: 15px !important; background-color: #f2f2f2;" (click)="openFilters()">
-                     <option value="Sep2023" class="dates" >Filtro</option>
-                   </select>
-                 </div>
-               </div>
-              </div>
-              <div class="row">
-               <div class="col-12">
-                 <table>
-                   <tr style="background-color: #F0F4F7;border-radius: 10px;">
-                     <th></th>
-                     <th>Fecha</th>
-                     <th>Horario</th>
-                     <th>Tipo</th>
-                     <th>Ubicación</th>
-                   </tr>
-                   <tr style="background-color: #fff;"><td></td><td></td><td></td><td></td><td></td></tr>
-                   <tr>
-                     <td><mat-icon>check_circle_outline</mat-icon></td>
-                     <td>01/12/23</td>
-                     <td>00:00 AM</td>
-                     <td>Ingreso</td>
-                     <td>Cali</td>
-                   </tr>
-                   <tr>
-                     <td><mat-icon>check_circle_outline</mat-icon></td>
-                     <td>01/12/23</td>
-                     <td>00:00 AM</td>
-                     <td>Cierre de sesión</td>
-                     <td>Cali </td>
-
-                   </tr>
-                   <tr>
-                     <td><mat-icon>check_circle_outline</mat-icon></td>
-                     <td>01/12/23</td>
-                     <td>00:00 AM</td>
-                     <td>Ingreso</td>
-                     <td>Cali</td>
-                   </tr>
-                 </table>
-               </div>
-             </div>
-           </div>
          </div>
         </div>
-
-        <div class="row">
-          <div class="col-5 ">
-            <div class="search" *ngIf="privacy">
-              <input type="text" placeholder="Buscar usuario">&nbsp;
-              <select  id=""  style="border-radius: 15px !important; background-color: #E4E4E4;" (click)="openFilters()">
-                <option value="Sep2023" class="dates" >Filtro</option>
-              </select>
-            </div>
-
-            <div class="chapters" *ngIf="privacy">
-              <div class="users card" *ngFor="let item of users">
-                <div class="row">
-                  <div class="col-2">
-                    <p class="image"><img src="../../../../assets/images/users.PNG" alt=""></p>
-                  </div>
-                  <div class="col-10">
-                    <p class="name">{{item.name}} </p>
-                    <p class="number">{{item.number}}</p>
-                    <p class="date">{{item.date}}</p>
-                    <p class="button">
-                      <button type="submit" class="btn btn-outline-dark">Cliente</button>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="col-7">
-            <div class="card profile" *ngIf="privacy">
-              <img class="users" src="../../../../assets/images/users.PNG" alt="">
-              <p class="name">Raquel Victoria</p>
-              <p class="location"><span class="point"> <mat-icon class="mat-18">location_on</mat-icon> </span>Cali, Colombia</p>
-
-            <p class="buttons">   <button style="margin-left: 10px !important;border-radius: 10px;"  type="submit" class="btn btn-dark show">Mostrar  </button> </p>
-            <table style="width: 100%;margin-left: 15px !important;padding: 20px !important;margin-right: 15px !important;">
-              <legend>Información</legend>
-              <tr>
-                <td><mat-icon class="mat-18">mail_outline</mat-icon></td>
-                <td>Correo</td>
-                <td>correo1234@gmail.com</td>
-                <td><button type="submit" class="btn btn-danger" style="background-color: #B71031 !important; border-radius: 15px;"> <span style="font-size: 15px; padding-top: 3px;padding-bottom: 6px;">Privado</span> </button></td>
-              </tr>
-              <tr>
-                <td><mat-icon class="mat-18">lock_outline</mat-icon></td>
-                <td>Contraseña</td>
-                <td>**********************</td>
-                <td><button type="submit" class="btn btn-danger" style="background-color: #B71031 !important; border-radius: 15px;">Privado</button></td>
-              </tr>
-              <tr>
-                <td><span style="font-weight: bold; font-size: 23px;">&nbsp;G</span></td>
-                <td>Género</td>
-                <td>Femenino</td>
-                <td><button type="submit" class="btn btn-primary" style="background-color: #181937; border-radius: 15px;">Público</button></td>
-              </tr>
-              <tr>
-                <td><span style="font-weight: bold; font-size: 23px;">&nbsp;#</span></td>
-                <td>Número</td>
-                <td>3102548989</td>
-                <td><button type="submit" class="btn btn-primary" style="background-color: #181937; border-radius: 15px;">Público</button></td>
-              </tr>
-              <tr>
-                <td><mat-icon class="mat-18">contact_mail_outline</mat-icon></td>
-                <td>Documento</td>
-                <td>1006548984</td>
-                <td><button type="submit" class="btn btn-danger" style="background-color: #B71031 !important; border-radius: 15px;">Privado</button></td>
-              </tr>
-            </table>
-
-            </div>
-
-
-          </div>
-
-
-
-        </div>
+        <privacy *ngIf="privacy"></privacy>
      </article>
     </div>
 
   </div>
-
-
-
  </div>
 

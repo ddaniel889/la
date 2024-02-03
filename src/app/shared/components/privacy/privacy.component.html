@@ -1,0 +1,80 @@
+
+
+<div class="row" style=" background-color: #F1F1F1 !important;">
+  <div class="col-5 " style=" background-color: #F1F1F1 !important;">
+    <div class="search" >
+      <input type="text" placeholder="Buscar usuario">&nbsp;
+      <select  id=""  style="border-radius: 15px !important; background-color: #E4E4E4;" (click)="openFilters()">
+        <option value="Sep2023" class="dates" >Filtro</option>
+      </select>
+    </div>
+
+    <div class="chapters" style=" background-color: #F1F1F1 !important;">
+      <div class="users card" *ngFor="let item of users">
+        <div class="row">
+          <div class="col-2">
+            <p class="image"><img src="../../../../assets/images/users.PNG" alt=""></p>
+          </div>
+          <div class="col-10">
+            <p class="name">{{item.name}} </p>
+            <p class="number">{{item.number}}</p>
+            <p class="date">{{item.date}}</p>
+            <p class="button">
+              <button type="submit" class="btn btn-outline-dark">Cliente</button>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="col-7">
+    <div class="card profile">
+      <img class="users" src="../../../../assets/images/users.PNG" alt="">
+      <p class="name">Raquel Victoria</p>
+      <p class="location"><span class="point"> <mat-icon class="mat-18">location_on</mat-icon> </span>Cali, Colombia</p>
+
+    <p class="buttons">   <button style="margin-left: 10px !important;border-radius: 10px;"  type="submit" class="btn btn-dark show">Mostrar  </button> </p>
+    <table style="width: 95%;margin-left: 15px !important;padding: 20px !important;margin-right: 15px !important;">
+      <legend>Información</legend>
+      <tr>
+        <td><mat-icon class="mat-18">mail_outline</mat-icon></td>
+        <td>Correo</td>
+        <td>correo1234@gmail.com</td>
+        <td><button type="submit" class="btn btn-danger" style="background-color: #B71031 !important; border-radius: 15px;"> <span style="font-size: 15px; padding-top: 3px;padding-bottom: 6px;">Privado</span> </button></td>
+      </tr>
+      <tr>
+        <td><mat-icon class="mat-18">lock_outline</mat-icon></td>
+        <td>Contraseña</td>
+        <td>**********************</td>
+        <td><button type="submit" class="btn btn-danger" style="background-color: #B71031 !important; border-radius: 15px;">Privado</button></td>
+      </tr>
+      <tr>
+        <td><span style="font-weight: bold; font-size: 23px;">&nbsp;G</span></td>
+        <td>Género</td>
+        <td>Femenino</td>
+        <td><button type="submit" class="btn btn-primary" style="background-color: #181937; border-radius: 15px;">Público</button></td>
+      </tr>
+      <tr>
+        <td><span style="font-weight: bold; font-size: 23px;">&nbsp;#</span></td>
+        <td>Número</td>
+        <td>3102548989</td>
+        <td><button type="submit" class="btn btn-primary" style="background-color: #181937; border-radius: 15px;">Público</button></td>
+      </tr>
+      <tr>
+        <td><mat-icon class="mat-18">contact_mail_outline</mat-icon></td>
+        <td>Documento</td>
+        <td>1006548984</td>
+        <td><button type="submit" class="btn btn-danger" style="background-color: #B71031 !important; border-radius: 15px;">Privado</button></td>
+      </tr>
+    </table>
+
+    </div>
+
+
+  </div>
+
+
+
+</div>
