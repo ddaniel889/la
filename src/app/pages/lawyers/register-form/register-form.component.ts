@@ -17,7 +17,7 @@ export class RegisterFormComponent implements OnInit {
   nextStep() {
     console.log('valor de step')
     console.log(this.pageIndex)
-    if (this.pageIndex >= 3){
+    if (this.pageIndex >= 1){
       return;
     }else{
       this.pageIndex += 1;
@@ -26,7 +26,7 @@ export class RegisterFormComponent implements OnInit {
 
   goNextSteps(index:any): void {
     let i = index +1;
-    this.router.navigate([`/register-step/${i}`]);
+    this.router.navigate([`/register-two/${i}`]);
   }
 
 }

@@ -50,58 +50,11 @@
       <span>0 /2 </span><span><mat-icon>check_circle_outline</mat-icon></span>
     </p>
     <p class="button">
-     <button type="submit" class="btn btn-success" (click)="nextStep()">Subir</button>
+     <button type="submit" class="btn btn-success" (click)="goNextSteps(1)">Subir</button>
    </p>
  </div>
 
- <div class="third-step" *ngIf="pageIndex === 2">
-  <h1>Verificación de documentos</h1>
-  <div class="steps">
-   <img src="../../../../assets/images/step-doc.jpg" alt="ste-register">
-  </div>
-  <div class="titles">
-    <p class="step"><span>Registro</span><span class="doc">Doc</span></p>
-  </div>
-  <br />
-  <br />
-  <div class="single">
-   <p class="picture" style="text-align: center !important;"><span>Sube una foto de tu documento nacional de</span></p>
-   <p class="second" style="text-align: center !important;"><span>identidad por la parte de atrás</span></p>
-  </div>
-  <br />
-  <br />
-  <div class="front-card">
-     <img src="../../../../assets/images/back_card.jpg" alt="">
-  </div>
-  <p class="steps">
-    <span>1 /2 </span><span><mat-icon>check_circle_outline</mat-icon></span>
-  </p>
-  <p class="button">
-   <button type="submit" class="btn btn-success" (click)="nextStep()">Subir</button>
- </p>
-</div>
 
-<div class="four-step" *ngIf="pageIndex === 3">
-  <h1>Verificación de documentos</h1>
-  <div class="steps">
-   <img src="../../../../assets/images/step-card.jpg" alt="ste-register">
-  </div>
-  <div class="titles">
-    <p class="step"><span>Registro</span><span >Doc</span><span class="card">Tarjeta</span></p>
-  </div>
-  <br />
-  <div class="single">
-   <p class="steps"><span>Sube una foto de tu tarjeta profesional</span></p>
-  </div>
-  <br />
-  <div class="front-card">
-     <img src="../../../../assets/images/target.jpg" alt="">
-  </div>
-  <p class="button">
-   <button type="submit" class="btn btn-success" (click)="goNextSteps(3)">Subir</button>
- </p>
-</div>
-<br />
 <br />
 
 </div>

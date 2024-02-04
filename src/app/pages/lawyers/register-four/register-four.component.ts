@@ -3,18 +3,18 @@ import { Router } from '@angular/router';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
-  selector: 'app-register-step',
-  templateUrl: './register-step.component.html',
-  styleUrls: ['./register-step.component.scss']
+  selector: 'app-register-four',
+  templateUrl: './register-four.component.html',
+  styleUrls: ['./register-four.component.scss']
 })
-export class RegisterStepComponent implements OnInit {
-  public step: any =4;
+export class RegisterFourComponent implements OnInit {
+  public step: any =6;
 
   constructor(private readonly router: Router,private  actRoute: ActivatedRoute) { }
 
   ngOnInit(): void {
     this.step = this.actRoute.snapshot.paramMap.get('id');
-
+  
   }
 
 
@@ -27,19 +27,12 @@ export class RegisterStepComponent implements OnInit {
   }
 
   nextStep() {
-    if (this.step >= 5){
+    if (this.step >= 8){
       return;
     }else{
       this.step = parseInt(this.step);
       this.step += 1;
     }
   }
-
-  goNextSteps(index:any): void {
-    let i = index +1;
-    this.router.navigate([`/register-four/${i}`]);
-  }
-
-
 
 }

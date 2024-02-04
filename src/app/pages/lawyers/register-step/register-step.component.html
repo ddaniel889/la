@@ -43,82 +43,10 @@
        <img src="../../../../assets/images/selfie.jpg" alt="">
     </div>
     <p class="button">
-     <button type="submit" class="btn btn-success" (click)="nextStep()">Continuar</button>
+     <button type="submit" class="btn btn-success" (click)="goNextSteps(5)">Continuar</button>
    </p>
   </div>
 
-  <div class="seven-step" *ngIf="step === 6">
-    <br />
-    <h1>Verificación de documentos</h1>
-    <br />
-    <div class="steps">
-     <img src="../../../../assets/images/step-full.jpg" alt="ste-register">
-    </div>
-    <div class="titles">
-      <p class="step"><span>Registro</span><span >Doc</span><span >Tarjeta</span><span class="photo">Foto</span></p>
-    </div>
-    <br />
-    <div class="front-card">
-       <img src="../../../../assets/images/delete.jpg" alt="">
-    </div>
-    <br />
-    <div class="single">
-     <p class="reject"><span>Rechazada</span></p>
-     <p class="step"><span>Lo sentimos, prueba volver a cargar los documentos </span></p>
-    </div>
 
-    <p class="button">
-     <button type="submit" class="btn btn-success" (click)="nextStep()">Continuar</button>
-   </p>
-  </div>
 
-  <div class="eigth-step" *ngIf="step === 7">
-    <br />
-    <h1>Verificación de documentos</h1>
-    <br />
-    <div class="steps">
-     <img src="../../../../assets/images/step-full.jpg" alt="ste-register">
-    </div>
-    <div class="titles">
-      <p class="step"><span>Registro</span><span >Doc</span><span >Tarjeta</span><span class="photo">Foto</span></p>
-    </div>
-    <br />
-    <div class="front-card">
-       <img src="../../../../assets/images/accept.jpg" alt="">
-    </div>
-    <br />
-    <div class="single">
-     <p class="reject"><span>Aceptada</span></p>
-     <p class="step"><span>Todos tus datos están en el orden adecuado. ¡Bienvenido a nuestra comunidad de abogados!</span></p>
-    </div>
-
-    <p class="button">
-     <button type="submit" class="btn btn-success" (click)="nextStep()">Continuar</button>
-   </p>
-  </div>
-
-  <div class="finish-step" *ngIf="step === 8">
-    <br />
-    <h1>Verificación de documentos</h1>
-    <br />
-    <div class="steps">
-     <img src="../../../../assets/images/step-full.jpg" alt="ste-register">
-    </div>
-    <div class="titles">
-      <p class="step"><span>Registro</span><span >Doc</span><span >Tarjeta</span><span class="photo">Foto</span></p>
-    </div>
-    <br />
-    <div class="front-card">
-       <img src="../../../../assets/images/accept.jpg" alt="">
-    </div>
-    <br />
-    <div class="single">
-     <p class="reject"><span>Para finalizar</span></p>
-     <p class="accept"><span><mat-icon>check_circle_outline</mat-icon>&nbsp;</span>Acepto los<span class="terms" (click)="goTerms()">términos y condiciones</span> </p>
-    </div>
-
-    <p class="button">
-     <button type="submit" class="btn btn-success" (click)="goProfile()">Continuar</button>
-   </p>
-  </div>
 </div>

@@ -11,6 +11,8 @@ import {RegisterFormComponent } from './pages/lawyers/register-form/register-for
 import {ProfileComponent } from './pages/lawyers/profile/profile.component';
 import { RecoveryComponent } from './pages/lawyers/recovery/recovery.component';
 import { RegisterStepComponent } from './pages/lawyers/register-step/register-step.component';
+import { RegisterSecondComponent } from './pages/lawyers/register-second/register-second.component';
+import { RegisterFourComponent } from './pages/lawyers/register-four/register-four.component';
 /*  admin    */
 import {PanelComponent } from './pages/admin/panel/panel.component';
 import {ManageComponent } from './pages/admin/manage/manage.component';
@@ -39,6 +41,8 @@ const routes: Routes = [
   { path: 'profile', component: ProfileComponent  },
   { path: 'recovery', component: RecoveryComponent  },
   { path: 'register-step/:id', component: RegisterStepComponent},
+  { path: 'register-two/:id', component: RegisterSecondComponent },
+  { path: 'register-four/:id', component: RegisterFourComponent},
    /*  Admin          */
   { path: 'panel', component: PanelComponent },
   { path: 'manage-users', component:ManageComponent },

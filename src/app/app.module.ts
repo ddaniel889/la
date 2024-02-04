@@ -52,6 +52,8 @@ import { CreateCamapaignComponent } from './pages/admin/create-camapaign/create-
 import { ActiveCampaingnComponent } from './pages/admin/active-campaingn/active-campaingn.component';
 import { RecoveryComponent } from './pages/lawyers/recovery/recovery.component';
 import { RegisterStepComponent } from './pages/lawyers/register-step/register-step.component';
+import { RegisterSecondComponent } from './pages/lawyers/register-second/register-second.component';
+import { RegisterFourComponent } from './pages/lawyers/register-four/register-four.component';
 
 
 @NgModule({
@@ -99,7 +101,9 @@ import { RegisterStepComponent } from './pages/lawyers/register-step/register-st
     CreateCamapaignComponent,
     ActiveCampaingnComponent,
     RecoveryComponent,
-    RegisterStepComponent
+    RegisterStepComponent,
+    RegisterSecondComponent,
+    RegisterFourComponent
   ],
   imports: [
     BrowserModule,
