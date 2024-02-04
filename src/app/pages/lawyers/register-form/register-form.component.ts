@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-register-form',
@@ -7,13 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RegisterFormComponent implements OnInit {
 
-  constructor() { }
+  constructor(private readonly router: Router) { }
 
   ngOnInit(): void {
   }
 
-  goTerms(): void {
-    //this.router.navigate(['/terms']);
+  goNextSteps(index:any): void {
+    this.router.navigate([`/register-step/${index}`]);
   }
 
 }

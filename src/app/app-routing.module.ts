@@ -10,6 +10,7 @@ import {OptionsComponent } from './pages/lawyers/options/options.component';
 import {RegisterFormComponent } from './pages/lawyers/register-form/register-form.component';
 import {ProfileComponent } from './pages/lawyers/profile/profile.component';
 import { RecoveryComponent } from './pages/lawyers/recovery/recovery.component';
+import { RegisterStepComponent } from './pages/lawyers/register-step/register-step.component';
 /*  admin    */
 import {PanelComponent } from './pages/admin/panel/panel.component';
 import {ManageComponent } from './pages/admin/manage/manage.component';
@@ -37,6 +38,7 @@ const routes: Routes = [
   { path: 'form', component: RegisterFormComponent  },
   { path: 'profile', component: ProfileComponent  },
   { path: 'recovery', component: RecoveryComponent  },
+  { path: 'register-step/:id', component: RegisterStepComponent},
    /*  Admin          */
   { path: 'panel', component: PanelComponent },
   { path: 'manage-users', component:ManageComponent },

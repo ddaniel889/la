@@ -21,4 +21,8 @@ export class RegisterComponent implements OnInit {
     this.router.navigate(['/login']);
   }
 
+  goRegister(): void {
+    this.router.navigate(['/form']);
+  }
+
 }

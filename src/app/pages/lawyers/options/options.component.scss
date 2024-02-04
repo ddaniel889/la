@@ -3,8 +3,6 @@
 div.main-content{
   background-color: #fff;
   div.logo{
-    //width: 122px;
-   // height: 102px;
    margin-top: 30px !important;
     padding-bottom: 40px !important;
     text-align: center !important;
@@ -35,7 +33,8 @@ div.main-content{
     div.box{
       margin: 0 auto;
       border-radius: 30px;
-      background-color: #138D75;
+      background-color: #181937 !important;
+      color:#fff;
       width: 412px;
       height: 258px;
       margin-left: 15px;

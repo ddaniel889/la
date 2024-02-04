@@ -25,5 +25,9 @@ export class LoginComponent implements OnInit {
     this.router.navigate(['/recovery']);
   }
 
+  goProfile(): void {
+    this.router.navigate(['/profile']);
+  }
+
 
 }

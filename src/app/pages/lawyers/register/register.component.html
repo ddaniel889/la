@@ -10,7 +10,7 @@
     </div>
 
     <div class="form-login">
-     <p class="title">¡Ingresa tus datos<span><mat-icon>help_outline</mat-icon></span></p>
+     <p class="title">¡Ingresa tus datos<span>&nbsp;<mat-icon>help_outline</mat-icon></span></p>
      <p class="title">para registrarte!</p>
      <div class="form">
       <form>
@@ -39,10 +39,10 @@
         <p class="links"><span class="title-left" (click)="goLogin()">¿ Ya tienes una cuenta?</span>&nbsp; </p>
 
 
-        <p class="accept"><span><mat-icon>check_circle_outline</mat-icon></span>Acepto los<span class="terms" (click)="goTerms()">términos y condiciones</span> </p>
+        <p class="accept"><span> <input type="checkbox"  name="accept" value="accept" />&nbsp;</span>&nbsp;Acepto los<span class="terms" (click)="goTerms()">términos y condiciones</span> </p>
 
         <p class="button">
-          <button type="submit" class="btn">Regístrarme</button>
+          <button type="submit" class="btn" (click)="goRegister()">Regístrarme</button>
         </p>
 
       </form>

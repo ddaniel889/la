@@ -12,4 +12,8 @@ export class RegisterComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  goTerms(): void {
+    this.router.navigate(['/terms']);
+  }
+
 }

@@ -28,12 +28,12 @@
       <br />
       <p class="links"><span class="title-left" (click)="goRegister()">¿ Aún no tienes una cuenta?</span>&nbsp;  <span class="title-right" (click)="goRecovery()"> ¿Olvidaste tu contraseña?</span></p>
 
-      <p class="remember"><span><mat-icon>check_circle_outline</mat-icon></span> &nbsp; <span>Recuerda mi contraseña</span></p>
+      <p class="remember"><span><input type="checkbox"  name="password" value="password" />&nbsp;</span> &nbsp; <span>Recuerda mi contraseña</span></p>
 
-      <p class="accept"><span><mat-icon>check_circle_outline</mat-icon></span> &nbsp; Acepto los<span class="terms" (click)="goTerms()">términos y condiciones</span> </p>
+      <p class="accept"><span><input type="checkbox"  name="terms" value="terms" />&nbsp;</span> &nbsp; Acepto los<span class="terms" (click)="goTerms()">términos y condiciones</span> </p>
 
       <p class="button">
-        <button type="submit" class="btn" style="background-color: #181937;border-radius: 15px; color:#fff">Iniciar sesión</button>
+        <button type="submit" class="btn" style="background-color: #181937;border-radius: 15px; color:#fff"  (click)="goProfile()">Iniciar sesión</button>
       </p>
 
     </form>
