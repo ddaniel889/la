@@ -45,50 +45,7 @@
     </div>
 
     <p class="button">
-     <button type="submit" class="btn btn-success" (click)="nextStep()">Continuar</button>
+     <button type="submit" class="btn btn-success" (click)="goNextSteps(7)">Continuar</button>
    </p>
   </div>
-
-  <div class="finish-step" *ngIf="step === 8">
-    <br />
-    <h1>Verificación de documentos</h1>
-    <br />
-    <div class="steps">
-     <img src="../../../../assets/images/step-full.jpg" alt="ste-register">
-    </div>
-    <div class="titles">
-      <p class="step"><span>Registro</span><span >Doc</span><span >Tarjeta</span><span class="photo">Foto</span></p>
-    </div>
-    <br />
-    <div class="front-card">
-       <img src="../../../../assets/images/accept.jpg" alt="">
-    </div>
-    <br />
-    <div class="single">
-     <p class="reject"><span>Para finalizar</span></p>
-     <p class="accept"><span><mat-icon>check_circle_outline</mat-icon>&nbsp;</span>Acepto los<span class="terms" (click)="goTerms()">términos y condiciones</span> </p>
-    </div>
-
-    <p class="button">
-     <button type="submit" class="btn btn-success" (click)="goProfile()">Continuar</button>
-   </p>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </div>

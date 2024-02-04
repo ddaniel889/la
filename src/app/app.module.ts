@@ -54,6 +54,7 @@ import { RecoveryComponent } from './pages/lawyers/recovery/recovery.component';
 import { RegisterStepComponent } from './pages/lawyers/register-step/register-step.component';
 import { RegisterSecondComponent } from './pages/lawyers/register-second/register-second.component';
 import { RegisterFourComponent } from './pages/lawyers/register-four/register-four.component';
+import { RegisterFiveComponent } from './pages/lawyers/register-five/register-five.component';
 
 
 @NgModule({
@@ -103,7 +104,8 @@ import { RegisterFourComponent } from './pages/lawyers/register-four/register-fo
     RecoveryComponent,
     RegisterStepComponent,
     RegisterSecondComponent,
-    RegisterFourComponent
+    RegisterFourComponent,
+    RegisterFiveComponent
   ],
   imports: [
     BrowserModule,

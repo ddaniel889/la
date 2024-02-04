@@ -13,6 +13,7 @@ import { RecoveryComponent } from './pages/lawyers/recovery/recovery.component';
 import { RegisterStepComponent } from './pages/lawyers/register-step/register-step.component';
 import { RegisterSecondComponent } from './pages/lawyers/register-second/register-second.component';
 import { RegisterFourComponent } from './pages/lawyers/register-four/register-four.component';
+import { RegisterFiveComponent } from './pages/lawyers/register-five/register-five.component';
 /*  admin    */
 import {PanelComponent } from './pages/admin/panel/panel.component';
 import {ManageComponent } from './pages/admin/manage/manage.component';
@@ -43,6 +44,7 @@ const routes: Routes = [
   { path: 'register-step/:id', component: RegisterStepComponent},
   { path: 'register-two/:id', component: RegisterSecondComponent },
   { path: 'register-four/:id', component: RegisterFourComponent},
+  { path: 'register-five/:id', component: RegisterFiveComponent },
    /*  Admin          */
   { path: 'panel', component: PanelComponent },
   { path: 'manage-users', component:ManageComponent },
