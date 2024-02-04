@@ -17,41 +17,33 @@
         <p class="error">El correo no está verificado</p>
         <p class="error">El correo ya está registrado en Law App</p>
         <p class="error">Te falta poner el correo</p>
-        <div class="input-group mb-3">
-          <span class="input-group-text">@</span>
-          <input type="text" class="form-control email" placeholder="Nombres" name="usrname">
+
+        <div class="search">
+          <input type="text" placeholder="Nombres">
         </div>
         <br />
-        <div class="input-group mb-3">
-          <span class="input-group-text">@</span>
-          <input type="text" class="form-control" placeholder="Apellidos" name="usrname">
+
+        <div class="search">
+          <input type="text" placeholder="Apellidos">
         </div>
         <br />
-        <div class="input-group mb-3">
-          <span class="input-group-text">@</span>
-          <input type="text" class="form-control" placeholder="Correo" name="usrname">
+        <div class="search">
+          <input type="text" placeholder="Correo">
         </div>
         <br />
-        <div class="input-group mb-3">
-          <span class="input-group-text">@</span>
-          <input type="text" class="form-control" placeholder="Contraseña" name="usrname">
+        <div class="search">
+          <input type="text" placeholder="Contraseña">
         </div>
         <p class="links"><span class="title-left" (click)="goLogin()">¿ Ya tienes una cuenta?</span>&nbsp; </p>
-
-
         <p class="accept"><span> <input type="checkbox"  name="accept" value="accept" />&nbsp;</span>&nbsp;Acepto los<span class="terms" (click)="goTerms()">términos y condiciones</span> </p>
-
         <p class="button">
           <button type="submit" class="btn" (click)="goRegister()">Regístrarme</button>
         </p>
-
+       <p class="padding"></p>
       </form>
+      <br/>
      </div>
-
-
-
     </div>
-
     <p class="personal">Tus datos personales y legales están protegidos al utilizar Law App</p>
 
      <p class="personal">o regístrate con</p>

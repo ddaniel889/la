@@ -16,14 +16,12 @@
       <p class="error">El correo no existe, veríficalo</p>
       <p class="error">La contraseña es incorrecta, intenta de nuevo</p>
       <p class="error">Te falta poner la contraseña</p>
-      <div class="input-group mb-3">
-        <span class="input-group-text">@</span>
-        <input type="text" class="form-control email" placeholder="Correo electrónico" name="usrname">
+      <div class="search">
+        <input type="text" placeholder="Correo electrónico">
       </div>
       <br />
-      <div class="input-group mb-3">
-        <span class="input-group-text">@</span>
-        <input type="text" class="form-control" placeholder="Contraseña" name="usrname">
+      <div class="search">
+        <input type="text" placeholder="Contraseña">
       </div>
       <br />
       <p class="links"><span class="title-left" (click)="goRegister()">¿ Aún no tienes una cuenta?</span>&nbsp;  <span class="title-right" (click)="goRecovery()"> ¿Olvidaste tu contraseña?</span></p>
@@ -31,6 +29,7 @@
       <p class="remember"><span><input type="checkbox"  name="password" value="password" />&nbsp;</span> &nbsp; <span>Recuerda mi contraseña</span></p>
 
       <p class="accept"><span><input type="checkbox"  name="terms" value="terms" />&nbsp;</span> &nbsp; Acepto los<span class="terms" (click)="goTerms()">términos y condiciones</span> </p>
+      <p>
 
       <p class="button">
         <button type="submit" class="btn" style="background-color: #181937;border-radius: 15px; color:#fff"  (click)="goProfile()">Iniciar sesión</button>

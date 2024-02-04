@@ -2,6 +2,25 @@
 
 div.main-content{
 
+  h1{
+    margin-top: 30px;
+    font-family: 'Poppins',sans-serif;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  div.front-card{
+    margin-top: 40px !important;
+    img{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
   div.third-step{
     margin: 0 auto;
     background-color: #fff;
@@ -51,14 +70,7 @@ div.main-content{
         text-align: center;
       }
     }
-    div.front-card{
-      margin-top: 40px !important;
-      img{
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-      }
-    }
+    
     p.picture{
       width: 100%;
       color: #181937;
@@ -79,15 +91,7 @@ div.main-content{
         font-family: 'Poppins',sans-serif;
       }
     }
-    h1{
-      margin-top: 30px;
-      font-family: 'Poppins',sans-serif;
-      text-align: center;
-      font-weight: bold;
-      font-size: 30px;
-      margin-top: 15px;
-      margin-bottom: 15px;
-    }
+
 
     p.button{
       padding-top: 50px;
@@ -169,14 +173,7 @@ div.main-content{
         font-weight: bold;
       }
     }
-    div.front-card{
-      margin-top: 40px !important;
-      img{
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-      }
-    }
+
     p.second{
       width: 100%;
       color: #181937;
@@ -189,15 +186,7 @@ div.main-content{
         font-family: 'Poppins',sans-serif;
       }
     }
-    h1{
-      margin-top: 30px;
-      font-family: 'Poppins',sans-serif;
-      text-align: center;
-      font-weight: bold;
-      font-size: 30px;
-      margin-top: 15px;
-      margin-bottom: 15px;
-    }
+
 
     p.button{
       padding-top: 50px;

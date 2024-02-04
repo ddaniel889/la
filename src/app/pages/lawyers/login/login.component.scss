@@ -12,7 +12,20 @@ div.lawyer{
   background-image: url("../../../../assets/images/back.png");
   background-repeat: no-repeat;
   background-size: auto;
- 
+
+}
+
+div.search{
+   margin: 0 auto !important;
+   padding-left: 63px !important;
+  input{
+    width: 357px !important;
+    background-color: #F1F1F1;
+    border-radius: 5px;
+    height: 51px !important;
+    border: #F1F1F1;
+  }
+
 }
 
  div.logo{
