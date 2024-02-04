@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-benefits',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BenefitsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private readonly router: Router) { }
 
   ngOnInit(): void {
+  }
+
+  goOptions(): void {
+    this.router.navigate(['/options']);
   }
 
 }

@@ -1,7 +1,7 @@
 <div class="main-content">
 
 
-  <div class="five-step">
+  <div class="five-step" *ngIf="step == 4">
     <br />
     <h1>Verificación de documentos</h1>
     <br />
@@ -20,11 +20,11 @@
        <img src="../../../../assets/images/selfie.jpg" alt="">
     </div>
     <p class="button">
-     <button type="submit" class="btn btn-success">Subir</button>
+     <button type="submit" class="btn btn-success" (click)="nextStep()">Subir</button>
    </p>
   </div>
 
-  <div class="six-step">
+  <div class="six-step" *ngIf="step === 5">
     <br />
     <h1>Verificación de documentos</h1>
     <br />
@@ -43,11 +43,11 @@
        <img src="../../../../assets/images/selfie.jpg" alt="">
     </div>
     <p class="button">
-     <button type="submit" class="btn btn-success">Continuar</button>
+     <button type="submit" class="btn btn-success" (click)="nextStep()">Continuar</button>
    </p>
   </div>
 
-  <div class="seven-step">
+  <div class="seven-step" *ngIf="step === 6">
     <br />
     <h1>Verificación de documentos</h1>
     <br />
@@ -68,11 +68,11 @@
     </div>
 
     <p class="button">
-     <button type="submit" class="btn btn-success">Continuar</button>
+     <button type="submit" class="btn btn-success" (click)="nextStep()">Continuar</button>
    </p>
   </div>
 
-  <div class="eigth-step">
+  <div class="eigth-step" *ngIf="step === 7">
     <br />
     <h1>Verificación de documentos</h1>
     <br />
@@ -93,11 +93,11 @@
     </div>
 
     <p class="button">
-     <button type="submit" class="btn btn-success">Continuar</button>
+     <button type="submit" class="btn btn-success" (click)="nextStep()">Continuar</button>
    </p>
   </div>
 
-  <div class="finish-step">
+  <div class="finish-step" *ngIf="step === 8">
     <br />
     <h1>Verificación de documentos</h1>
     <br />
@@ -118,7 +118,7 @@
     </div>
 
     <p class="button">
-     <button type="submit" class="btn btn-success">Continuar</button>
+     <button type="submit" class="btn btn-success" (click)="goProfile()">Continuar</button>
    </p>
   </div>
 </div>

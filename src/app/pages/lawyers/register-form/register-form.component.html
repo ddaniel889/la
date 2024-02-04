@@ -1,5 +1,5 @@
 <div class="main-content">
-  <div class="register-form">
+  <div class="register-form" *ngIf="pageIndex === 0">
      <h1>Formulario de registro</h1>
      <div class="steps">
       <img src="../../../../assets/images/step-register.jpg" alt="ste-register">
@@ -25,11 +25,11 @@
       </form>
      </div>
      <p class="button">
-      <button type="submit" class="btn">Continuar</button>
+      <button type="submit" class="btn" (click)="nextStep()">Continuar</button>
     </p>
   </div>
 
-  <div class="second-step">
+  <div class="second-step" *ngIf="pageIndex === 1">
     <h1>Verificación de documentos</h1>
     <div class="steps">
      <img src="../../../../assets/images/step-doc.jpg" alt="ste-register">
@@ -50,11 +50,11 @@
       <span>0 /2 </span><span><mat-icon>check_circle_outline</mat-icon></span>
     </p>
     <p class="button">
-     <button type="submit" class="btn btn-success">Subir</button>
+     <button type="submit" class="btn btn-success" (click)="nextStep()">Subir</button>
    </p>
  </div>
 
- <div class="third-step">
+ <div class="third-step" *ngIf="pageIndex === 2">
   <h1>Verificación de documentos</h1>
   <div class="steps">
    <img src="../../../../assets/images/step-doc.jpg" alt="ste-register">
@@ -77,11 +77,11 @@
     <span>1 /2 </span><span><mat-icon>check_circle_outline</mat-icon></span>
   </p>
   <p class="button">
-   <button type="submit" class="btn btn-success">Subir</button>
+   <button type="submit" class="btn btn-success" (click)="nextStep()">Subir</button>
  </p>
 </div>
 
-<div class="four-step">
+<div class="four-step" *ngIf="pageIndex === 3">
   <h1>Verificación de documentos</h1>
   <div class="steps">
    <img src="../../../../assets/images/step-card.jpg" alt="ste-register">
@@ -98,7 +98,7 @@
      <img src="../../../../assets/images/target.jpg" alt="">
   </div>
   <p class="button">
-   <button type="submit" class="btn btn-success" (click)="goNextSteps(4)">Subir</button>
+   <button type="submit" class="btn btn-success" (click)="goNextSteps(3)">Subir</button>
  </p>
 </div>
 <br />
