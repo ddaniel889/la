@@ -13,8 +13,10 @@ export class RegisterStepComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  
   goTerms(): void {
-    //this.router.navigate(['/terms']);
+    this.router.navigate(['/terms']);
   }
+
 
 }
