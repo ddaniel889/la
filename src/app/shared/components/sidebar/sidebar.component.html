@@ -14,6 +14,8 @@
     <li><a routerLink="/sentences"> <span> <mat-icon>check_circle_outline</mat-icon> </span>Sentencias judiciales</a></li>
     <li><a routerLink="/news"> <span> <mat-icon>list_alt</mat-icon> </span>Noticias</a></li>
     <li><a routerLink="/profile"> <span> <mat-icon>person_outline</mat-icon> </span>Perfil</a></li>
+    <li  (click)="directTo('login')"><a style="color: #E53232;"> <span> <mat-icon style="color:#E53232;">person_outline</mat-icon> </span>Cerrar sesión</a></li>
   </ul>
 </div>
 </div>
+<router-outlet></router-outlet>

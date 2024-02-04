@@ -23,13 +23,13 @@ div.main-content{
    border-radius: 5px;
    height: 51px !important;
    border: #F1F1F1;
+   border-radius: 15px !important;
  }
 
 }
 
   div.logo{
-    padding-top: 40px !important;
-    padding-bottom: 40px !important;
+    padding-top: 10px !important;
     text-align: center !important;
     img.la{
      margin: 0 auto !important;
@@ -42,7 +42,7 @@ div.main-content{
     padding-bottom: 25px !important;
    }
    p.title{
-     margin-top: 35px !important;
+     margin-top: 10px !important;
      padding-bottom: 10px !important;
      font-weight: bold;
      font-family: 'Poppins',sans-serif;
@@ -58,7 +58,10 @@ div.main-content{
    }
 
    form{
-
+    p.button{
+      margin-top: 15px !important;
+      //margin-bottom: 30px !important;
+    }
     button {
       background-color: #181937 !important;
       border-radius: 15px;
@@ -86,6 +89,10 @@ div.main-content{
     margin-top: 15px !important;
    }
 
+   p.bottom{
+    margin-bottom: 15px !important;
+   }
+
    p.error{
      color: #DB2222;
      text-align: center;
@@ -107,10 +114,7 @@ div.main-content{
    border-radius: 15px !important;
    box-shadow:0ch !important;
 
-   div.input-group{
-     width: 357px !important;
-     margin: 0 auto !important;
-   }
+
 
    p{
      text-align: center;

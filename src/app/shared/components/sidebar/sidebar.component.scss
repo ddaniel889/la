@@ -51,6 +51,7 @@
 
   li a:hover:not(.active) {
     background-color: #181937;
+    cursor: pointer;
     color: white;
     border-radius: 15px;
     font-family: 'Poppins', sans-serif;

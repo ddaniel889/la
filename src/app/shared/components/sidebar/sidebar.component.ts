@@ -1,6 +1,7 @@
 
 
 import { Component, OnInit } from '@angular/core';
+import { CanActivate, Router } from '@angular/router';
 
 @Component({
   selector: 'sidebar',
@@ -9,9 +10,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SidebarComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
+  }
+
+  directTo(param:string): void {
+    this.router.navigate([`/${param}`]);
   }
 
 }

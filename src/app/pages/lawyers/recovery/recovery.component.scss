@@ -15,6 +15,20 @@ div.lawyer{
 
 }
 
+div.search{
+  margin: 0 auto !important;
+  padding-left: 63px !important;
+ input{
+   border-radius: 15px !important;
+   width: 357px !important;
+   background-color: #F1F1F1;
+   border-radius: 5px;
+   height: 51px !important;
+   border: #F1F1F1;
+ }
+
+}
+
  div.logo{
    padding-bottom: 40px !important;
    text-align: center !important;
@@ -53,12 +67,14 @@ div.recovery{
   }
 
   p.button{
-    padding-top: 20px;
+    margin-top: 10px !important;
+    margin-bottom: 30px !important;
     text-align: center;
     button{
       border-radius: 15px;
       background-color: #181937 !important;
       color:#fff;
+      width: 177px;
     }
   }
 
