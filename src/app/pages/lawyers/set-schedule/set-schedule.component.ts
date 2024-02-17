@@ -7,6 +7,27 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SetScheduleComponent implements OnInit {
 
+  public appoinment = [{
+    date : 'Septiembre 17 del 2023',
+    time:'10:00 AM - 11:00 AM ',
+    type : 'Presencial',
+    person : 'Raquel Ortiz',
+   },
+   {
+    date : 'Septiembre 17 del 2023',
+    time:'10:00 AM - 11:00 AM ',
+    type : 'Presencial',
+    person : 'Raquel Ortiz',
+   },
+   {
+    date : 'Septiembre 17 del 2023',
+    time:'10:00 AM - 11:00 AM ',
+    type : 'Presencial',
+    person : 'Raquel Ortiz',
+   },
+
+   ];
+
   constructor() { }
 
   ngOnInit(): void {

@@ -7,6 +7,90 @@ import { Component, OnInit } from '@angular/core';
 })
 export class VacanciesComponent implements OnInit {
 
+  public vacancies = [
+    {
+    name : 'Raquel Ortiz',
+    location:'Bogotá, Colombia ',
+    image : '',
+    job : 'Especialidad',
+    job1 : 'Especialidad',
+    description: 'Reclamación por Despido Injusto y Discriminación en XYZ Corporación',
+    time:2
+   },
+   {
+    name : 'Raquel Ortiz',
+    location:'Bogotá, Colombia ',
+    image : '',
+    job : 'Especialidad',
+    job1 : 'Especialidad',
+    description: 'Reclamación por Despido Injusto y Discriminación en XYZ Corporación',
+    time:2
+   },
+   {
+    name : 'Raquel Ortiz',
+    location:'Bogotá, Colombia ',
+    image : '',
+    job : 'Especialidad',
+    job1 : 'Especialidad',
+    description: 'Reclamación por Despido Injusto y Discriminación en XYZ Corporación',
+    time:2
+   },
+   {
+    name : 'Raquel Ortiz',
+    location:'Bogotá, Colombia ',
+    image : '',
+    job : 'Especialidad',
+    job1 : 'Especialidad',
+    description: 'Reclamación por Despido Injusto y Discriminación en XYZ Corporación',
+    time:2
+   },
+   {
+    name : 'Raquel Ortiz',
+    location:'Bogotá, Colombia ',
+    image : '',
+    job : 'Especialidad',
+    job1 : 'Especialidad',
+    description: 'Reclamación por Despido Injusto y Discriminación en XYZ Corporación',
+    time:2
+   },
+   {
+    name : 'Raquel Ortiz',
+    location:'Bogotá, Colombia ',
+    image : '',
+    job : 'Especialidad',
+    job1 : 'Especialidad',
+    description: 'Reclamación por Despido Injusto y Discriminación en XYZ Corporación',
+    time:2
+   },
+   {
+    name : 'Raquel Ortiz',
+    location:'Bogotá, Colombia ',
+    image : '',
+    job : 'Especialidad',
+    job1 : 'Especialidad',
+    description: 'Reclamación por Despido Injusto y Discriminación en XYZ Corporación',
+    time:2
+   },
+   {
+    name : 'Raquel Ortiz',
+    location:'Bogotá, Colombia ',
+    image : '',
+    job : 'Especialidad',
+    job1 : 'Especialidad',
+    description: 'Reclamación por Despido Injusto y Discriminación en XYZ Corporación',
+    time:2
+   },
+   {
+    name : 'Raquel Ortiz',
+    location:'Bogotá, Colombia ',
+    image : '',
+    job : 'Especialidad',
+    job1 : 'Especialidad',
+    description: 'Reclamación por Despido Injusto y Discriminación en XYZ Corporación',
+    time:2
+   }
+   ];
+
   constructor() { }
 
   ngOnInit(): void {

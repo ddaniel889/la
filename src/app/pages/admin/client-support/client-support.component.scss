@@ -4,8 +4,8 @@
 div.main-content{
   div.head{
     p.head{
-      margin-top: 30px !important;
-      margin-bottom: 0 !important;
+      margin-top: 2px !important;
+      margin-bottom: 6px !important;
       font-family: 'Poppins', sans-serif;
     }
   }
@@ -14,7 +14,7 @@ div.main-content{
      h6.generate{
       margin-left: 5px;
       color: #8C8C8C;
-      font-size: 13px;
+      font-size: 13px !important;
       font-family: 'Poppins', sans-serif;
      }
      h6.request{
@@ -48,8 +48,11 @@ div.main-content{
   span.side{
     float: right;
     mat-icon{
-      padding:25px !important;
-      margin-right:25px !important;
+      position: absolute;
+      top: 45px;
+      right: 385px !important;
+      margin-right: 12px !important;
+      font-size: 20px !important;
     }
   }
   div.side{

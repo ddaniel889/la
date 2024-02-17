@@ -1,0 +1,104 @@
+<div class="main-content">
+  <div class="row">
+    <div class="col-2">
+      <nav>
+        <sidebar></sidebar>
+      </nav>
+    </div>
+
+    <div class="col-10">
+      <article>
+        <div class="head">
+          <div class="row top">
+            <div class="col-5"> <p class="head">  <span> !Bienvenida!, Ana Richardson   </span> </p></div>
+            <div class="col-5"> <p>  <span class="side"> <mat-icon class="mat-18" style="font-size: 18px !important;">notifications</mat-icon> <span class="profile"> <img src="../../../../assets/images/image_profile.jpg" alt=""> Ana Richardson </span></span>   </p></div>
+          </div>
+         </div>
+
+         <div class="note">
+          <p>
+            ¡Prepárate para ofrecer tus servicios como abogado!
+          </p>
+         </div>
+
+          <div class="row">
+              <div class="col-5">
+                <div class="first" (click)="goProfile()">
+                  <div class="row">
+                    <div class="column top" >
+                      <p>¿Quieres</p>
+                      <p>aparecer de</p>
+                      <p>primero en los </p>
+                      <p>resultados de</p>
+                      <p>búsqueda?</p>
+                    </div>
+                    <div class="column">
+                     <img src="../../../../assets/images/gold.png" alt="">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="second" (click)="openSubscriptions()">
+                  <div class="row">
+                    <div class="column">
+                      <p>Buscar vacantes</p>
+
+                    </div>
+                    <div class="column">
+                     <img src="../../../../assets/images/folder.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="third">
+                  <div class="row">
+                    <div class="column">
+                      <p>Configurar horarios</p>
+                      <p class="title"> Establece los horarios que tienes  </p>
+                      <p class="title">disponibles para atender clientes</p>
+                    </div>
+                    <div class="column">
+                     <img src="../../../../assets/images/clocks.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+
+
+              <div class="col-7">
+                <h2>Tus próximas citas</h2>
+                <div class="row">
+                  <div class="col-12">
+                    <div class="box" *ngFor="let item  of dates">
+                      <p class="title">{{item.name}}  </p>
+                      <p> {{item.date}} </p>
+                      <p><mat-icon class="mat-18" style="font-size: 16px !important;">query_builder</mat-icon> {{item.time}}   <span style="margin-left: 25px;"><mat-icon class="mat-18" style="font-size: 16px !important;">laptop_windows</mat-icon> {{item.matter}} </span></p>
+                    </div>
+                  </div>
+
+                </div>
+
+                <h2 class="cases">Tus casos </h2>
+                <div class="row">
+                  <div class="col-12">
+                    <div class="box" *ngFor="let item  of cases">
+                      <div class="row">
+                        <div class="col-3">
+
+                        </div>
+                      </div>
+                      <div class="col-6">
+                        <p class="title">{{item.matter}}  </p>
+                        <p><mat-icon style="font-size: 16px;">loupe</mat-icon> {{item.update}} </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+      </article>
+    </div>
+  </div>
+</div>

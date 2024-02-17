@@ -18,6 +18,7 @@ import { MarketingTableComponent } from './components/marketing-table/marketing-
 import { ContentTableComponent } from './components/content-table/content-table.component';
 import { PrivacyComponent } from './components/privacy/privacy.component';
 import { CasesTablesComponent } from './components/cases-tables/cases-tables.component';
+import { AdminHeaderComponent } from './components/admin-header/admin-header.component';
 
 
 
@@ -39,7 +40,8 @@ import { CasesTablesComponent } from './components/cases-tables/cases-tables.com
     MarketingTableComponent,
     ContentTableComponent,
     PrivacyComponent,
-    CasesTablesComponent
+    CasesTablesComponent,
+    AdminHeaderComponent
   ],
   imports: [
     CommonModule,

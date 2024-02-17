@@ -26,7 +26,7 @@ export class LoginComponent implements OnInit {
   }
 
   goProfile(): void {
-    this.router.navigate(['/profile']);
+    this.router.navigate(['/index']);
   }
 
 

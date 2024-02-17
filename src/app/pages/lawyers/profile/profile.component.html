@@ -1,103 +1,108 @@
 <div class="main-content">
-  <nav>
-   <sidebar></sidebar>
-  </nav>
+  <div class="row">
+    <div class="col-2">
+      <nav>
+        <sidebar></sidebar>
+       </nav>
+    </div>
+
+    <div class="col-10">
 
   <article>
-     <div class="head">
-      <div class="row">
-        <div class="col-6"> <p class="head">  <span>    <span> <mat-icon class="keyboard">keyboard_arrow_left</mat-icon> </span>¿Cómo podemos ayudarte?  </span> </p></div>
-        <div class="col-6"> <p>  <span class="side"> <mat-icon class="mat-18">notifications</mat-icon> <span class="profile"> <img src="../../../../assets/images/image_profile.jpg" alt=""> Ana Richardson </span></span>   </p></div>
-      </div>
+    <div class="head">
+     <div class="row">
+       <div class="col-6"> <p class="head">  <span>    <span> <mat-icon class="keyboard">keyboard_arrow_left</mat-icon> </span>¿Cómo podemos ayudarte?  </span> </p></div>
+       <div class="col-6"> <p>  <span class="side"> <mat-icon class="mat-18">notifications</mat-icon> <span class="profile"> <img src="../../../../assets/images/image_profile.jpg" alt=""> Ana Richardson </span></span>   </p></div>
      </div>
-
-     <div class="note">
-      <p>
-        Sientete libre de contactarnos en cualquier momento. ¡Te
-      </p>
-      <p>
-        contestaremos lo más pronto posible!
-      </p>
-     </div>
-
-     <div class="search">
-        <input type="text" placeholder="Buscar en ayuda y soporte">
-     </div>
-
-     <div class="questions" >
-        <p (click)="setPage(1)">Preguntas frecuentes</p>
-     </div>
-
-     <div class="problem">
-      <p (click)="setPage(2)">Reporta un problema</p>
-   </div>
-
-   <div class="contact">
-    <p (click)="setPage(3)">Contáctanos</p>
-   </div>
-
-
-  <div class="section-questions" *ngIf="pageIndex === 1">
-    <div class="row top">
-      <div class="col-6"> <p class="head">  <span>    <span> <mat-icon class="keyboard">keyboard_arrow_left</mat-icon> </span>Preguntas frecuentes </span> </p></div>
-      <div class="col-6"> <p>  <span class="side"> <mat-icon class="mat-18">notifications</mat-icon> <span class="profile"> <img src="../../../../assets/images/image_profile.jpg" alt=""> Ana Richardson </span></span>   </p></div>
     </div>
+
     <div class="note">
-      <p>
-        Sientete libre de contactarnos en cualquier momento. ¡Te
-      </p>
-      <p>
-        contestaremos lo más pronto posible!
-      </p>
-     </div>
-
-
+     <p>
+       Sientete libre de contactarnos en cualquier momento. ¡Te
+     </p>
+     <p>
+       contestaremos lo más pronto posible!
+     </p>
+    </div>
 
     <div class="search">
-      <input type="text" placeholder="Buscar en preguntas frecuentes">
-   </div>
-   <div class="questions"  *ngFor="let item of section">
-    <p>{{item.item}}</p>
- </div>
+       <input type="text" placeholder="Buscar en ayuda y soporte">
+    </div>
 
+    <div class="questions" >
+       <p (click)="setPage(1)">Preguntas frecuentes</p>
+    </div>
 
+    <div class="problem">
+     <p (click)="setPage(2)">Reporta un problema</p>
+  </div>
+
+  <div class="contact">
+   <p (click)="setPage(3)">Contáctanos</p>
   </div>
 
 
-  <ng-template #report [ngIf]="pageIndex === 2">
-    <div class="head">
-      <p>    <span class="arrow"> </span>Reportar un problema </p>
-      <p class="texts">
-        Estamos aquí para escucharte y brindarte asistencia en caso de que encuentres algún desafío o dificultad mientras utilizas nuestra aplicación de abogados. Tu satisfacción y experiencia son de suma importancia para nosotros, y estamos comprometidos a resolver cualquier problema que puedas enfrentar de manera rápida y efectiva. Si has encontrado obstáculos en la búsqueda de un abogado, experimentado retrasos en la comunicación, o te has topado con cualquier otro problema, por favor, utiliza esta sección para comunicárnoslo.
-      </p>
-     </div>
-
-     <div class="types">
-      <h3>Posibles problemas</h3>
-       <div> Dificultades para encontrar un abogado adecuado. </div>
-       <div> Retrasos en la comunicación con los abogados.</div>
-       <div> Problemas con el proceso de pago y facturación.</div>
-       <div> Falta de claridad sobre el progreso de su caso.</div>
-
-     </div>
-
-     <div class="more">
-      <h3>Si es algo más:</h3>
-      <textarea name="" id="" cols="30" rows="10" placeholder="Dejanoslo saber aquí y te responderemos... "></textarea>
-
-     </div>
-
-  </ng-template>
-
-  <ng-template #contactUs [ngIf]="pageIndex === 3">
-    <div class="head">
-      <p> <span class="arrow"> </span>Contáctanos </p>
-      <p class="texts">
-        Sientete libre de contactarnos en cualquier momento. ¡Te contestaremos lo más pronto posible!
-      </p>
+ <div class="section-questions" *ngIf="pageIndex === 1">
+   <div class="row top">
+     <div class="col-6"> <p class="head">  <span>    <span> <mat-icon class="keyboard">keyboard_arrow_left</mat-icon> </span>Preguntas frecuentes </span> </p></div>
+     <div class="col-6"> <p>  <span class="side"> <mat-icon class="mat-18">notifications</mat-icon> <span class="profile"> <img src="../../../../assets/images/image_profile.jpg" alt=""> Ana Richardson </span></span>   </p></div>
+   </div>
+   <div class="note">
+     <p>
+       Sientete libre de contactarnos en cualquier momento. ¡Te
+     </p>
+     <p>
+       contestaremos lo más pronto posible!
+     </p>
     </div>
 
 
-  </ng-template>
-  </article>
+
+   <div class="search">
+     <input type="text" placeholder="Buscar en preguntas frecuentes">
+  </div>
+  <div class="questions"  *ngFor="let item of section">
+   <p>{{item.item}}</p>
+</div>
+
+
+ </div>
+
+
+ <ng-template #report [ngIf]="pageIndex === 2">
+   <div class="head">
+     <p>    <span class="arrow"> </span>Reportar un problema </p>
+     <p class="texts">
+       Estamos aquí para escucharte y brindarte asistencia en caso de que encuentres algún desafío o dificultad mientras utilizas nuestra aplicación de abogados. Tu satisfacción y experiencia son de suma importancia para nosotros, y estamos comprometidos a resolver cualquier problema que puedas enfrentar de manera rápida y efectiva. Si has encontrado obstáculos en la búsqueda de un abogado, experimentado retrasos en la comunicación, o te has topado con cualquier otro problema, por favor, utiliza esta sección para comunicárnoslo.
+     </p>
+    </div>
+
+    <div class="types">
+     <h3>Posibles problemas</h3>
+      <div> Dificultades para encontrar un abogado adecuado. </div>
+      <div> Retrasos en la comunicación con los abogados.</div>
+      <div> Problemas con el proceso de pago y facturación.</div>
+      <div> Falta de claridad sobre el progreso de su caso.</div>
+
+    </div>
+
+    <div class="more">
+     <h3>Si es algo más:</h3>
+     <textarea name="" id="" cols="30" rows="10" placeholder="Dejanoslo saber aquí y te responderemos... "></textarea>
+
+    </div>
+
+ </ng-template>
+
+ <ng-template #contactUs [ngIf]="pageIndex === 3">
+   <div class="head">
+     <p> <span class="arrow"> </span>Contáctanos </p>
+     <p class="texts">
+       Sientete libre de contactarnos en cualquier momento. ¡Te contestaremos lo más pronto posible!
+     </p>
+   </div>
+ </ng-template>
+ </article>
+  </div>
+  </div>
 </div>

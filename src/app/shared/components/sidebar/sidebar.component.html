@@ -4,16 +4,16 @@
     <img class="la" src="../../../../assets/images/logo_orange.jpg" alt="logo-low-app">
   </div>
   <ul>
-    <li><a class="active" routerLink="/index"><span> <mat-icon>home_outline</mat-icon> </span>Inicio</a></li>
-    <li><a routerLink="/schedule"> <span> <mat-icon>schedule_outline</mat-icon> </span>Configurar horarios</a></li>
-    <li><a routerLink="/vacancies"> <span> <mat-icon>work_outline</mat-icon> </span>Buscar vacantes</a></li>
-    <li><a routerLink="/dates"> <span> <mat-icon>assignment_outline</mat-icon> </span>Tus citas</a></li>
-    <li><a routerLink="/messages"> <span> <mat-icon>message_outline</mat-icon> </span>Mensajes</a></li>
-    <li><a routerLink="/calendar"> <span> <mat-icon>calendar_today</mat-icon> </span>Calendario</a></li>
-    <li><a routerLink="/cases"> <span> <mat-icon>data_usage_outline</mat-icon> </span>Tus casos</a></li>
-    <li><a routerLink="/sentences"> <span> <mat-icon>check_circle_outline</mat-icon> </span>Sentencias judiciales</a></li>
-    <li><a routerLink="/news"> <span> <mat-icon>list_alt</mat-icon> </span>Noticias</a></li>
-    <li><a routerLink="/profile"> <span> <mat-icon>person_outline</mat-icon> </span>Perfil</a></li>
+    <li (click)="directTo('index')"><a class="active" ><span> <mat-icon>home_outline</mat-icon> </span>Inicio</a></li>
+    <li (click)="directTo('schedule')"><a > <span> <mat-icon>schedule_outline</mat-icon> </span>Configurar horarios</a></li>
+    <li (click)="directTo('vacancies')"><a> <span> <mat-icon>work_outline</mat-icon> </span>Buscar vacantes</a></li>
+    <li (click)="directTo('dates')"><a> <span> <mat-icon>assignment_outline</mat-icon> </span>Tus citas</a></li>
+    <li (click)="directTo('messages')"><a> <span> <mat-icon>message_outline</mat-icon> </span>Mensajes</a></li>
+    <li (click)="directTo('calendar')"><a> <span> <mat-icon>calendar_today</mat-icon> </span>Calendario</a></li>
+    <li (click)="directTo('cases')"><a> <span> <mat-icon>data_usage_outline</mat-icon> </span>Tus casos</a></li>
+    <li (click)="directTo('sentences')"><a> <span> <mat-icon>check_circle_outline</mat-icon> </span>Sentencias judiciales</a></li>
+    <li (click)="directTo('news')"><a> <span> <mat-icon>list_alt</mat-icon> </span>Noticias</a></li>
+    <li (click)="directTo('profile')"><a> <span> <mat-icon>person_outline</mat-icon> </span>Perfil</a></li>
     <li  (click)="directTo('login')"><a style="color: #E53232;"> <span> <mat-icon style="color:#E53232;">person_outline</mat-icon> </span>Cerrar sesión</a></li>
   </ul>
 </div>

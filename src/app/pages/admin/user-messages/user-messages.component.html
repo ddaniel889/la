@@ -1,0 +1,84 @@
+<div class="main-content">
+  <div class="row">
+    <div class="col-2">
+      <nav>
+        <admin-sidebar></admin-sidebar>
+      </nav>
+    </div>
+    <div class="col-10">
+       <article>
+         <div class="row header">
+            <div class="col-3">
+              <p><span class="side"> <mat-icon class="mat-18">keyboard_arrow_left</mat-icon> <span class="profile"> <img src="../../../../assets/images/image_profile.jpg" alt=""> <span class="name" style="font-family: 'Poppins',sans-serif !important;"> Ana Richardson </span ></span ></span ></p>
+           </div>
+           <div class="col-6">
+             <p class="middle"> <span> <img src="../../../../assets/images/image_profile.jpg" alt=""> <span class="" style="font-family: 'Poppins',sans-serif !important;"> Raquel Victoria </span ></span ></p>
+           </div>
+           <div class="col-1">
+             <p class="middle"><mat-icon class="mat-18">videocam</mat-icon></p>
+           </div>
+           <div class="col-1">
+             <p class="middle"><mat-icon class="mat-18">phone</mat-icon></p>
+           </div>
+           <div class="col-1">
+            <p class="middle"> <mat-icon class="mat-18">more_vert</mat-icon> </p>
+
+           </div>
+
+         </div>
+         <div class="row botton">
+          <div class="col-3 side">
+            <p class="title"> Notificaciones</p>
+            <hr>
+            <table class="responsive">
+               <tr *ngFor="let item of users" style="border-bottom: 1px solid #D9D9D9 !important;">
+                 <td>
+                  <img src="../../../../assets/images/image_profile.jpg" alt="">
+                 </td>
+                 <td class="middle" style="width: 157px !important;">
+                  <p class="name" style="font-family: 'Poppins',sans-serif !important;">{{item.name}} </p >
+                  <p class="name" style="font-family: 'Poppins',sans-serif !important;">{{item.matter}} </p >
+                 </td>
+                 <td>
+                  <span class="time">{{item.date}}</span>
+                 </td>
+               </tr>
+            </table>
+            <hr>
+            <hr>
+            <div class="search">
+              &nbsp;<input type="text" placeholder="Buscar">
+            </div>
+            <p class="title">Mensajes</p>
+            <table class="responsive">
+              <tr *ngFor="let item of messages" style="border-bottom: 1px solid #D9D9D9 !important; background-color: #F0F4F7 !important;">
+                <td>
+                 <img src="../../../../assets/images/image_profile.jpg" alt="">
+                </td>
+                <td class="middle" style="width: 157px !important;">
+                 <p class="name" style="font-family: 'Poppins',sans-serif !important;">{{item.name}} </p >
+                 <p class="name" style="font-family: 'Poppins',sans-serif !important;">{{item.message}} </p >
+                </td>
+                <td>
+                  <p class="name">
+                    <span class="sent" style="font-weight: bold;text-align: center !important;">{{item.date}}</span>
+                  </p>
+                  <p class="name" style="text-align: center !important;">
+                    <mat-icon class="mat-18">keyboard_arrow_down</mat-icon>
+                  </p>
+                </td>
+              </tr>
+           </table>
+          </div>
+          <div class="col-12">
+            
+
+            <div class="search">
+              &nbsp;<input type="text" placeholder="Buscar">
+            </div>
+          </div>
+         </div>
+       </article>
+    </div>
+  </div>
+</div>

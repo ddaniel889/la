@@ -14,6 +14,18 @@ import { RegisterStepComponent } from './pages/lawyers/register-step/register-st
 import { RegisterSecondComponent } from './pages/lawyers/register-second/register-second.component';
 import { RegisterFourComponent } from './pages/lawyers/register-four/register-four.component';
 import { RegisterFiveComponent } from './pages/lawyers/register-five/register-five.component';
+import { StartComponent } from './pages/lawyers/start/start.component';
+import { SetScheduleComponent } from './pages/lawyers/set-schedule/set-schedule.component';
+import { VacanciesComponent } from './pages/lawyers/vacancies/vacancies.component';
+import { DatesComponent } from './pages/lawyers/dates/dates.component';
+import { MessagesComponent } from './pages/lawyers/messages/messages.component';
+import { CalendarComponent } from './pages/lawyers/calendar/calendar.component';
+import { CasesComponent } from './pages/lawyers/cases/cases.component';
+import { SentencesComponent } from './pages/lawyers/sentences/sentences.component';
+import { NewsComponent } from './pages/lawyers/news/news.component';
+import { MainProfileComponent } from './pages/lawyers/main-profile/main-profile.component';
+import { VacanciesAvalaibleComponent } from './pages/lawyers/vacancies-avalaible/vacancies-avalaible.component';
+
 /*  admin    */
 import {PanelComponent } from './pages/admin/panel/panel.component';
 import {ManageComponent } from './pages/admin/manage/manage.component';
@@ -27,6 +39,7 @@ import { ConfigurationsComponent } from './pages/admin/configurations/configurat
 import { ClientSupportComponent } from './pages/admin/client-support/client-support.component';
 import { AccountComponent } from './pages/admin/account/account.component';
 import { ManagerDetailComponent } from './pages/admin/manager-detail/manager-detail.component';
+import { UserMessagesComponent } from './pages/admin/user-messages/user-messages.component';
 
 
 const routes: Routes = [
@@ -45,6 +58,20 @@ const routes: Routes = [
   { path: 'register-two/:id', component: RegisterSecondComponent },
   { path: 'register-four/:id', component: RegisterFourComponent},
   { path: 'register-five/:id', component: RegisterFiveComponent },
+  { path: 'index', component:  StartComponent },
+  { path: 'schedule', component: SetScheduleComponent },
+  { path: 'vacancies', component: VacanciesComponent },
+  { path: 'dates', component: DatesComponent },
+  { path: 'messages', component: MessagesComponent },
+  { path: 'calendar', component: CalendarComponent  },
+  { path: 'cases', component: CasesComponent },
+  { path: 'sentences', component: SentencesComponent  },
+  { path: 'news', component:  NewsComponent  },
+  { path: 'main-profile', component:   MainProfileComponent  },
+  { path: 'vacancy-avalaible/:id', component: VacanciesAvalaibleComponent  },
+
+
+
    /*  Admin          */
   { path: 'panel', component: PanelComponent },
   { path: 'manage-users', component:ManageComponent },
@@ -58,6 +85,8 @@ const routes: Routes = [
   { path: 'client-support', component:ClientSupportComponent },
   { path: 'account', component:AccountComponent },
   { path: 'manager-detail/:id', component: ManagerDetailComponent },
+  { path: 'user-messages', component: UserMessagesComponent },
+
 ];
 
 @NgModule({

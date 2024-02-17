@@ -1,1 +1,101 @@
-<p>vacancies works!</p>
+<div class="main-content">
+  <div class="row">
+    <div class="col-2">
+      <nav>
+        <sidebar></sidebar>
+      </nav>
+    </div>
+
+   <div class="col-10">
+    <article>
+      <div class="head">
+        <div class="row top">
+          <div class="col-7"> <p class="head"><span><mat-icon style="cursor: pointer;margin-left: 60px !important;">keyboard_arrow_left</mat-icon></span>  <span class="vacancy" style="float: right !important;"> Buscar vacantes </span> </p></div>
+          <div class="col-5"> <p>  <span class="side"> <mat-icon class="mat-18">notifications</mat-icon> <span class="profile"> <img src="../../../../assets/images/image_profile.jpg" alt=""> Ana Richardson </span></span>   </p></div>
+        </div>
+       </div>
+
+       <div class="note">
+        <p>
+          ¡Bienvenido, abogado en búsqueda de nuevas oportunidades! Aquí encontrarás las mejores vacantes para tu
+        </p>
+        <p>
+          carrera legal
+        </p>
+       </div>
+       <div class="row">
+        <div class="col-12">
+          <div class="search">
+            <input type="text" placeholder="Buscar vacantes por palabra clave">&nbsp;
+            <select  id=""  style="border-radius: 15px !important; background-color: #f2f2f2;border:">
+              <option value="Sep2023" class="dates">Especialidad</option>
+            </select>&nbsp;
+            <select  id=""  style="border-radius: 15px !important; background-color: #f2f2f2;border:">
+              <option value="Sep2023" class="dates">Modalidad</option>
+            </select>&nbsp;
+            <select  id=""  style="border-radius: 15px !important; background-color: #f2f2f2;border:">
+              <option value="Sep2023" class="dates">Ordenar por</option>
+            </select>
+          </div>
+        </div>
+
+       </div>
+
+       <div class="row tab">
+        <div class="col-4">
+          <button> Vacantes disponibles</button>
+        </div>
+        <div class="col-4">
+          <button> Vacantes a las que has aplicado</button>
+        </div>
+        <div class="col-4">
+          <button>Vacantes guardadas</button>
+        </div>
+       </div>
+
+       <div class="row">
+        <div class="col-12">
+          <p class="vacancies">Hay 27 vacantes disponibles</p>
+          <p class="vacancies">Hay 20 vacantes disponibles con estas especificaciones</p>
+          <p class="vacancies"> Aún no has guardado vacantes</p>
+          <!--p class="vacancies"> No hay ninguna vacante guardada con estas especificaciones</!--p>
+          <p class="vacancies">Aún no has aplicado a vacantes</p>
+          <p class="vacancies">Lo sentimos, no hay vacantes disponibles</p>
+          <p class="vacancies">Hay 20 vacantes disponibles con estas especificaciones</p>
+          <p-- class="vacancies">No hay ninguna vacante guardada con estas especificaciones</p-->
+        </div>
+
+       </div>
+
+       <div class="row charts text-center">
+
+          <div class="card chart" *ngFor="let item of vacancies">
+            <div class="row">
+              <div class="col-2">
+                <img src="../../../../assets/images/image_profile.jpg" alt="">
+              </div>
+              <div class="col-4">
+                <p>{{item.name}} </p>
+                <p>{{item.location}}</p>
+              </div>
+              <div class="col-2">
+
+              </div>
+              <div class="col-2">
+                <mat-icon class="mat-18">star_border</mat-icon>
+              </div>
+              <div class="col-2">
+                <mat-icon class="mat-18">more_horiz</mat-icon>
+              </div>
+            </div>
+            <p class="buttons"> <button> Especialidad</button>  <button> Especialidad</button></p>
+            <p class="paragraph">{{item.description}}</p>
+            <p>
+              Hace {{item.time}} horas
+            </p>
+          </div>
+       </div>
+    </article>
+   </div>
+  </div>
+</div>

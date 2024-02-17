@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { FilterUsersComponent } from '../filter-users/filter-users.component';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-manage',
@@ -64,12 +65,16 @@ export class ManageComponent implements OnInit {
 
 
   constructor(
-    private readonly dialog: MatDialog,
+    private readonly dialog: MatDialog,private router: Router
   ) {
 
    }
 
   ngOnInit(): void {
+  }
+
+  setMessages(): void {
+    this.router.navigate(['user-messages']);
   }
 
 

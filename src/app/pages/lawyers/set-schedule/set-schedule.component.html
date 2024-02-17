@@ -1,1 +1,174 @@
-<p>set-schedule works!</p>
+<div class="main-content">
+  <div class="row">
+    <div class="col-2">
+      <nav>
+        <sidebar></sidebar>
+      </nav>
+    </div>
+
+   <div class="col-10">
+    <article>
+      <div class="head">
+        <div class="row top">
+          <div class="col-5"> <p class="head"><span><mat-icon style="cursor: pointer;">keyboard_arrow_left</mat-icon></span>  <span> Configuración de horarios </span> </p></div>
+          <div class="col-5"> <p>  <span class="side"> <mat-icon class="mat-18">notifications</mat-icon> <span class="profile"> <img src="../../../../assets/images/image_profile.jpg" alt=""> Ana Richardson </span></span>   </p></div>
+        </div>
+       </div>
+
+       <div class="note">
+        <p>
+          Selecciona una fecha en tu calendario y agrega los horarios en los que estarás
+        </p>
+        <p>
+          disponible :
+        </p>
+       </div>
+
+       <div class="row">
+        <div class="col-7">
+          <div class="calendar">
+
+
+          </div>
+
+         <h2 class="title">Reserva de citas</h2>
+         <div class="row" style="width: 85% !important;">
+          <div class="col-6">
+             <p class="dating"><input type="checkbox"  name="password" value="password" />&nbsp;Recordatorio de citas</p>
+          </div>
+          <div class="col-6">
+             <p class="dating"><input type="checkbox"  name="password" value="password" />&nbsp;Agregar citas a tu calendario personal</p>
+          </div>
+          <div class="card appointment" *ngFor="let data of appoinment">
+             <div class="row">
+              <div class="col-4">
+                <p class="date">{{data.date}} </p>
+                <p>{{data.time}} </p>
+              </div>
+              <div class="col-2">
+                <p class="type">{{data.type}}</p>
+              </div>
+              <div class="col-3">
+                <p class="image">  <img src="../../../../assets/images/image_profile.jpg" alt=""> {{data.person}} </p>
+              </div>
+              <div class="col-3">
+                <p class="buttons">  <button class="btn" style="width: 130px;height: 37px; border-radius: 20px;background-color: #38A14F;margin: 10px;display: block;margin-left: auto;margin-right: auto; "><span style="color:#fff">Guardar </span></button></p>
+              </div>
+             </div>
+          </div>
+         </div>
+        </div>
+
+        <div class="col-5">
+          <div class="card hours">
+            <h2 class="hours">Horarios disponibles</h2>
+            <h3 class="now">Viernes, 09 de Febrero </h3>
+            <table class="table-responsive">
+              <tr>
+                <td>
+                  <p style="float: right !important;width: 80%;"><img src="../../../../assets/images/forward.jpg" alt="">&nbsp;&nbsp;Desde:</p>
+                </td>
+                <td>
+                  <div class="row">
+                    <div class="col-2">
+                      <div class="up">
+                        <input type="text" placeholder="00">&nbsp;
+                      </div>
+                    </div>
+                    <div class="col-2">
+                      <div class="up">
+                        <input type="text" placeholder="00">&nbsp;
+                      </div>
+                    </div>
+                    <div class="col-2">
+                      <div class="up">
+                        <input type="text" placeholder="AM">&nbsp;
+                      </div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p style="float: right !important;width: 80%;"><img src="../../../../assets/images/forward.jpg" alt="">&nbsp;&nbsp;Hasta:</p>
+                </td>
+                <td>
+                  <div class="row">
+                    <div class="col-2">
+                      <div class="up">
+                        <input type="text" placeholder="00">&nbsp;
+                      </div>
+                    </div>
+                    <div class="col-2">
+                      <div class="up">
+                        <input type="text" placeholder="00">&nbsp;
+                      </div>
+                    </div>
+                    <div class="col-2">
+                      <div class="up">
+                        <input type="text" placeholder="AM">&nbsp;
+                      </div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p style="float: right !important;width: 80%;"><mat-icon class="mat-18">laptop</mat-icon>&nbsp;&nbsp;Modalidad:</p>
+                </td>
+                <td>
+                  <div class="search">
+                    <input type="text" placeholder="PRESENCIAL">&nbsp;
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p style="float: right !important;width: 80%;"><mat-icon class="mat-18">subdirectory_arrow_right</mat-icon>&nbsp;&nbsp;Dirección:</p>
+                </td>
+                <td>
+                  <div class="search">
+                    <input type="text" placeholder="Calle 34 #34-90, Cali, Valle del Cauca">&nbsp;
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p style="float: right !important;width: 80%;"><mat-icon class="mat-18">trip_origin</mat-icon>&nbsp;&nbsp;Asunto:</p>
+                </td>
+                <td>
+                  <div class="search">
+                    <input type="text" placeholder="Opcional">&nbsp;
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p style="float: right !important;width: 80%;"><mat-icon class="mat-18"><mat-icon>person_outline</mat-icon></mat-icon>&nbsp;&nbsp;Agregar participante:</p>
+                </td>
+                <td>
+                  <div class="search">
+                    <input type="text" placeholder="Opcional">&nbsp;
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p style="float: right !important;width: 80%;"> <img src="../../../../assets/images/icons/dollar.PNG" alt="">&nbsp;&nbsp;Precio:</p>
+                </td>
+                <td>
+                  <div class="search">
+                    <input type="text" placeholder="$00000">&nbsp;
+                  </div>
+                </td>
+              </tr>
+            </table>
+            <p class="buttons">  <button class="btn" style="width: 137px;height: 45px; border-radius: 20px;background-color: #181937;margin: 10px;display: block;margin-left: auto;margin-right: auto; "><span style="color:#fff">Guardar </span></button></p>
+          </div>
+        </div>
+       </div>
+    </article>
+   </div>
+  </div>
+</div>
+

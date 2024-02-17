@@ -55,6 +55,11 @@ import { RegisterStepComponent } from './pages/lawyers/register-step/register-st
 import { RegisterSecondComponent } from './pages/lawyers/register-second/register-second.component';
 import { RegisterFourComponent } from './pages/lawyers/register-four/register-four.component';
 import { RegisterFiveComponent } from './pages/lawyers/register-five/register-five.component';
+import { StartComponent } from './pages/lawyers/start/start.component';
+import { UserMessagesComponent } from './pages/admin/user-messages/user-messages.component';
+import { SubscriptionsComponent } from './pages/lawyers/subscriptions/subscriptions.component';
+import { MainProfileComponent } from './pages/lawyers/main-profile/main-profile.component';
+import { VacanciesAvalaibleComponent } from './pages/lawyers/vacancies-avalaible/vacancies-avalaible.component';
 
 
 @NgModule({
@@ -105,7 +110,12 @@ import { RegisterFiveComponent } from './pages/lawyers/register-five/register-fi
     RegisterStepComponent,
     RegisterSecondComponent,
     RegisterFourComponent,
-    RegisterFiveComponent
+    RegisterFiveComponent,
+    StartComponent,
+    UserMessagesComponent,
+    SubscriptionsComponent,
+    MainProfileComponent,
+    VacanciesAvalaibleComponent
   ],
   imports: [
     BrowserModule,
