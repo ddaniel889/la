@@ -29,7 +29,7 @@
               <div class="left">
                 <div class="search">
                   <input type="text" placeholder="Buscar usuario">&nbsp;
-                  <select (click)="openFilters()" id="" style="border-radius: 15px !important; background-color: #f2f2f2;">
+                  <select (click)="openFilters()" id="" style="border-radius: 15px !important; background-color: #f2f2f2;height: 29px !important;border:0">
                     <option value="Sep2023" class="dates">Filtro</option>
                   </select>
                 </div>
@@ -55,6 +55,8 @@
             </div>
 
             <div class="col-7">
+              <br />
+              <br />
               <div class="right">
                   <img class="users" src="../../../../assets/images/users.PNG" alt="">
                   <p class="name">Raquel Victoria</p>
@@ -98,15 +100,15 @@
               </div>
 
               <div class="payment">
+                <br >
+                <p> <legend><span class="title" style="font-size: 17px;color:#181937;margin-top: 25px;margin-left: 25px;padding-top: 25px !important;">Historial de pagos</span>
+                  <span class="calendar" style="width: 50%; float: right;">
+                  <select name="" id="" style="border-radius: 15px !important; background-color: #f2f2f2;float: right !important; border: 1px solid #f2f2f2;font-size: 13px;margin-right: 45px !important;">
+                    <option value="Sep2023" class="dates">Pagos</option>
+                    <option value="Oct2023" class="dates">Casos</option>
+                  </select>
+                </span></legend> </p>
                 <table>
-                  <legend>Historial de pagos
-                    <span class="calendar" style="width: 50%; float: right;">
-                    <select name="" id="" style="border-radius: 15px !important; background-color: #f2f2f2;">
-                      <option value="Sep2023" class="dates">Pagos</option>
-                      <option value="Oct2023" class="dates">Casos</option>
-                    </select>
-
-                  </span></legend>
                   <tr style="background-color: #f2f2f2; color:#9192A6;">
                     <th>Servicio</th>
                     <th>Fecha</th>
@@ -114,10 +116,10 @@
                     <th>Pago</th>
                   </tr>
                   <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                     <td></td>
+                    <td>Registro mercantil</td>
+                    <td>23/01/2024</td>
+                    <td>Ana Richardson</td>
+                     <td>150</td>
                   </tr>
                 </table>
               </div>
