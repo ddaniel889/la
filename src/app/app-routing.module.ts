@@ -40,6 +40,7 @@ import { ClientSupportComponent } from './pages/admin/client-support/client-supp
 import { AccountComponent } from './pages/admin/account/account.component';
 import { ManagerDetailComponent } from './pages/admin/manager-detail/manager-detail.component';
 import { UserMessagesComponent } from './pages/admin/user-messages/user-messages.component';
+import { NewCasesComponent } from './pages/lawyers/new-cases/new-cases.component';
 
 
 const routes: Routes = [
@@ -69,8 +70,7 @@ const routes: Routes = [
   { path: 'news', component:  NewsComponent  },
   { path: 'main-profile', component:   MainProfileComponent  },
   { path: 'vacancy-avalaible/:id', component: VacanciesAvalaibleComponent  },
-
-
+  { path: 'new-case', component: NewCasesComponent },
 
    /*  Admin          */
   { path: 'panel', component: PanelComponent },

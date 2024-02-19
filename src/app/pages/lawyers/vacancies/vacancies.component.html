@@ -58,18 +58,17 @@
           <p class="vacancies">Hay 27 vacantes disponibles</p>
           <p class="vacancies">Hay 20 vacantes disponibles con estas especificaciones</p>
           <p class="vacancies"> Aún no has guardado vacantes</p>
-          <!--p class="vacancies"> No hay ninguna vacante guardada con estas especificaciones</!--p>
+          <p class="vacancies"> No hay ninguna vacante guardada con estas especificaciones</p>
           <p class="vacancies">Aún no has aplicado a vacantes</p>
           <p class="vacancies">Lo sentimos, no hay vacantes disponibles</p>
           <p class="vacancies">Hay 20 vacantes disponibles con estas especificaciones</p>
-          <p-- class="vacancies">No hay ninguna vacante guardada con estas especificaciones</p-->
+          <p class="vacancies">No hay ninguna vacante guardada con estas especificaciones</p>
         </div>
 
        </div>
 
        <div class="row charts text-center">
-
-          <div class="card chart" *ngFor="let item of vacancies">
+          <div class="card chart" *ngFor="let item of vacancies" (click)="goVacancie(item.id)">
             <div class="row">
               <div class="col-2">
                 <img src="../../../../assets/images/image_profile.jpg" alt="">
@@ -94,6 +93,7 @@
               Hace {{item.time}} horas
             </p>
           </div>
+
        </div>
     </article>
    </div>

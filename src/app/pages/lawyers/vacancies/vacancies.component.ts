@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {  VacanciesAvalaibleComponent} from '../vacancies-avalaible/vacancies-avalaible.component';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-vacancies',
@@ -9,6 +11,7 @@ export class VacanciesComponent implements OnInit {
 
   public vacancies = [
     {
+    id:'0',
     name : 'Raquel Ortiz',
     location:'Bogotá, Colombia ',
     image : '',
@@ -18,6 +21,7 @@ export class VacanciesComponent implements OnInit {
     time:2
    },
    {
+    id:'1',
     name : 'Raquel Ortiz',
     location:'Bogotá, Colombia ',
     image : '',
@@ -27,6 +31,7 @@ export class VacanciesComponent implements OnInit {
     time:2
    },
    {
+    id:'2',
     name : 'Raquel Ortiz',
     location:'Bogotá, Colombia ',
     image : '',
@@ -36,6 +41,7 @@ export class VacanciesComponent implements OnInit {
     time:2
    },
    {
+    id:'3',
     name : 'Raquel Ortiz',
     location:'Bogotá, Colombia ',
     image : '',
@@ -45,6 +51,7 @@ export class VacanciesComponent implements OnInit {
     time:2
    },
    {
+    id:'4',
     name : 'Raquel Ortiz',
     location:'Bogotá, Colombia ',
     image : '',
@@ -54,6 +61,7 @@ export class VacanciesComponent implements OnInit {
     time:2
    },
    {
+    id:'5',
     name : 'Raquel Ortiz',
     location:'Bogotá, Colombia ',
     image : '',
@@ -63,6 +71,7 @@ export class VacanciesComponent implements OnInit {
     time:2
    },
    {
+    id:'6',
     name : 'Raquel Ortiz',
     location:'Bogotá, Colombia ',
     image : '',
@@ -72,6 +81,7 @@ export class VacanciesComponent implements OnInit {
     time:2
    },
    {
+    id:'7',
     name : 'Raquel Ortiz',
     location:'Bogotá, Colombia ',
     image : '',
@@ -81,6 +91,7 @@ export class VacanciesComponent implements OnInit {
     time:2
    },
    {
+    id:'8',
     name : 'Raquel Ortiz',
     location:'Bogotá, Colombia ',
     image : '',
@@ -91,9 +102,14 @@ export class VacanciesComponent implements OnInit {
    }
    ];
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
+
+  goVacancie(id:Object): void {
+    this.router.navigate([`/vacancy-avalaible/${id}`]);
+  }
+
 
 }

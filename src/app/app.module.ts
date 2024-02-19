@@ -60,6 +60,8 @@ import { UserMessagesComponent } from './pages/admin/user-messages/user-messages
 import { SubscriptionsComponent } from './pages/lawyers/subscriptions/subscriptions.component';
 import { MainProfileComponent } from './pages/lawyers/main-profile/main-profile.component';
 import { VacanciesAvalaibleComponent } from './pages/lawyers/vacancies-avalaible/vacancies-avalaible.component';
+import { SentModalComponent } from './pages/lawyers/sent-modal/sent-modal.component';
+import { NewCasesComponent } from './pages/lawyers/new-cases/new-cases.component';
 
 
 @NgModule({
@@ -115,7 +117,9 @@ import { VacanciesAvalaibleComponent } from './pages/lawyers/vacancies-avalaible
     UserMessagesComponent,
     SubscriptionsComponent,
     MainProfileComponent,
-    VacanciesAvalaibleComponent
+    VacanciesAvalaibleComponent,
+    SentModalComponent,
+    NewCasesComponent
   ],
   imports: [
     BrowserModule,

@@ -14,6 +14,39 @@
           <div class="col-5"> <p>  <span class="side"> <mat-icon class="mat-18">notifications</mat-icon> <span class="profile"> <img src="../../../../assets/images/image_profile.jpg" alt=""> Ana Richardson </span></span>   </p></div>
         </div>
        </div>
+       <div class="note">
+        <p>
+          Aquí puedes revisar cómo van tus casos y el progreso que ha tenido
+        </p>
+        <p>
+          cada uno. ¡También crea nuevos casos!
+        </p>
+       </div>
+
+       <div class="row">
+        <p class="cases">Tus casos:</p>
+        <div class="col-5">
+         <div class="section"  style="cursor: pointer !important;">
+          <img src="../../../../assets/images/request.png" alt="">
+         </div>
+        </div>
+      </div>
+
+      <div class="row">
+       <div class="col-12">
+         <div class="total" *ngFor="let item of total">
+          <div class="row">
+            <div class="col-3">
+
+            </div>
+            <div class="col-6">
+              <h3> {{item.title}}</h3>
+              <p><span class="update"> {{item.update}} actualizaciones </span>  <span class="time"> Hasta {{item.date}} Nov / 13 días </span></p>
+            </div>
+          </div>
+         </div>
+       </div>
+      </div>
 
 
 

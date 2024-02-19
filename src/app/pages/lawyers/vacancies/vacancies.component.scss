@@ -77,6 +77,10 @@ div.main-content{
         height: 28px !important;
         border: #F1F1F1;
       }
+      select{
+        border: 1px solid #F1F1F1;
+        height: 28px !important;
+      }
 
     }
 
@@ -114,14 +118,26 @@ div.main-content{
 
 
     div.charts{
-      margin-top: 30px !important;
-      margin-left: 30px !important;
-      width: 90%;
+     // margin: 0 auto !important;
+      width: 80%;
+      margin-left: 180px !important;
       div.chart{
+        cursor: pointer;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: flex-start;
+        align-items: flex-start;
         background-color: #fff;
         border-radius: 10px;
         width: 266px;
         height: 203px;
+        margin: 30px !important;
         box-shadow: 5px 5px #F1F1F1;
         img{
           margin-top: 25px;
