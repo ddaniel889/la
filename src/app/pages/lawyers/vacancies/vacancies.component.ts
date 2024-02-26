@@ -13,9 +13,9 @@ export class VacanciesComponent implements OnInit {
     {
     id:'0',
     name : 'Raquel Ortiz',
-    location:'Bogotá, Colombia ',
-    image : '',
-    job : 'Especialidad',
+    clabe:'Bogotá, Colombia ',
+    balance : '',
+    accounts : 'Especialidad',
     job1 : 'Especialidad',
     description: 'Reclamación por Despido Injusto y Discriminación en XYZ Corporación',
     time:2

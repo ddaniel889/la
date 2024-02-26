@@ -121,18 +121,18 @@ div.main-content{
      // margin: 0 auto !important;
       width: 80%;
       margin-left: 180px !important;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-content: flex-start;
+      align-items: flex-start;
       div.chart{
         cursor: pointer;
-        display: -webkit-box;
-        display: -moz-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-content: flex-start;
-        align-items: flex-start;
         background-color: #fff;
         border-radius: 10px;
         width: 266px;

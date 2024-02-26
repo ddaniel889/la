@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+div.main-content{
+
+
+  article{
+    margin-top: 30px !important;
+    padding: 10px !important;
+    margin-left: 30px !important;
+    margin-right: 30px !important;
+    span.side{
+      float: right;
+      mat-icon{
+        position: absolute;
+        top: 45px;
+        right: 385px !important;
+        margin-right: 12px !important;
+        font-size: 20px !important;
+      }
+    }
+    div.side{
+      float: right !important;
+      margin-right: 50px;
+      span.profile{
+        padding-left: 25px !important;
+      }
+    }
+    p.head{
+      margin-top: 2px !important;
+      margin-bottom: 5px !important;
+      div.top{
+        margin-left: 50px !important;
+      }
+      font-family: 'Poppins';
+      font-weight: bold;
+      font-size: 23px;
+      color:#181937;
+      span{
+        margin-right: 10px;
+        mat-icon.keyboard{
+          font-size: 25px !important;
+          cursor: pointer;
+        }
+        span.profile{
+          font-size:17px;
+          font-family: 'Poppins';
+          color: #181937;
+        }
+
+      }
+
+    }
+    div.note{
+       margin-top: 20px !important;
+      p{
+        margin-left: 10px;
+        font-family: 'Poppins';
+        color: #181937;
+        font-size: 16px;
+        margin-bottom: 0;
+
+      }
+    }
+
+    div.myProgress {
+      margin-top: 25px !important;
+      width: 85%;
+      background-color: #fff;
+      border-radius: 15px;
+      border: 1px solid #F1F1F1 !important;
+      box-shadow: 10px 10px #F1F1F1;
+
+    }
+
+    div.myBar {
+      width: 60px;
+      height: 60px;
+      background-color: #ddd;
+      text-align: center;
+      line-height: 30px;
+      color: white;
+      border-radius: 50%;
+      span.percent{
+        padding-top: 20px;
+      }
+
+
+    }
+
+    div.cases{
+        margin-top: 80px !important;
+        border: 1px solid #F1F1F1 !important;
+        box-shadow: 10px 10px #F1F1F1;
+        width: 90%;
+      div.name{
+        background-color: #181937;
+        height: 141px;
+        border-radius: 10px;
+        margin-left: 30px !important;
+        margin-right: 50px !important;
+      }
+      div.meeting{
+        margin-top: 40px;
+        margin-right: 50px !important;
+        margin-bottom: 50px !important;
+        background-color: #fff;
+        margin-left: 30px !important;
+        height: 141px;
+        border-radius: 10px;
+        border: 1px solid #F1F1F1 !important;
+      }
+      div.description{
+        margin-top: 40px;
+        margin-right: 50px !important;
+        margin-bottom: 50px !important;
+        background-color: #F1F1F1 ;
+        margin-left: 30px !important;
+        border-radius: 10px;
+        border: 1px solid #F1F1F1 !important;
+      }
+      p.meeting{
+        padding-top: 40px !important;
+        font-family: 'Poppins';
+        color: #181937;
+        font-size: 20px;
+        margin-left: 30px;
+        font-weight: bold;
+     }
+
+    }
+
+
+
+  }
+
+
+}

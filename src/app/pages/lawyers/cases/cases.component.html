@@ -26,7 +26,7 @@
        <div class="row">
         <p class="cases">Tus casos:</p>
         <div class="col-5">
-         <div class="section"  style="cursor: pointer !important;">
+         <div class="section"  style="cursor: pointer !important;" (click)="addCases()">
           <img src="../../../../assets/images/request.png" alt="">
          </div>
         </div>
@@ -36,12 +36,12 @@
        <div class="col-12">
          <div class="total" *ngFor="let item of total">
           <div class="row">
-            <div class="col-3">
+            <div class="col-2">
 
             </div>
             <div class="col-6">
-              <h3> {{item.title}}</h3>
-              <p><span class="update"> {{item.update}} actualizaciones </span>  <span class="time"> Hasta {{item.date}} Nov / 13 días </span></p>
+              <h3 class="subtitle"> {{item.title}}</h3>
+              <p><span class="update"><mat-icon class="mat-18" style="font-size: 10px !important;color: #181937;">add_alarm</mat-icon> {{item.update}} actualizaciones </span>  <span class="time"> Hasta {{item.date}} Nov / 13 días </span></p>
             </div>
           </div>
          </div>
