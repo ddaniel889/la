@@ -25,6 +25,7 @@ import { SentencesComponent } from './pages/lawyers/sentences/sentences.componen
 import { NewsComponent } from './pages/lawyers/news/news.component';
 import { MainProfileComponent } from './pages/lawyers/main-profile/main-profile.component';
 import { VacanciesAvalaibleComponent } from './pages/lawyers/vacancies-avalaible/vacancies-avalaible.component';
+import { DoPaymentsComponent } from './pages/lawyers/do-payments/do-payments.component';
 
 /*  admin    */
 import {PanelComponent } from './pages/admin/panel/panel.component';
@@ -71,6 +72,8 @@ const routes: Routes = [
   { path: 'main-profile', component:   MainProfileComponent  },
   { path: 'vacancy-avalaible/:id', component: VacanciesAvalaibleComponent  },
   { path: 'new-case', component: NewCasesComponent },
+  { path: 'do-payment', component:  DoPaymentsComponent  },
+
 
    /*  Admin          */
   { path: 'panel', component: PanelComponent },

@@ -62,6 +62,7 @@ import { MainProfileComponent } from './pages/lawyers/main-profile/main-profile.
 import { VacanciesAvalaibleComponent } from './pages/lawyers/vacancies-avalaible/vacancies-avalaible.component';
 import { SentModalComponent } from './pages/lawyers/sent-modal/sent-modal.component';
 import { NewCasesComponent } from './pages/lawyers/new-cases/new-cases.component';
+import { DoPaymentsComponent } from './pages/lawyers/do-payments/do-payments.component';
 
 
 @NgModule({
@@ -119,7 +120,8 @@ import { NewCasesComponent } from './pages/lawyers/new-cases/new-cases.component
     MainProfileComponent,
     VacanciesAvalaibleComponent,
     SentModalComponent,
-    NewCasesComponent
+    NewCasesComponent,
+    DoPaymentsComponent
   ],
   imports: [
     BrowserModule,

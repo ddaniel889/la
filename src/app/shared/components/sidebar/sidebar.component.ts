@@ -19,4 +19,8 @@ export class SidebarComponent implements OnInit {
     this.router.navigate([`/${param}`]);
   }
 
+  goPay() {
+    console.log('pay')
+  }
+
 }

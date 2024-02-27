@@ -19,6 +19,7 @@ import { ContentTableComponent } from './components/content-table/content-table.
 import { PrivacyComponent } from './components/privacy/privacy.component';
 import { CasesTablesComponent } from './components/cases-tables/cases-tables.component';
 import { AdminHeaderComponent } from './components/admin-header/admin-header.component';
+import { ButtonPayComponent } from './components/button-pay/button-pay.component';
 
 
 
@@ -41,7 +42,8 @@ import { AdminHeaderComponent } from './components/admin-header/admin-header.com
     ContentTableComponent,
     PrivacyComponent,
     CasesTablesComponent,
-    AdminHeaderComponent
+    AdminHeaderComponent,
+    ButtonPayComponent
   ],
   imports: [
     CommonModule,
@@ -64,7 +66,8 @@ import { AdminHeaderComponent } from './components/admin-header/admin-header.com
     MarketingTableComponent,
     ContentTableComponent,
     PrivacyComponent,
-    CasesTablesComponent
+    CasesTablesComponent,
+    ButtonPayComponent
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })
