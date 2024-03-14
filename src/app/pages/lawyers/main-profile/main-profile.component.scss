@@ -6,10 +6,16 @@ div.main-content{
   article{
     margin-top: 30px !important;
     padding: 10px !important;
-    margin-left: 15px !important;
+    margin-left: 30px !important;
     span.side{
-      //margin-right: 500px !important;
       float: right;
+      mat-icon{
+        position: absolute;
+        top: 45px;
+        right: 385px !important;
+        margin-right: 12px !important;
+        font-size: 20px !important;
+      }
     }
     div.side{
       float: right !important;

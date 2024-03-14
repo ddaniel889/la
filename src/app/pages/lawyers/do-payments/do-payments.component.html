@@ -19,6 +19,129 @@
           ¡Llena la información de pago!
         </p>
        </div>
+       <br />
+       <div class="row">
+        <div class="col-6">
+          <div class="card hours">
+            <table class="table-responsive">
+              <tr>
+                <td>
+                  <div class="row">
+                    <div class="col-5">
+                      <h5 class="method">Método de pago</h5>
+                    </div>
+                    <div class="col-6">
+                      <button class="btn" style="width: 180px;height: 35px; border-radius: 20px;background-color: #181937;margin: 10px;display: block;margin-left: auto;margin-right: auto; "><span style="color:#fff;font-size: 15px;">Agregar método</span></button>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <div class="check">
+                    <input type="radio"  name="state" value="active" checked />&nbsp;
+                    <label for="active">Tarjeta de crédito o débito</label>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="check">
+                    <input type="radio"  name="state" value="active" checked />&nbsp;
+                    <label for="active">PSE</label>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="check">
+                    <input type="radio"  name="state" value="active" checked />&nbsp;
+                    <label for="active">PayPal</label>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="check">
+                    <input type="radio"  name="state" value="active" checked />&nbsp;
+                    <label for="active">Otro método de pago</label>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="search">
+                    <h6 class="coupon">Cupón</h6>
+                    <input type="text" placeholder="Ingresa tu cupón">&nbsp;
+                  </div>
+                </td>
+              </tr>
+              <!--tr>
+                <td><h6 class="">Resumen de pago</h6></td>
+              </!--tr>
+              <tr>
+                <td><h6 class="">Servicio</h6></td>
+              </tr>
+              <tr style="width: 200px !important;">
+                <td >Cita  </td>   <td>$000000 </td>
+              </tr>
+              <tr>
+                <td>Cita  </td>   <td>$000000 </td>
+              </tr>
+              <tr>
+                <td>Cita  </td>    <td>$000000 </td>
+              </tr>
+              <br />
+              <tr-->
+              <!--td> Total</!--td>   <td>$000000 </td>
+              </tr-->
+            </table>
+            <p class="buttons">  <button class="btn" style="width: 137px;height: 45px; border-radius: 20px;background-color: #181937;margin: 10px;display: block;margin-left: auto;margin-right: auto; "><span style="color:#fff">Pagar ahora </span></button></p>
+          </div>
+
+        </div>
+        <div class="col-6">
+          <h2>Datos de la tarjeta</h2>
+
+          <table class="table-responsive cards">
+           <tr>
+             <td>
+              <div class="search">
+                <input type="text" placeholder="Número de la tarjeta">
+              </div>
+          </td>
+           </tr>
+           <tr>
+            <td>
+              <div class="search">
+                <input type="text" placeholder="Nombre del titular ">
+              </div>
+          </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="search">
+                <input type="text" placeholder="Fecha expiración">
+              </div>
+            </td>
+            <td>
+              <div class="search">
+                <input type="text" placeholder="CVC">
+              </div>
+            </td>
+          </tr>
+          </table>
+          <br />
+          <div class="paypal" style="width: 66%;">
+            <ngx-paypal [config]="payPalConfig"></ngx-paypal>
+          </div>
+
+
+        </div>
+
+
+       </div>
 
 
 

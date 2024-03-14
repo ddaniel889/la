@@ -20,6 +20,7 @@ import { PrivacyComponent } from './components/privacy/privacy.component';
 import { CasesTablesComponent } from './components/cases-tables/cases-tables.component';
 import { AdminHeaderComponent } from './components/admin-header/admin-header.component';
 import { ButtonPayComponent } from './components/button-pay/button-pay.component';
+import { DataPickerComponent } from './components/data-picker/data-picker.component';
 
 
 
@@ -43,7 +44,8 @@ import { ButtonPayComponent } from './components/button-pay/button-pay.component
     PrivacyComponent,
     CasesTablesComponent,
     AdminHeaderComponent,
-    ButtonPayComponent
+    ButtonPayComponent,
+    DataPickerComponent
   ],
   imports: [
     CommonModule,
@@ -67,7 +69,8 @@ import { ButtonPayComponent } from './components/button-pay/button-pay.component
     ContentTableComponent,
     PrivacyComponent,
     CasesTablesComponent,
-    ButtonPayComponent
+    ButtonPayComponent,
+    DataPickerComponent 
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })

@@ -1,0 +1,109 @@
+<div class="main-content">
+  <div class="row">
+    <div class="col-2">
+      <nav>
+        <sidebar></sidebar>
+      </nav>
+    </div>
+
+   <div class="col-10">
+    <article>
+      <div class="head">
+        <div class="row top">
+          <div class="col-5"> <p class="head"><span (click)="goDates()"><mat-icon style="cursor: pointer;">keyboard_arrow_left</mat-icon></span>  <span> Tus próximas citas &nbsp;<mat-icon style="cursor: pointer;">keyboard_arrow_right</mat-icon><strong>Cita</strong></span> </p></div>
+          <div class="col-5"> <p>  <span class="side"> <mat-icon class="mat-18">notifications</mat-icon> <span class="profile"> <img src="../../../../assets/images/image_profile.jpg" alt=""> Ana Richardson </span></span>   </p></div>
+        </div>
+       </div>
+
+
+       <div class="note">
+        <p>
+          Cita:<strong> Defensa en el Caso de Propiedad Intelectual: Protegiendo la innovación tecnológica</strong>
+        </p>
+       </div>
+
+       <div class="row">
+        <div class="col-7">
+          <p class="virtual"><button class="outline">Virtual</button></p>
+          <div class="call">
+             <div class="row middle" *ngIf="noCall">
+               <div class="col-1">
+
+               </div>
+               <div class="col-2">
+                <img src="../../../../assets/images/computer.png" alt="">
+               </div>
+               <div class="col-8">
+                <p class="call">
+                  Aún no es el momento de tu cita. Cuando sea la hora,
+                </p>
+                <p class="call">
+                  te enviaremos un recordatorio para que te conectes
+                </p>
+                <p class="call" *ngIf="init">¡Ya puedes ingresar a la cita!</p>
+               </div>
+               <div class="col-1">
+
+               </div>
+             </div>
+             <div class="row middle" *ngIf="calling">
+              <div class="col-1">
+
+              </div>
+              <div class="col-10">
+               <p>
+                <img src="../../../../assets/images/users.PNG" alt="">
+               </p>
+               <p class="calling">
+                 Raquel Ortiz
+               </p>
+               <p class="calling">
+                ya está en la reunión
+               </p>
+
+              </div>
+              <div class="col-1">
+
+              </div>
+            </div>
+
+          </div>
+          <p class="area"><button class="area">Entrar</button> </p>
+
+        </div>
+
+        <div class="col-5">
+          <div class="card chat">
+            <p class="buttons"> <button>Mensaje</button>  <button class="gray">Participantes</button></p>
+            <h3 class="now">Duración de la citas <span> 1 hora</span></h3>
+            <div class="row myProgress" >
+              <div class="myBar">15%</div>
+            </div>
+            <p class="line"><span class="line">-----------------------------&nbsp;</span> <span class="messages">Mensajes</span>  <span class="line">&nbsp;-------------------------</span></p>
+            <div class="area">
+
+            </div>
+            <div class="input row">
+              <div class="col-1">
+
+              </div>
+              <div class="col-1">
+
+              </div>
+
+              <div class="col-1">
+                <span><mat-icon style="cursor: pointer;">add</mat-icon></span>
+              </div>
+              <div class="col-6 right">
+                <p><input type="text" placeholder="Escribe un mensaje"> </p>
+              </div>
+            </div>
+          </div>
+        </div>
+       </div>
+    </article>
+   </div>
+  </div>
+</div>
+
+

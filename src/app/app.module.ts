@@ -63,6 +63,12 @@ import { VacanciesAvalaibleComponent } from './pages/lawyers/vacancies-avalaible
 import { SentModalComponent } from './pages/lawyers/sent-modal/sent-modal.component';
 import { NewCasesComponent } from './pages/lawyers/new-cases/new-cases.component';
 import { DoPaymentsComponent } from './pages/lawyers/do-payments/do-payments.component';
+import { HistoryActivitiesComponent } from './pages/lawyers/history-activities/history-activities.component';
+
+import { NgxPayPalModule } from 'ngx-paypal';
+import { CancelDatingComponent } from './pages/lawyers/cancel-dating/cancel-dating.component';
+import { DatingDetailsComponent } from './pages/lawyers/dating-details/dating-details.component';
+import { EditDatingComponent } from './pages/lawyers/edit-dating/edit-dating.component';
 
 
 @NgModule({
@@ -121,7 +127,11 @@ import { DoPaymentsComponent } from './pages/lawyers/do-payments/do-payments.com
     VacanciesAvalaibleComponent,
     SentModalComponent,
     NewCasesComponent,
-    DoPaymentsComponent
+    DoPaymentsComponent,
+    HistoryActivitiesComponent,
+    CancelDatingComponent,
+    DatingDetailsComponent,
+    EditDatingComponent
   ],
   imports: [
     BrowserModule,
@@ -129,7 +139,8 @@ import { DoPaymentsComponent } from './pages/lawyers/do-payments/do-payments.com
     BrowserAnimationsModule,
     MatIconModule,
     MatDialogModule,
-    SharedModule
+    SharedModule,
+    NgxPayPalModule 
   ],
   providers: [],
   bootstrap: [AppComponent]

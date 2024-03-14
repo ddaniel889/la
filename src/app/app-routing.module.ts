@@ -26,6 +26,9 @@ import { NewsComponent } from './pages/lawyers/news/news.component';
 import { MainProfileComponent } from './pages/lawyers/main-profile/main-profile.component';
 import { VacanciesAvalaibleComponent } from './pages/lawyers/vacancies-avalaible/vacancies-avalaible.component';
 import { DoPaymentsComponent } from './pages/lawyers/do-payments/do-payments.component';
+import { HistoryActivitiesComponent } from './pages/lawyers/history-activities/history-activities.component';
+import { DatingDetailsComponent } from './pages/lawyers/dating-details/dating-details.component';
+import { EditDatingComponent } from './pages/lawyers/edit-dating/edit-dating.component';
 
 /*  admin    */
 import {PanelComponent } from './pages/admin/panel/panel.component';
@@ -73,6 +76,10 @@ const routes: Routes = [
   { path: 'vacancy-avalaible/:id', component: VacanciesAvalaibleComponent  },
   { path: 'new-case', component: NewCasesComponent },
   { path: 'do-payment', component:  DoPaymentsComponent  },
+  { path: 'history-activities', component: HistoryActivitiesComponent   },
+  { path: 'dating-detail/:id', component: DatingDetailsComponent},
+  { path: 'edit-dating/:id', component:EditDatingComponent},
+
 
 
    /*  Admin          */

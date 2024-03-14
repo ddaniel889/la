@@ -11,11 +11,42 @@
       <div class="head">
         <div class="row top">
           <div class="col-5"> <p class="head"><span><mat-icon style="cursor: pointer;">keyboard_arrow_left</mat-icon></span>  <span> Tus próximas citas </span> </p></div>
-          <div class="col-5"> <p>  <span class="side"> <mat-icon class="mat-18">notifications</mat-icon> <span class="profile"> <img src="../../../../assets/images/image_profile.jpg" alt=""> Ana Richardson </span></span>   </p></div>
+          <div class="col-5"> <p><span class="search">  <input type="text" placeholder="Buscar"> </span> <span class="side"> <mat-icon class="mat-18">notifications</mat-icon> <span class="profile"> <img src="../../../../assets/images/image_profile.jpg" alt=""> Ana Richardson </span></span>   </p></div>
         </div>
        </div>
 
-      
+       <div class="tab">
+        <div class="row">
+          <div class="col-6">
+            <button>Reuniones virtuales</button>
+          </div>
+          <div class="col-6">
+            <button> Reuniones presenciales</button>
+          </div>
+        </div>
+
+       </div>
+       <p class="meeting">Tienes 2 reuniones virtuales</p>
+       <p class="remember"><span class="dating"><mat-icon style="cursor: pointer;">check_circle_outline</mat-icon>Recordatorio de citas </span>  <span class="appointment"><mat-icon style="cursor: pointer;">check_circle_outline</mat-icon>Agregar citas a tu calendario personal </span>   </p>
+
+       <div class="row cases" >
+        <div class="col-12">
+          <div class="total" *ngFor="let item of total">
+           <div class="row">
+            <div class="col-8">
+              <h3 class="subtitle"> {{item.title}}</h3>
+              <h4 class="date"> {{item.date}}</h4>
+              <p><span class="update"><mat-icon class="mat-18" style="font-size: 10px !important;color: #181937;">query_builder</mat-icon> {{item.time}} </span>  <span class="time"><mat-icon class="mat-18" style="font-size: 10px !important;color: #181937;">laptop</mat-icon> {{item.matter}} </span>   <span class="person"><img src="../../../../assets/images/image_profile.jpg" alt=""> {{item.person}} </span>  </p>
+              <p>&nbsp;</p>
+            </div>
+             <div class="col-3">
+              <p><span><mat-icon class="mat-19" style="font-size: 30px !important;">more_horiz</mat-icon> </span></p>
+              <p class="buttons"> <button class="outline" (click)="cancelDating()"> Editar</button>  <button (click)="goDating(item.id)"> Entrar</button></p>
+             </div>
+           </div>
+          </div>
+        </div>
+       </div>
 
     </article>
    </div>
